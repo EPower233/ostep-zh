@@ -1,0 +1,117 @@
+.VPNavBarTranslations,
+.VPNavScreenTranslations {
+  display: none !important;
+}
+
+.bilingual-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: 12px;
+  padding: 2px;
+  border-radius: 8px;
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+}
+
+.bilingual-btn {
+  padding: 3px 9px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.4;
+  border-radius: 6px;
+  color: var(--vp-c-text-2);
+  background: transparent;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.bilingual-btn:hover {
+  color: var(--vp-c-text-1);
+}
+
+.bilingual-btn.active {
+  color: var(--vp-c-brand-1);
+  background: var(--vp-c-bg);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 1279px) {
+  .bilingual-btn-split {
+    display: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  html.bilingual-split .VPDoc .aside {
+    display: none !important;
+  }
+
+  html.bilingual-split .VPDoc .container,
+  html.bilingual-split .VPDoc .content,
+  html.bilingual-split .VPDoc .content-container {
+    max-width: 100% !important;
+  }
+
+  html.bilingual-split .VPDoc .content-container {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+    gap: 24px;
+    align-items: start;
+  }
+
+  html.bilingual-split .VPDoc .content-container > :not(.main):not(.bilingual-peer-pane) {
+    grid-column: 1 / -1;
+  }
+
+  html.bilingual-split .VPDoc .content-container > .main {
+    grid-column: 1;
+    grid-row: 1;
+    min-width: 0;
+    margin: 0 !important;
+  }
+
+  html.bilingual-split .VPDoc .content-container > .bilingual-peer-pane {
+    grid-column: 2;
+    grid-row: 1;
+    min-width: 0;
+  }
+
+  html.bilingual-split.bilingual-en-primary .VPDoc .content-container > .main {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  html.bilingual-split.bilingual-en-primary .VPDoc .content-container > .bilingual-peer-pane {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  html.bilingual-split .VPDoc .content-container > .VPDocFooter {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  html.bilingual-split .VPDoc .content-container .main .vp-doc,
+  html.bilingual-split .VPDoc .content-container .bilingual-peer-pane {
+    height: calc(100vh - var(--vp-nav-height) - 48px);
+    overflow-y: auto;
+    padding: 16px 20px;
+    border: 1px solid var(--vp-c-divider);
+    border-radius: 10px;
+    background: var(--vp-c-bg);
+  }
+
+  /* Half-width panes: keep table header / row-label cells readable instead of
+     wrapping CJK one character per line; the table scrolls horizontally. */
+  html.bilingual-split .VPDoc .content-container table th,
+  html.bilingual-split .VPDoc .content-container table td:first-child {
+    white-space: nowrap;
+  }
+}
+
+.bilingual-peer-status {
+  padding: 24px;
+  color: var(--vp-c-text-2);
+  font-size: 14px;
+}

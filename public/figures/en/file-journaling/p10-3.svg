@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="729.0" height="116.1" viewBox="0 0 540 86">
+  <style>
+    :root {
+      --fg: #1f2328;
+      --surface: #e6ebf1;
+      --bg: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fg: #e6edf3;
+        --surface: #2d333b;
+        --bg: #1b1f24;
+      }
+    }
+    text { font-family: ui-serif, Georgia, "Times New Roman", serif; fill: var(--fg); }
+    .stroke { stroke: var(--fg); fill: none; stroke-width: 1.2; }
+    .super { fill: var(--surface); stroke: var(--fg); stroke-width: 1.2; }
+    .cell { fill: var(--bg); stroke: var(--fg); stroke-width: 1.2; }
+    .arrow-head { fill: var(--fg); }
+    path:not([fill]), use:not([fill]), text:not([fill]) { fill: var(--fg); }
+</style>
+  <!-- Rotated "Journal" label -->
+  <text x="16" y="50" font-size="13" text-anchor="middle" transform="rotate(-90 16 50)">Journal</text>
+
+  <!-- Journal Superblock + Tx1..Tx5 + open tail -->
+  <rect class="super" x="30" y="24" width="60" height="52"/>
+  <text x="60" y="47" font-size="13" text-anchor="middle">Journal</text>
+  <text x="60" y="63" font-size="13" text-anchor="middle">Super</text>
+
+  <rect class="cell" x="90" y="24" width="56" height="52"/>
+  <text x="118" y="55" font-size="14" text-anchor="middle">Tx1</text>
+
+  <rect class="cell" x="146" y="24" width="56" height="52"/>
+  <text x="174" y="55" font-size="14" text-anchor="middle">Tx2</text>
+
+  <rect class="cell" x="202" y="24" width="56" height="52"/>
+  <text x="230" y="55" font-size="14" text-anchor="middle">Tx3</text>
+
+  <rect class="cell" x="258" y="24" width="56" height="52"/>
+  <text x="286" y="55" font-size="14" text-anchor="middle">Tx4</text>
+
+  <rect class="cell" x="314" y="24" width="56" height="52"/>
+  <text x="342" y="55" font-size="14" text-anchor="middle">Tx5</text>
+
+  <!-- Open tail lines -->
+  <line class="stroke" x1="370" y1="24" x2="532" y2="24"/>
+  <line class="stroke" x1="370" y1="76" x2="532" y2="76"/>
+  <text x="394" y="55" font-size="15" text-anchor="middle">...</text>
+  <line class="stroke" x1="418" y1="50" x2="496" y2="50"/>
+  <polygon class="arrow-head" points="496,46 505,50 496,54"/>
+
+  <!-- Oldest pointer (Journal Super -> start of Tx1) -->
+  <polyline class="stroke" points="80,32 80,14 90,14 90,21"/>
+  <polygon class="arrow-head" points="87,18 90,24 93,18"/>
+
+  <!-- Newest pointer (Journal Super -> end of Tx5) -->
+  <polyline class="stroke" points="72,32 72,7 370,7 370,21"/>
+  <polygon class="arrow-head" points="367,18 370,24 373,18"/>
+</svg>

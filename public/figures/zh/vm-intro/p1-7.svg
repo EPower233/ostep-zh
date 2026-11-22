@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="313.8" height="464.9" viewBox="0 0 126.54 187.44">
+<style>
+  :root {
+    --fg: #1f2328;
+    --fg-muted: #57606a;
+    --bg-surface: #ffffff;
+    --surface: #f6f8fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+    --fg: #e6edf3;
+    --fg-muted: #9da7b3;
+    --bg-surface: #1b1f24;
+    --surface: #21262d;
+    }
+  }
+  path:not([fill]), use:not([fill]), text:not([fill]) { fill: var(--fg); }
+</style>
+<defs>
+<clipPath id="clip_1">
+<path transform="matrix(1,0,0,-1,-167.29,559.19)" d="M167.29 371.75H293.83V559.19H167.29Z"/>
+</clipPath>
+<clipPath id="clip_2">
+<path transform="matrix(1,0,0,-1,-167.29,559.19)" d="M0 0H432V648H0Z"/>
+</clipPath>
+<clipPath id="clip_3">
+<path transform="matrix(.1,0,0,-.1,-167.29,559.19)" d="M2060.14 5007.19H2878.324V5498.1H2060.14Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+</defs>
+<g clip-path="url(#clip_1)">
+<g clip-path="url(#clip_2)">
+
+
+
+
+
+
+
+
+<path transform="matrix(.1,0,0,-.1,-167.29,559.19)" stroke-width="4.05" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M859.5 5740.07H3738.78"/>
+<path transform="matrix(.1,0,0,-.1,-167.29,559.19)" stroke-width="8.18182" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2060.14 3779.92H2878.324V5007.19H2060.14Z"/>
+<g clip-path="url(#clip_3)">
+<path transform="matrix(.1,0,0,-.1,-167.29,559.19)" d="M2060.14 5007.19H2878.324V5498.1H2060.14Z" fill="var(--surface)"/>
+</g>
+<path transform="matrix(.1,0,0,-.1,-167.29,559.19)" stroke-width="8.18182" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2060.14 5007.19H2878.324V5498.1H2060.14Z"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</g>
+</g>
+
+<text x="13.72" y="184.78" font-size="8.2" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">最大</text>
+<text x="16.00" y="62.06" font-size="8.2" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">64KB</text>
+<text x="13.73" y="12.97" font-size="8.2" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">0KB</text>
+<text x="79.64" y="124.57" font-size="8.2" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">当前程序</text>
+<text x="79.64" y="132.75" font-size="8.2" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">（代码、数据等）</text>
+<text x="79.64" y="26.38" font-size="8.2" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">操作系统</text>
+<text x="79.64" y="34.57" font-size="8.2" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">（代码、数据等）</text>
+</svg>

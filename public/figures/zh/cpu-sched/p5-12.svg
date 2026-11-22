@@ -1,0 +1,217 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="486.3" height="187.4" viewBox="0 0 196.1 75.57">
+<style>
+  :root {
+    --fg: #1f2328;
+    --fg-muted: #57606a;
+    --bg-surface: #ffffff;
+    --surface: #f6f8fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+    --fg: #e6edf3;
+    --fg-muted: #9da7b3;
+    --bg-surface: #1b1f24;
+    --surface: #21262d;
+    }
+  }
+  path:not([fill]), use:not([fill]), text:not([fill]) { fill: var(--fg); }
+</style>
+<defs>
+<clipPath id="clip_1">
+<path transform="matrix(1,0,0,-1,-103.48003,453.80009)" d="M103.48 378.23H299.58V453.8H103.48Z"/>
+</clipPath>
+<clipPath id="clip_2">
+<path transform="matrix(1,0,0,-1,-103.48003,453.80009)" d="M0 0H432V648H0Z"/>
+</clipPath>
+<clipPath id="clip_3">
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" d="M1069.74 5018.4H1380.783V5407.2009H1069.74Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+<clipPath id="clip_4">
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" d="M1380.78 5018.4H1691.8191V5407.2009H1380.78Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+<clipPath id="clip_5">
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" d="M1691.82 5018.4H2002.8589V5407.2009H1691.82Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+<clipPath id="clip_6">
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" d="M1069.74 4031.28H1131.9509V4420.081H1069.74Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+<clipPath id="clip_7">
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" d="M1131.95 4031.28H1194.157V4420.081H1131.95Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+<clipPath id="clip_8">
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" d="M1194.16 4031.28H1256.3671V4420.081H1194.16Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+<clipPath id="clip_9">
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" d="M1256.36 4031.28H1318.567V4420.081H1256.36Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+<clipPath id="clip_10">
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" d="M1318.57 4031.28H1380.7809V4420.081H1318.57Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+<clipPath id="clip_11">
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" d="M1380.78 4031.28H1442.987V4420.081H1380.78Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+<clipPath id="clip_12">
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" d="M1442.99 4031.28H1505.197V4420.081H1442.99Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+<clipPath id="clip_13">
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" d="M1505.2 4031.28H1567.407V4420.081H1505.2Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+<clipPath id="clip_14">
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" d="M1567.4 4031.28H1629.611V4420.081H1567.4Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+<clipPath id="clip_15">
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" d="M1629.61 4031.28H1691.817V4420.081H1629.61Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+<clipPath id="clip_16">
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" d="M1691.82 4031.28H1754.027V4420.081H1691.82Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+<clipPath id="clip_17">
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" d="M1754.03 4031.28H1816.237V4420.081H1754.03Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+<clipPath id="clip_18">
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" d="M1816.23 4031.28H1878.4409V4420.081H1816.23Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+<clipPath id="clip_19">
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" d="M1878.45 4031.28H1940.657V4420.081H1878.45Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+<clipPath id="clip_20">
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" d="M1940.65 4031.28H2002.857V4420.081H1940.65Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+</defs>
+<g clip-path="url(#clip_1)">
+<g clip-path="url(#clip_2)">
+
+
+
+
+
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" stroke-width="4.05" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M580.5 5740.07H3459.78"/>
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" stroke-width="8.64" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1065.42 5018.4H2940.3"/>
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" stroke-width="8.64" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1069.74 4983.84V5018.4"/>
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" stroke-width="8.64" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1380.78 4983.84V5018.4"/>
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" stroke-width="8.64" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1691.82 4983.84V5018.4"/>
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" stroke-width="8.64" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2002.86 4983.84V5018.4"/>
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" stroke-width="8.64" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2313.9 4983.84V5018.4"/>
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" stroke-width="8.64" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2624.94 4983.84V5018.4"/>
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" stroke-width="8.64" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2935.98 4983.84V5018.4"/>
+
+<g clip-path="url(#clip_3)">
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" d="M1069.74 5018.4H1380.783V5407.2009H1069.74Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</g>
+
+<g clip-path="url(#clip_4)">
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" d="M1380.78 5018.4H1691.8191V5407.2009H1380.78Z" fill="var(--surface)"/>
+</g>
+
+<g clip-path="url(#clip_5)">
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" d="M1691.82 5018.4H2002.8589V5407.2009H1691.82Z" fill="var(--fg-muted)"/>
+</g>
+
+
+
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" stroke-width="8.64" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1065.42 4031.28H2940.3"/>
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" stroke-width="8.64" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1069.74 3996.72V4031.28"/>
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" stroke-width="8.64" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1380.78 3996.72V4031.28"/>
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" stroke-width="8.64" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1691.82 3996.72V4031.28"/>
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" stroke-width="8.64" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2002.86 3996.72V4031.28"/>
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" stroke-width="8.64" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2313.9 3996.72V4031.28"/>
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" stroke-width="8.64" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2624.94 3996.72V4031.28"/>
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" stroke-width="8.64" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2935.98 3996.72V4031.28"/>
+
+<g clip-path="url(#clip_6)">
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" d="M1069.74 4031.28H1131.9509V4420.081H1069.74Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</g>
+
+<g clip-path="url(#clip_7)">
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" d="M1131.95 4031.28H1194.157V4420.081H1131.95Z" fill="var(--surface)"/>
+</g>
+
+<g clip-path="url(#clip_8)">
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" d="M1194.16 4031.28H1256.3671V4420.081H1194.16Z" fill="var(--fg-muted)"/>
+</g>
+
+<g clip-path="url(#clip_9)">
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" d="M1256.36 4031.28H1318.567V4420.081H1256.36Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</g>
+
+<g clip-path="url(#clip_10)">
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" d="M1318.57 4031.28H1380.7809V4420.081H1318.57Z" fill="var(--surface)"/>
+</g>
+
+<g clip-path="url(#clip_11)">
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" d="M1380.78 4031.28H1442.987V4420.081H1380.78Z" fill="var(--fg-muted)"/>
+</g>
+
+<g clip-path="url(#clip_12)">
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" d="M1442.99 4031.28H1505.197V4420.081H1442.99Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</g>
+
+<g clip-path="url(#clip_13)">
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" d="M1505.2 4031.28H1567.407V4420.081H1505.2Z" fill="var(--surface)"/>
+</g>
+
+<g clip-path="url(#clip_14)">
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" d="M1567.4 4031.28H1629.611V4420.081H1567.4Z" fill="var(--fg-muted)"/>
+</g>
+
+<g clip-path="url(#clip_15)">
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" d="M1629.61 4031.28H1691.817V4420.081H1629.61Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</g>
+
+<g clip-path="url(#clip_16)">
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" d="M1691.82 4031.28H1754.027V4420.081H1691.82Z" fill="var(--surface)"/>
+</g>
+
+<g clip-path="url(#clip_17)">
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" d="M1754.03 4031.28H1816.237V4420.081H1754.03Z" fill="var(--fg-muted)"/>
+</g>
+
+<g clip-path="url(#clip_18)">
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" d="M1816.23 4031.28H1878.4409V4420.081H1816.23Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</g>
+
+<g clip-path="url(#clip_19)">
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" d="M1878.45 4031.28H1940.657V4420.081H1878.45Z" fill="var(--surface)"/>
+</g>
+
+<g clip-path="url(#clip_20)">
+<path transform="matrix(.1,0,0,-.1,-103.48003,453.80009)" d="M1940.65 4031.28H2002.857V4420.081H1940.65Z" fill="var(--fg-muted)"/>
+</g>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</g>
+</g>
+
+<text x="3.49" y="63.60" font-size="8.6" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">0</text>
+<text x="34.60" y="63.60" font-size="8.6" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">5</text>
+<text x="65.70" y="63.60" font-size="8.6" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">10</text>
+<text x="96.81" y="63.60" font-size="8.6" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">15</text>
+<text x="127.91" y="63.60" font-size="8.6" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">20</text>
+<text x="159.01" y="63.60" font-size="8.6" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">25</text>
+<text x="190.12" y="63.60" font-size="8.6" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">30</text>
+<text x="96.81" y="74.83" font-size="8.6" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">时间</text>
+<text x="50.27" y="8.56" font-size="8.6" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">ABCABCABCABCABC</text>
+</svg>

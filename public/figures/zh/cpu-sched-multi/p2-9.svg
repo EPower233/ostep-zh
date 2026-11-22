@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="136.9" height="304.5" viewBox="0 0 55.2 122.77">
+<style>
+  :root {
+    --fg: #1f2328;
+    --fg-muted: #57606a;
+    --bg-surface: #ffffff;
+    --surface: #f6f8fa;
+    --stroke-mid: #8c959f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+    --fg: #e6edf3;
+    --fg-muted: #9da7b3;
+    --bg-surface: #1b1f24;
+    --surface: #21262d;
+      --stroke-mid: #7d8590;
+    }
+  }
+  path:not([fill]), use:not([fill]), text:not([fill]) { fill: var(--fg); }
+</style>
+<defs>
+<clipPath id="clip_1">
+<path transform="matrix(1,0,0,-1,-202.30995,549.5999)" d="M202.31 426.83003H257.51V549.6H202.31Z"/>
+</clipPath>
+<clipPath id="clip_2">
+<path transform="matrix(1,0,0,-1,-202.30995,549.5999)" d="M0 0H432V648H0Z"/>
+</clipPath>
+<clipPath id="clip_3">
+<path transform="matrix(.1,0,0,-.1,-202.30995,549.5999)" d="M2083.05 4284H2515.05V4716H2083.05Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+<clipPath id="clip_4">
+<path transform="matrix(.1,0,0,-.1,-202.30995,549.5999)" d="M2083.05 5004H2515.05V5436H2083.05Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+<clipPath id="clip_5">
+<path transform="matrix(.1,0,0,-.1,-202.30995,549.5999)" d="M2083.05 4932H2515.05V5076H2083.05Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+</defs>
+<g clip-path="url(#clip_1)">
+<g clip-path="url(#clip_2)">
+
+
+
+
+
+
+
+<path transform="matrix(.1,0,0,-.1,-202.30995,549.5999)" stroke-width="4.05" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M859.5 5740.07H3738.78"/>
+<g clip-path="url(#clip_3)">
+<path transform="matrix(.1,0,0,-.1,-202.30995,549.5999)" d="M2083.05 4284H2515.05V4716H2083.05Z" fill="var(--bg-surface)"/>
+</g>
+<path transform="matrix(.1,0,0,-.1,-202.30995,549.5999)" stroke-width="3.6" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2083.05 4284H2515.05V4716H2083.05Z"/>
+
+<g clip-path="url(#clip_4)">
+<path transform="matrix(.1,0,0,-.1,-202.30995,549.5999)" d="M2083.05 5004H2515.05V5436H2083.05Z" fill="var(--bg-surface)"/>
+</g>
+<path transform="matrix(.1,0,0,-.1,-202.30995,549.5999)" stroke-width="3.6" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2083.05 5004H2515.05V5436H2083.05Z"/>
+
+<g clip-path="url(#clip_5)">
+<path transform="matrix(.1,0,0,-.1,-202.30995,549.5999)" d="M2083.05 4932H2515.05V5076H2083.05Z" fill="var(--surface)"/>
+</g>
+<path transform="matrix(.1,0,0,-.1,-202.30995,549.5999)" stroke-width="3.6" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2083.05 4932H2515.05V5076H2083.05Z"/>
+
+<path transform="matrix(.1,0,0,-.1,-202.30995,549.5999)" stroke-width="14.4" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2299.05 4932V4716"/>
+<path transform="matrix(.1,0,0,-.1,-202.30995,549.5999)" stroke-width="14.4" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2299.05 4716V4932"/>
+
+
+
+
+
+<path transform="matrix(.1,0,0,-.1,-202.30995,549.5999)" stroke-width="467.1" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--stroke-mid)" d="M769.77 2907.81H3828.33"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</g>
+</g>
+
+<text x="27.60" y="104.63" font-size="11.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">内存</text>
+<text x="27.60" y="32.63" font-size="11.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">CPU</text>
+<text x="27.60" y="54.23" font-size="11.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">缓存</text>
+</svg>

@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="667.9" height="394.0" viewBox="0 0 269.32 158.89">
+<style>
+  :root {
+    --fg: #1f2328;
+    --fg-muted: #57606a;
+    --bg-surface: #ffffff;
+    --surface: #f6f8fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+    --fg: #e6edf3;
+    --fg-muted: #9da7b3;
+    --bg-surface: #1b1f24;
+    --surface: #21262d;
+    }
+  }
+  path:not([fill]), use:not([fill]), text:not([fill]) { fill: var(--fg); }
+</style>
+<defs>
+<clipPath id="clip_1">
+<path transform="matrix(1,0,0,-1,-64.96997,558.49996)" d="M64.97 399.61H334.29V558.5H64.97Z"/>
+</clipPath>
+<clipPath id="clip_2">
+<path transform="matrix(1,0,0,-1,-64.96997,558.49996)" d="M0 0H432V648H0Z"/>
+</clipPath>
+</defs>
+<g clip-path="url(#clip_1)">
+<g clip-path="url(#clip_2)">
+
+
+
+
+
+<path transform="matrix(.1,0,0,-.1,-64.96997,558.49996)" stroke-width="4.05" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M580.5 5740.07H3459.78"/>
+
+
+<path transform="matrix(.1,0,0,-.1,-64.96997,558.49996)" stroke-width="9.36" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1271.34 5392.8 2581.74 5346"/>
+<path transform="matrix(.1,0,0,-.1,-64.96997,558.49996)" d="M2581.74 5346 2582.57 5369.39 2628.51 5344.33 2580.91 5322.61Z"/>
+<path transform="matrix(.1,0,0,-.1,-64.96997,558.49996)" stroke-width="4.68" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2581.74 5346 2582.57 5369.39 2628.51 5344.33 2580.91 5322.61Z"/>
+
+
+<path transform="matrix(.1,0,0,-.1,-64.96997,558.49996)" stroke-width="9.36" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2628.54 5205.6 1926.54 5158.8"/>
+<path transform="matrix(.1,0,0,-.1,-64.96997,558.49996)" d="M1926.54 5158.8 1928.1 5135.45 1879.84 5155.69 1924.98 5182.15Z"/>
+<path transform="matrix(.1,0,0,-.1,-64.96997,558.49996)" stroke-width="4.68" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1926.54 5158.8 1928.1 5135.45 1879.84 5155.69 1924.98 5182.15Z"/>
+<path transform="matrix(.1,0,0,-.1,-64.96997,558.49996)" stroke-width="9.36" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1786.14 5121.36 1861.02 5196.24"/>
+<path transform="matrix(.1,0,0,-.1,-64.96997,558.49996)" stroke-width="9.36" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1786.14 5196.24 1861.02 5121.36"/>
+
+<path transform="matrix(.1,0,0,-.1,-64.96997,558.49996)" stroke-width="9.36" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1271.34 4456.8 2581.74 4363.2"/>
+<path transform="matrix(.1,0,0,-.1,-64.96997,558.49996)" d="M2581.74 4363.2 2583.41 4386.54 2628.42 4359.87 2580.07 4339.86Z"/>
+<path transform="matrix(.1,0,0,-.1,-64.96997,558.49996)" stroke-width="4.68" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2581.74 4363.2 2583.41 4386.54 2628.42 4359.87 2580.07 4339.86Z"/>
+
+<path transform="matrix(.1,0,0,-.1,-64.96997,558.49996)" stroke-width="9.36" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2628.54 4269.6 1318.14 4129.2"/>
+<path transform="matrix(.1,0,0,-.1,-64.96997,558.49996)" d="M1318.14 4129.2 1320.63 4105.93 1271.61 4124.21 1315.65 4152.47Z"/>
+<path transform="matrix(.1,0,0,-.1,-64.96997,558.49996)" stroke-width="4.68" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1318.14 4129.2 1320.63 4105.93 1271.61 4124.21 1315.65 4152.47Z"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</g>
+</g>
+
+<text x="33.26" y="13.97" font-size="9.4" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">发送方</text>
+<text x="32.43" y="22.50" font-size="7.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">[发送消息;</text>
+<text x="25.15" y="31.86" font-size="7.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">保留副本;</text>
+<text x="22.44" y="41.22" font-size="7.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">设置定时器]</text>
+<text x="233.19" y="13.97" font-size="9.4" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">接收方</text>
+<text x="232.94" y="27.18" font-size="7.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">[收到消息]</text>
+<text x="219.63" y="36.54" font-size="7.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">[发送 ack]</text>
+<text x="9.13" y="64.62" font-size="7.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">...</text>
+<text x="33.47" y="73.98" font-size="7.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">（等待 ack）</text>
+<text x="9.13" y="83.34" font-size="7.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">...</text>
+<text x="30.77" y="106.74" font-size="7.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">[定时器到期;</text>
+<text x="30.97" y="116.10" font-size="7.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">设置定时器/重试]</text>
+<text x="232.94" y="125.46" font-size="7.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">[收到消息]</text>
+<text x="219.63" y="134.82" font-size="7.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">[发送 ack]</text>
+<text x="27.02" y="146.99" font-size="7.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">[收到 ack;</text>
+<text x="41.80" y="156.35" font-size="7.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">删除副本/定时器关闭]</text>
+</svg>

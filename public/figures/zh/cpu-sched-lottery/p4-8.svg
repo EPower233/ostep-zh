@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="441.2" height="404.8" viewBox="0 0 178 163">
+<style>
+  :root {
+    --fg: #1f2328;
+    --fg-muted: #57606a;
+    --bg-surface: #ffffff;
+    --surface: #f6f8fa;
+    --accent-1: #ffa600;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+    --fg: #e6edf3;
+    --fg-muted: #9da7b3;
+    --bg-surface: #1b1f24;
+    --surface: #21262d;
+    --accent-1: #faba42;
+    }
+  }
+  path:not([fill]), use:not([fill]), text:not([fill]) { fill: var(--fg); }
+</style>
+<defs>
+<clipPath id="clip_1">
+<path transform="matrix(1,0,0,-1,-113.91,551.82009)" d="M113.91 388.6H291.83V551.82H113.91Z"/>
+</clipPath>
+<clipPath id="clip_2">
+<path transform="matrix(1,0,0,-1,-113.91,551.82009)" d="M0 0H432V648H0Z"/>
+</clipPath>
+</defs>
+<g clip-path="url(#clip_1)">
+<g clip-path="url(#clip_2)">
+
+
+
+
+
+
+
+<path transform="matrix(.1,0,0,-.1,-113.91,551.82009)" stroke-width="4.05" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M580.5 5740.07H3459.78"/>
+<path transform="matrix(.1,0,0,-.1,-113.91,551.82009)" stroke-width="7.14286" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1473.71 4137.14H2766.57"/>
+<path transform="matrix(.1,0,0,-.1,-113.91,551.82009)" stroke-width="7.14286" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1477.28 4133.57V5426.43"/>
+<path transform="matrix(.1,0,0,-.1,-113.91,551.82009)" stroke-width="7.14286" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1477.28 4108.57V4137.14"/>
+<path transform="matrix(.1,0,0,-.1,-113.91,551.82009)" stroke-width="7.14286" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1905.86 4108.57V4137.14"/>
+<path transform="matrix(.1,0,0,-.1,-113.91,551.82009)" stroke-width="7.14286" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2334.43 4108.57V4137.14"/>
+<path transform="matrix(.1,0,0,-.1,-113.91,551.82009)" stroke-width="7.14286" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2763 4108.57V4137.14"/>
+<path transform="matrix(.1,0,0,-.1,-113.91,551.82009)" stroke-width="7.14286" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1448.71 4137.14H1477.28"/>
+<path transform="matrix(.1,0,0,-.1,-113.91,551.82009)" stroke-width="7.14286" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1448.71 4394.29H1477.28"/>
+<path transform="matrix(.1,0,0,-.1,-113.91,551.82009)" stroke-width="7.14286" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1448.71 4651.43H1477.28"/>
+<path transform="matrix(.1,0,0,-.1,-113.91,551.82009)" stroke-width="7.14286" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1448.71 4908.57H1477.28"/>
+<path transform="matrix(.1,0,0,-.1,-113.91,551.82009)" stroke-width="7.14286" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1448.71 5165.71H1477.28"/>
+<path transform="matrix(.1,0,0,-.1,-113.91,551.82009)" stroke-width="7.14286" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1448.71 5422.86H1477.28"/>
+
+
+<path transform="matrix(.1,0,0,-.1,-113.91,551.82009)" stroke-width="3.57143" stroke-linecap="butt" stroke-dasharray="14.2857,14.2857" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1477.28 5422.86H2764.85"/>
+<path transform="matrix(.1,0,0,-.1,-113.91,551.82009)" stroke-width="14.2857" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--accent-1)" d="M1477.28 4780 1606.3 4940.71 1681.76 5037.14 1735.31 5069.29 1776.84 5092.86 1810.78 5133.57 1839.47 5150.41 1864.32 5160.36 1886.24 5163.33 1905.86 5167.86 2034.87 5267.5 2110.34 5295.71 2163.88 5303.39 2205.41 5313.57 2239.35 5310 2268.04 5328.27 2292.89 5327.23 2314.82 5337.86 2334.43 5353 2352.16 5362.86 2368.36 5365.18 2383.26 5367.8 2397.05 5372.8 2409.89 5377.71 2421.91 5378.53 2433.19 5378.99 2443.83 5380.6 2453.89 5379.55 2463.44 5374.96 2472.52 5374.9 2481.18 5375.71 2489.45 5372.27 2497.38 5377.32 2504.97 5379.74 2512.27 5381.07 2519.3 5379.52 2526.07 5377.63 2532.6 5376.68 2538.91 5376.79 2545.01 5380.83 2550.92 5380.74 2556.64 5379.48 2562.2 5380.06 2567.6 5381.23 2572.84 5381.61 2577.94 5383.65 2582.91 5383.1 2587.74 5381.81 2592.45 5382.41 2597.05 5383.14 2601.53 5380.71 2605.91 5380.2 2610.19 5381.12 2614.38 5382.91 2618.46 5386.34 2622.47 5386.7 2626.39 5387.05 2630.22 5388.75 2633.98 5388.96 2637.67 5389.33 2641.29 5389.56 2644.83 5389.74 2648.31 5391.27 2651.72 5392.47 2655.08 5394.35 2658.37 5395.19 2661.61 5395.22 2664.79 5395.58 2667.92 5395.93 2671 5397.43 2674.02 5399.29 2677 5399.46 2679.93 5398.75 2682.82 5399.58 2685.66 5400 2688.46 5400.47 2691.21 5400.29 2693.93 5400.22 2696.61 5400.05 2699.25 5399.68 2701.86 5399.94 2704.42 5400.2 2706.95 5400.16 2709.45 5399.14 2711.92 5398.7 2714.35 5399.43 2716.75 5399.23 2719.13 5399.94 2721.46 5400.3 2723.78 5400.61 2726.06 5400.98 2728.32 5400.63 2730.55 5400.48 2732.75 5400.42 2734.93 5400.41 2737.08 5401.82 2739.2 5401.75 2741.31 5402.37 2743.39 5402.12 2745.45 5403.08 2747.48 5402.92 2749.49 5403.39 2751.48 5403.8 2753.45 5403.35 2755.4 5403.37 2757.33 5404.06 2759.24 5403.07 2761.13 5403.46 2763 5403.98"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<path transform="matrix(.1,0,0,-.1,-113.91,551.82009)" stroke-width="4.05" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M3098.97 1833.43H3172.05"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</g>
+</g>
+
+<text x="33.82" y="149.95" font-size="8.6" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">1</text>
+<text x="76.67" y="149.95" font-size="8.6" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">10</text>
+<text x="119.53" y="149.95" font-size="8.6" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">100</text>
+<text x="162.39" y="149.95" font-size="8.6" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">1000</text>
+<text x="22.86" y="141.86" font-size="8.6" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">0.0</text>
+<text x="22.86" y="116.15" font-size="8.6" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">0.2</text>
+<text x="22.86" y="90.44" font-size="8.6" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">0.4</text>
+<text x="22.86" y="64.72" font-size="8.6" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">0.6</text>
+<text x="22.86" y="39.01" font-size="8.6" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">0.8</text>
+<text x="22.86" y="13.29" font-size="8.6" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">1.0</text>
+<text x="98.10" y="160.66" font-size="8.6" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">作业长度</text>
+<text x="10.28" y="77.87" font-size="8.6" fill="var(--fg)" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 10.28 77.87)" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">公平性</text>
+</svg>

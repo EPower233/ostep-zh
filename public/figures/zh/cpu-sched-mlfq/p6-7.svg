@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="506.3" height="316.8" viewBox="0 0 204.17 127.73">
+<style>
+  :root {
+    --fg: #1f2328;
+    --fg-muted: #57606a;
+    --bg-surface: #ffffff;
+    --surface: #f6f8fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+    --fg: #e6edf3;
+    --fg-muted: #9da7b3;
+    --bg-surface: #1b1f24;
+    --surface: #21262d;
+    }
+  }
+  path:not([fill]), use:not([fill]), text:not([fill]) { fill: var(--fg); }
+</style>
+<defs>
+<clipPath id="clip_1">
+<path transform="matrix(1,0,0,-1,-107.74999,561.04)" d="M107.75 433.31H311.92V561.04H107.75Z"/>
+</clipPath>
+<clipPath id="clip_2">
+<path transform="matrix(1,0,0,-1,-107.74999,561.04)" d="M0 0H432V648H0Z"/>
+</clipPath>
+</defs>
+<g clip-path="url(#clip_1)">
+<g clip-path="url(#clip_2)">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<path transform="matrix(.1,0,0,-.1,-107.74999,561.04)" stroke-width="4.05" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M580.5 5650.43H3459.78"/>
+
+<path transform="matrix(.1,0,0,-.1,-107.74999,561.04)" stroke-width="3.4" stroke-linecap="butt" stroke-dasharray="13.6,13.6" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1277.58 4467.27H2991.18"/>
+<path transform="matrix(.1,0,0,-.1,-107.74999,561.04)" stroke-width="3.4" stroke-linecap="butt" stroke-dasharray="13.6,13.6" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1277.58 4838.18H2991.18"/>
+<path transform="matrix(.1,0,0,-.1,-107.74999,561.04)" stroke-width="3.4" stroke-linecap="butt" stroke-dasharray="13.6,13.6" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1277.58 5209.09H2991.18"/>
+
+<path transform="matrix(.1,0,0,-.1,-107.74999,561.04)" d="M1334.7 5394.55H1391.821V5580.003H1334.7Z" fill="var(--surface)"/>
+<path transform="matrix(.1,0,0,-.1,-107.74999,561.04)" d="M1448.94 5394.55H1506.0571V5580.003H1448.94Z" fill="var(--surface)"/>
+<path transform="matrix(.1,0,0,-.1,-107.74999,561.04)" d="M1620.3 5023.64H1734.5381V5209.0935H1620.3Z" fill="var(--surface)"/>
+<path transform="matrix(.1,0,0,-.1,-107.74999,561.04)" d="M1848.78 5023.64H1963.0181V5209.0935H1848.78Z" fill="var(--surface)"/>
+<path transform="matrix(.1,0,0,-.1,-107.74999,561.04)" d="M2191.5 4652.73H2419.98V4838.187H2191.5Z" fill="var(--surface)"/>
+<path transform="matrix(.1,0,0,-.1,-107.74999,561.04)" d="M2648.46 4652.73H2876.94V4838.187H2648.46Z" fill="var(--surface)"/>
+<path transform="matrix(.1,0,0,-.1,-107.74999,561.04)" d="M1277.58 5209.09H1334.701V5394.547H1277.58Z"/>
+<path transform="matrix(.1,0,0,-.1,-107.74999,561.04)" d="M1391.82 5209.09H1448.941V5394.547H1391.82Z"/>
+<path transform="matrix(.1,0,0,-.1,-107.74999,561.04)" d="M1506.06 4838.18H1620.302V5023.6335H1506.06Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+<path transform="matrix(.1,0,0,-.1,-107.74999,561.04)" d="M1734.54 4838.18H1848.782V5023.6335H1734.54Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+<path transform="matrix(.1,0,0,-.1,-107.74999,561.04)" d="M1963.02 4467.27H2191.5V4652.723H1963.02Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+<path transform="matrix(.1,0,0,-.1,-107.74999,561.04)" d="M2419.98 4467.27H2648.46V4652.723H2419.98Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</g>
+</g>
+
+<text x="11.44" y="25.17" font-size="8.2" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">Q2</text>
+<text x="11.44" y="62.26" font-size="8.2" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">Q1</text>
+<text x="11.44" y="99.35" font-size="8.2" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">Q0</text>
+<text x="20.01" y="125.31" font-size="8.2" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">0</text>
+<text x="48.57" y="125.31" font-size="8.2" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">50</text>
+<text x="77.13" y="125.31" font-size="8.2" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">100</text>
+<text x="105.69" y="125.31" font-size="8.2" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">150</text>
+<text x="134.25" y="125.31" font-size="8.2" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">200</text>
+<text x="162.81" y="125.31" font-size="8.2" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">250</text>
+<text x="191.37" y="125.31" font-size="8.2" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">300</text>
+</svg>

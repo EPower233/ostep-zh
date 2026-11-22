@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="633.3" height="227.9" viewBox="0 0 255.37 91.88">
+<style>
+  :root {
+    --fg: #1f2328;
+    --fg-muted: #57606a;
+    --bg-surface: #ffffff;
+    --surface: #f6f8fa;
+    --surface-mid: #d0d7de;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+    --fg: #e6edf3;
+    --fg-muted: #9da7b3;
+    --bg-surface: #1b1f24;
+    --surface: #21262d;
+    --surface-mid: #2f363f;
+    }
+  }
+  path:not([fill]), use:not([fill]), text:not([fill]) { fill: var(--fg); }
+</style>
+<defs>
+<clipPath id="clip_1">
+<path transform="matrix(1,0,0,-1,-102.21991,545.2798)" d="M102.22 453.4H357.59V545.28H102.22Z"/>
+</clipPath>
+<clipPath id="clip_2">
+<path transform="matrix(1,0,0,-1,-102.21991,545.2798)" d="M0 0H432V648H0Z"/>
+</clipPath>
+<clipPath id="clip_3">
+<path transform="matrix(.1,0,0,-.1,-102.21991,545.2798)" d="M1082.25 5112H1643.852V5392.801H1082.25Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+<clipPath id="clip_4">
+<path transform="matrix(.1,0,0,-.1,-102.21991,545.2798)" d="M2018.25 5112H2579.852V5392.801H2018.25Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+<clipPath id="clip_5">
+<path transform="matrix(.1,0,0,-.1,-102.21991,545.2798)" d="M2954.25 5112H3515.852V5392.801H2954.25Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+<clipPath id="clip_6">
+<path transform="matrix(.1,0,0,-.1,-102.21991,545.2798)" d="M1831.05 4550.4H2767.05V4924.798H1831.05Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+</defs>
+<g clip-path="url(#clip_1)">
+<g clip-path="url(#clip_2)">
+
+
+
+
+
+
+
+
+
+
+
+<path transform="matrix(.1,0,0,-.1,-102.21991,545.2798)" stroke-width="4.05" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M859.5 5740.07H3738.78"/>
+<g clip-path="url(#clip_3)">
+<path transform="matrix(.1,0,0,-.1,-102.21991,545.2798)" d="M1082.25 5112H1643.852V5392.801H1082.25Z" fill="var(--surface)"/>
+</g>
+
+<g clip-path="url(#clip_4)">
+<path transform="matrix(.1,0,0,-.1,-102.21991,545.2798)" d="M2018.25 5112H2579.852V5392.801H2018.25Z" fill="var(--surface)"/>
+</g>
+
+<g clip-path="url(#clip_5)">
+<path transform="matrix(.1,0,0,-.1,-102.21991,545.2798)" d="M2954.25 5112H3515.852V5392.801H2954.25Z" fill="var(--surface)"/>
+</g>
+
+<g clip-path="url(#clip_6)">
+<path transform="matrix(.1,0,0,-.1,-102.21991,545.2798)" d="M1831.05 4550.4H2767.05V4924.798H1831.05Z" fill="var(--surface-mid)"/>
+</g>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</g>
+</g>
+
+<text x="34.08" y="18.64" font-size="7.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">C1</text>
+<text x="34.09" y="28.00" font-size="7.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">缓存: F[v1]</text>
+<text x="127.68" y="18.64" font-size="7.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">C2</text>
+<text x="127.69" y="28.00" font-size="7.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">缓存: F[v2]</text>
+<text x="221.28" y="18.64" font-size="7.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">C3</text>
+<text x="221.29" y="28.00" font-size="7.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">缓存: 空</text>
+<text x="127.69" y="65.44" font-size="7.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">服务器 S</text>
+<text x="127.69" y="74.80" font-size="7.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">磁盘: 最初为 F[v1]</text>
+<text x="136.58" y="84.16" font-size="7.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">F[v2] 最终</text>
+</svg>

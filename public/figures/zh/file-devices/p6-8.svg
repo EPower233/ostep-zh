@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="597.3" height="188.3" viewBox="0 0 240.86 75.94">
+<style>
+  :root {
+    --fg: #1f2328;
+    --fg-muted: #57606a;
+    --bg-surface: #ffffff;
+    --surface: #f6f8fa;
+    --surface-mid: #d0d7de;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+    --fg: #e6edf3;
+    --fg-muted: #9da7b3;
+    --bg-surface: #1b1f24;
+    --surface: #21262d;
+    --surface-mid: #2f363f;
+    }
+  }
+  path:not([fill]), use:not([fill]), text:not([fill]) { fill: var(--fg); }
+</style>
+<defs>
+<clipPath id="clip_1">
+<path transform="matrix(1,0,0,-1,-107.6,553.30996)" d="M107.6 477.37H348.46V553.31H107.6Z"/>
+</clipPath>
+<clipPath id="clip_2">
+<path transform="matrix(1,0,0,-1,-107.6,553.30996)" d="M0 0H432V648H0Z"/>
+</clipPath>
+<clipPath id="clip_3">
+<path transform="matrix(.1,0,0,-.1,-107.6,553.30996)" d="M1620.59 5250.19H2008.281V5405.268H1620.59Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+<clipPath id="clip_4">
+<path transform="matrix(.1,0,0,-.1,-107.6,553.30996)" d="M2105.2 5250.19H2492.8909V5405.268H2105.2Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+<clipPath id="clip_5">
+<path transform="matrix(.1,0,0,-.1,-107.6,553.30996)" d="M2589.82 5250.19H2977.511V5405.268H2589.82Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+</defs>
+<g clip-path="url(#clip_1)">
+<g clip-path="url(#clip_2)">
+
+
+<path transform="matrix(.1,0,0,-.1,-107.6,553.30996)" stroke-width="4.05" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M859.5 5740.07H3738.78"/>
+
+<g clip-path="url(#clip_3)">
+<path transform="matrix(.1,0,0,-.1,-107.6,553.30996)" d="M1620.59 5250.19H2008.281V5405.268H1620.59Z" fill="var(--bg-surface)"/>
+</g>
+<path transform="matrix(.1,0,0,-.1,-107.6,553.30996)" stroke-width="9.69231" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1620.59 5250.19H2008.281V5405.268H1620.59Z"/>
+
+<g clip-path="url(#clip_4)">
+<path transform="matrix(.1,0,0,-.1,-107.6,553.30996)" d="M2105.2 5250.19H2492.8909V5405.268H2105.2Z" fill="var(--bg-surface)"/>
+</g>
+<path transform="matrix(.1,0,0,-.1,-107.6,553.30996)" stroke-width="9.69231" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2105.2 5250.19H2492.8909V5405.268H2105.2Z"/>
+
+<g clip-path="url(#clip_5)">
+<path transform="matrix(.1,0,0,-.1,-107.6,553.30996)" d="M2589.82 5250.19H2977.511V5405.268H2589.82Z" fill="var(--bg-surface)"/>
+</g>
+<path transform="matrix(.1,0,0,-.1,-107.6,553.30996)" stroke-width="9.69231" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2589.82 5250.19H2977.511V5405.268H2589.82Z"/>
+
+<path transform="matrix(.1,0,0,-.1,-107.6,553.30996)" stroke-width="9.69231" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1135.97 4794.65H3074.43V5473.111H1135.97Z"/>
+<path transform="matrix(.1,0,0,-.1,-107.6,553.30996)" stroke-width="4.84615" stroke-linecap="butt" stroke-dasharray="19.3846,19.3846" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1135.97 5182.34H3074.43"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</g>
+</g>
+
+<text x="68.47" y="67.56" font-size="7.8" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">其他硬件专用芯片</text>
+<text x="74.71" y="57.87" font-size="7.8" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">内存(DRAM、SRAM 或两者)</text>
+<text x="54.24" y="48.18" font-size="7.8" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">微控制器(CPU)</text>
+<text x="32.06" y="23.94" font-size="7.8" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">寄存器</text>
+<text x="73.84" y="23.94" font-size="7.8" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">状态</text>
+<text x="122.31" y="23.94" font-size="7.8" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">命令</text>
+<text x="170.77" y="23.94" font-size="7.8" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">数据</text>
+<text x="219.77" y="23.94" font-size="7.8" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">接口</text>
+<text x="219.56" y="57.87" font-size="7.8" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">内部结构</text>
+</svg>

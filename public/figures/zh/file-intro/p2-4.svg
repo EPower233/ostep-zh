@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="458.3" height="358.9" viewBox="0 0 184.8 144.73">
+<style>
+  :root {
+    --fg: #1f2328;
+    --fg-muted: #57606a;
+    --bg-surface: #ffffff;
+    --surface: #f6f8fa;
+    --stroke-mid: #8c959f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+    --fg: #e6edf3;
+    --fg-muted: #9da7b3;
+    --bg-surface: #1b1f24;
+    --surface: #21262d;
+      --stroke-mid: #7d8590;
+    }
+  }
+  path:not([fill]), use:not([fill]), text:not([fill]) { fill: var(--fg); }
+</style>
+<defs>
+<clipPath id="clip_1">
+<path transform="matrix(1,0,0,-1,-137.50995,542.39987)" d="M137.51 397.66999H322.31V542.4H137.51Z"/>
+</clipPath>
+<clipPath id="clip_2">
+<path transform="matrix(1,0,0,-1,-137.50995,542.39987)" d="M0 0H432V648H0Z"/>
+</clipPath>
+<clipPath id="clip_3">
+<path transform="matrix(.1,0,0,-.1,-137.50995,542.39987)" d="M2443.05 5220C2443.05 5299.53 2378.58 5364 2299.05 5364 2219.52 5364 2155.05 5299.53 2155.05 5220 2155.05 5140.47 2219.52 5076 2299.05 5076 2378.58 5076 2443.05 5140.47 2443.05 5220Z"/>
+</clipPath>
+<clipPath id="clip_4">
+<path transform="matrix(.1,0,0,-.1,-137.50995,542.39987)" d="M2083.05 4860C2083.05 4939.53 2018.58 5004 1939.05 5004 1859.52 5004 1795.05 4939.53 1795.05 4860 1795.05 4780.47 1859.52 4716 1939.05 4716 2018.58 4716 2083.05 4780.47 2083.05 4860Z"/>
+</clipPath>
+<clipPath id="clip_5">
+<path transform="matrix(.1,0,0,-.1,-137.50995,542.39987)" d="M1723.05 4500C1723.05 4579.53 1658.58 4644 1579.05 4644 1499.52 4644 1435.05 4579.53 1435.05 4500 1435.05 4420.47 1499.52 4356 1579.05 4356 1658.58 4356 1723.05 4420.47 1723.05 4500Z"/>
+</clipPath>
+<clipPath id="clip_6">
+<path transform="matrix(.1,0,0,-.1,-137.50995,542.39987)" d="M2803.05 4860C2803.05 4939.53 2738.58 5004 2659.05 5004 2579.52 5004 2515.05 4939.53 2515.05 4860 2515.05 4780.47 2579.52 4716 2659.05 4716 2738.58 4716 2803.05 4780.47 2803.05 4860Z"/>
+</clipPath>
+<clipPath id="clip_7">
+<path transform="matrix(.1,0,0,-.1,-137.50995,542.39987)" d="M3163.05 4500C3163.05 4579.53 3098.58 4644 3019.05 4644 2939.52 4644 2875.05 4579.53 2875.05 4500 2875.05 4420.47 2939.52 4356 3019.05 4356 3098.58 4356 3163.05 4420.47 3163.05 4500Z"/>
+</clipPath>
+<clipPath id="clip_8">
+<path transform="matrix(.1,0,0,-.1,-137.50995,542.39987)" d="M2443.05 4500C2443.05 4579.53 2378.58 4644 2299.05 4644 2219.52 4644 2155.05 4579.53 2155.05 4500 2155.05 4420.47 2219.52 4356 2299.05 4356 2378.58 4356 2443.05 4420.47 2443.05 4500Z"/>
+</clipPath>
+<clipPath id="clip_9">
+<path transform="matrix(.1,0,0,-.1,-137.50995,542.39987)" d="M2803.05 4140C2803.05 4219.53 2738.58 4284 2659.05 4284 2579.52 4284 2515.05 4219.53 2515.05 4140 2515.05 4060.47 2579.52 3996 2659.05 3996 2738.58 3996 2803.05 4060.47 2803.05 4140Z"/>
+</clipPath>
+</defs>
+<g clip-path="url(#clip_1)">
+<g clip-path="url(#clip_2)">
+
+
+
+
+
+
+<path transform="matrix(.1,0,0,-.1,-137.50995,542.39987)" stroke-width="4.05" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M859.5 5740.07H3738.78"/>
+<path transform="matrix(.1,0,0,-.1,-137.50995,542.39987)" stroke-width="7.2" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--stroke-mid)" d="M2299.05 5220 1939.05 4860"/>
+<path transform="matrix(.1,0,0,-.1,-137.50995,542.39987)" stroke-width="7.2" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--stroke-mid)" d="M1939.05 4860 1579.05 4500"/>
+<path transform="matrix(.1,0,0,-.1,-137.50995,542.39987)" stroke-width="7.2" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--stroke-mid)" d="M2299.05 5220 2659.05 4860"/>
+<path transform="matrix(.1,0,0,-.1,-137.50995,542.39987)" stroke-width="7.2" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--stroke-mid)" d="M2659.05 4860 2299.05 4500"/>
+<path transform="matrix(.1,0,0,-.1,-137.50995,542.39987)" stroke-width="7.2" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--stroke-mid)" d="M2659.05 4860 3019.05 4500"/>
+<path transform="matrix(.1,0,0,-.1,-137.50995,542.39987)" stroke-width="7.2" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--stroke-mid)" d="M3019.05 4500 2659.05 4140"/>
+<g clip-path="url(#clip_3)">
+<path transform="matrix(.1,0,0,-.1,-137.50995,542.39987)" d="M2155.05 5076H2443.05V5364H2155.05Z" fill="var(--bg-surface)"/>
+</g>
+<path transform="matrix(.1,0,0,-.1,-137.50995,542.39987)" stroke-width="7.2" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--stroke-mid)" d="M2443.05 5220C2443.05 5299.53 2378.58 5364 2299.05 5364 2219.52 5364 2155.05 5299.53 2155.05 5220 2155.05 5140.47 2219.52 5076 2299.05 5076 2378.58 5076 2443.05 5140.47 2443.05 5220"/>
+
+<g clip-path="url(#clip_4)">
+<path transform="matrix(.1,0,0,-.1,-137.50995,542.39987)" d="M1795.05 4716H2083.05V5004H1795.05Z" fill="var(--bg-surface)"/>
+</g>
+<path transform="matrix(.1,0,0,-.1,-137.50995,542.39987)" stroke-width="7.2" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--stroke-mid)" d="M2083.05 4860C2083.05 4939.53 2018.58 5004 1939.05 5004 1859.52 5004 1795.05 4939.53 1795.05 4860 1795.05 4780.47 1859.52 4716 1939.05 4716 2018.58 4716 2083.05 4780.47 2083.05 4860"/>
+
+<g clip-path="url(#clip_5)">
+<path transform="matrix(.1,0,0,-.1,-137.50995,542.39987)" d="M1435.05 4356H1723.05V4644H1435.05Z" fill="var(--bg-surface)"/>
+</g>
+<path transform="matrix(.1,0,0,-.1,-137.50995,542.39987)" stroke-width="7.2" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--stroke-mid)" d="M1723.05 4500C1723.05 4579.53 1658.58 4644 1579.05 4644 1499.52 4644 1435.05 4579.53 1435.05 4500 1435.05 4420.47 1499.52 4356 1579.05 4356 1658.58 4356 1723.05 4420.47 1723.05 4500"/>
+
+<g clip-path="url(#clip_6)">
+<path transform="matrix(.1,0,0,-.1,-137.50995,542.39987)" d="M2515.05 4716H2803.05V5004H2515.05Z" fill="var(--bg-surface)"/>
+</g>
+<path transform="matrix(.1,0,0,-.1,-137.50995,542.39987)" stroke-width="7.2" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--stroke-mid)" d="M2803.05 4860C2803.05 4939.53 2738.58 5004 2659.05 5004 2579.52 5004 2515.05 4939.53 2515.05 4860 2515.05 4780.47 2579.52 4716 2659.05 4716 2738.58 4716 2803.05 4780.47 2803.05 4860"/>
+
+<g clip-path="url(#clip_7)">
+<path transform="matrix(.1,0,0,-.1,-137.50995,542.39987)" d="M2875.05 4356H3163.05V4644H2875.05Z" fill="var(--bg-surface)"/>
+</g>
+<path transform="matrix(.1,0,0,-.1,-137.50995,542.39987)" stroke-width="7.2" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--stroke-mid)" d="M3163.05 4500C3163.05 4579.53 3098.58 4644 3019.05 4644 2939.52 4644 2875.05 4579.53 2875.05 4500 2875.05 4420.47 2939.52 4356 3019.05 4356 3098.58 4356 3163.05 4420.47 3163.05 4500"/>
+
+<g clip-path="url(#clip_8)">
+<path transform="matrix(.1,0,0,-.1,-137.50995,542.39987)" d="M2155.05 4356H2443.05V4644H2155.05Z" fill="var(--bg-surface)"/>
+</g>
+<path transform="matrix(.1,0,0,-.1,-137.50995,542.39987)" stroke-width="7.2" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--stroke-mid)" d="M2443.05 4500C2443.05 4579.53 2378.58 4644 2299.05 4644 2219.52 4644 2155.05 4579.53 2155.05 4500 2155.05 4420.47 2219.52 4356 2299.05 4356 2378.58 4356 2443.05 4420.47 2443.05 4500"/>
+
+<g clip-path="url(#clip_9)">
+<path transform="matrix(.1,0,0,-.1,-137.50995,542.39987)" d="M2515.05 3996H2803.05V4284H2515.05Z" fill="var(--bg-surface)"/>
+</g>
+<path transform="matrix(.1,0,0,-.1,-137.50995,542.39987)" stroke-width="7.2" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--stroke-mid)" d="M2803.05 4140C2803.05 4219.53 2738.58 4284 2659.05 4284 2579.52 4284 2515.05 4219.53 2515.05 4140 2515.05 4060.47 2579.52 3996 2659.05 3996 2738.58 3996 2803.05 4060.47 2803.05 4140"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</g>
+</g>
+
+<text x="92.39" y="23.55" font-size="7.2" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">/</text>
+<text x="56.40" y="59.55" font-size="7.2" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">foo</text>
+<text x="20.40" y="95.55" font-size="7.2" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">bar.txt</text>
+<text x="128.40" y="59.55" font-size="7.2" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">bar</text>
+<text x="164.39" y="95.55" font-size="7.2" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">foo</text>
+<text x="92.40" y="95.55" font-size="7.2" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">bar</text>
+<text x="128.40" y="131.55" font-size="7.2" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">bar.txt</text>
+</svg>

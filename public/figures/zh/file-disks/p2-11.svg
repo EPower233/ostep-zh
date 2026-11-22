@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="269.1" height="263.9" viewBox="0 0 108.5 106.42">
+<style>
+  :root {
+    --fg: #1f2328;
+    --fg-muted: #57606a;
+    --bg-surface: #ffffff;
+    --surface: #f6f8fa;
+    --stroke-mid: #8c959f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+    --fg: #e6edf3;
+    --fg-muted: #9da7b3;
+    --bg-surface: #1b1f24;
+    --surface: #21262d;
+      --stroke-mid: #7d8590;
+    }
+  }
+  path:not([fill]), use:not([fill]), text:not([fill]) { fill: var(--fg); }
+</style>
+<defs>
+<clipPath id="clip_1">
+<path transform="matrix(1,0,0,-1,-142.16,552.69)" d="M142.16 446.27003H250.66V552.69H142.16Z"/>
+</clipPath>
+<clipPath id="clip_2">
+<path transform="matrix(1,0,0,-1,-142.16,552.69)" d="M0 0H432V648H0Z"/>
+</clipPath>
+<clipPath id="clip_3">
+<path transform="matrix(.1,0,0,-.1,-142.16,552.69)" d="M1778.73 4936.2C1778.73 4958.42 1760.71 4976.44 1738.49 4976.44 1716.27 4976.44 1698.26 4958.42 1698.26 4936.2 1698.26 4913.98 1716.27 4895.97 1738.49 4895.97 1760.71 4895.97 1778.73 4913.98 1778.73 4936.2Z"/>
+</clipPath>
+<clipPath id="clip_4">
+<path transform="matrix(.1,0,0,-.1,-142.16,552.69)" d="M1633.88 4533.85C1633.88 4564.96 1608.66 4590.18 1577.55 4590.18 1546.44 4590.18 1521.22 4564.96 1521.22 4533.85 1521.22 4502.74 1546.44 4477.52 1577.55 4477.52 1608.66 4477.52 1633.88 4502.74 1633.88 4533.85Z"/>
+</clipPath>
+<clipPath id="clip_5">
+<path transform="matrix(.1,0,0,-.1,-142.16,552.69)" d="M2084.52 4936.2C2084.52 4949.54 2073.71 4960.34 2060.38 4960.34 2047.04 4960.34 2036.23 4949.54 2036.23 4936.2 2036.23 4922.87 2047.04 4912.06 2060.38 4912.06 2073.71 4912.06 2084.52 4922.87 2084.52 4936.2Z"/>
+</clipPath>
+</defs>
+<g clip-path="url(#clip_1)">
+<g clip-path="url(#clip_2)">
+
+
+
+
+
+
+
+<path transform="matrix(.1,0,0,-.1,-142.16,552.69)" stroke-width="4.05" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M580.5 5740.07H3459.78"/>
+<path transform="matrix(.1,0,0,-.1,-142.16,552.69)" stroke-width="8.04706" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2301.79 4936.2C2301.79 5069.53 2193.7 5177.62 2060.38 5177.62 1927.05 5177.62 1818.96 5069.53 1818.96 4936.2 1818.96 4802.88 1927.05 4694.79 2060.38 4694.79 2193.7 4694.79 2301.79 4802.88 2301.79 4936.2"/>
+<path transform="matrix(.1,0,0,-.1,-142.16,552.69)" stroke-width="8.04706" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2446.63 4936.2C2446.63 5149.53 2273.7 5322.46 2060.38 5322.46 1847.05 5322.46 1674.12 5149.53 1674.12 4936.2 1674.12 4722.88 1847.05 4549.95 2060.38 4549.95 2273.7 4549.95 2446.63 4722.88 2446.63 4936.2"/>
+<path transform="matrix(.1,0,0,-.1,-142.16,552.69)" stroke-width="80.4706" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--stroke-mid)" d="M1577.55 4533.85 1746.54 4976.44"/>
+<g clip-path="url(#clip_3)">
+<path transform="matrix(.1,0,0,-.1,-142.16,552.69)" d="M1698.26 4895.97H1778.7288V4976.439H1698.26Z" fill="var(--fg-muted)"/>
+</g>
+<g clip-path="url(#clip_4)">
+<path transform="matrix(.1,0,0,-.1,-142.16,552.69)" d="M1521.22 4477.52H1633.88V4590.18H1521.22Z" fill="var(--surface)"/>
+</g>
+<path transform="matrix(.1,0,0,-.1,-142.16,552.69)" stroke-width="4.02353" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1633.88 4533.85C1633.88 4564.96 1608.66 4590.18 1577.55 4590.18 1546.44 4590.18 1521.22 4564.96 1521.22 4533.85 1521.22 4502.74 1546.44 4477.52 1577.55 4477.52 1608.66 4477.52 1633.88 4502.74 1633.88 4533.85"/>
+
+
+
+
+<g clip-path="url(#clip_5)">
+<path transform="matrix(.1,0,0,-.1,-142.16,552.69)" d="M2036.23 4912.06H2084.5113V4960.3415H2036.23Z"/>
+</g>
+<path transform="matrix(.1,0,0,-.1,-142.16,552.69)" stroke-width="8.04706" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2084.52 4936.2C2084.52 4949.54 2073.71 4960.34 2060.38 4960.34 2047.04 4960.34 2036.23 4949.54 2036.23 4936.2 2036.23 4922.87 2047.04 4912.06 2060.38 4912.06 2073.71 4912.06 2084.52 4922.87 2084.52 4936.2"/>
+<path transform="matrix(.1,0,0,-.1,-142.16,552.69)" stroke-width="8.04706" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2221.32 5378.79H1899.43"/>
+<path transform="matrix(.1,0,0,-.1,-142.16,552.69)" d="M1867.25 5378.79 1899.43 5362.7V5394.89"/>
+<path transform="matrix(.1,0,0,-.1,-142.16,552.69)" stroke-width="4.02353" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1867.25 5378.79 1899.43 5362.7V5394.89Z"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<path transform="matrix(.1,0,0,-.1,-142.16,552.69)" stroke-width="4.05" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M940.59 1825.7H995.941"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</g>
+</g>
+
+<text x="15.38" y="55.72" font-size="7.2" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">磁头</text>
+<text x="22.77" y="81.62" font-size="7.2" fill="var(--fg)" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 22.77 81.62)" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">磁臂</text>
+<text x="96.07" y="62.61" font-size="8.1" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">0</text>
+<text x="91.75" y="46.51" font-size="8.1" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">11</text>
+<text x="79.97" y="34.73" font-size="8.1" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">10</text>
+<text x="63.88" y="30.42" font-size="8.1" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">9</text>
+<text x="47.78" y="34.73" font-size="8.1" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">8</text>
+<text x="36.00" y="46.51" font-size="8.1" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">7</text>
+<text x="31.69" y="62.61" font-size="8.1" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">6</text>
+<text x="36.00" y="78.70" font-size="8.1" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">5</text>
+<text x="47.78" y="90.48" font-size="8.1" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">4</text>
+<text x="63.88" y="94.80" font-size="8.1" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">3</text>
+<text x="79.97" y="90.48" font-size="8.1" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">2</text>
+<text x="91.75" y="78.70" font-size="8.1" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">1</text>
+<text x="63.88" y="55.59" font-size="7.2" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">主轴</text>
+<text x="63.88" y="12.14" font-size="7.2" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">旋转方向</text>
+</svg>

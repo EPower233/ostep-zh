@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="734.1" height="312.5" viewBox="0 0 296 126">
+<style>
+  :root {
+    --fg: #1f2328;
+    --fg-muted: #57606a;
+    --bg-surface: #ffffff;
+    --surface: #f6f8fa;
+    --surface-mid: #d0d7de;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+    --fg: #e6edf3;
+    --fg-muted: #9da7b3;
+    --bg-surface: #1b1f24;
+    --surface: #21262d;
+    --surface-mid: #2f363f;
+    }
+  }
+  use:not([fill]), text:not([fill]) { fill: var(--fg); }
+</style>
+<defs>
+<clipPath id="clip_1">
+<path transform="matrix(1,0,0,-1,-64,560)" d="M64 434H360V560H64Z"/>
+</clipPath>
+<clipPath id="clip_2">
+<path transform="matrix(1,0,0,-1,-64,560)" d="M0 0H432V648H0Z"/>
+</clipPath>
+</defs>
+<g clip-path="url(#clip_1)">
+<g clip-path="url(#clip_2)">
+
+
+
+<path transform="matrix(.1,0,0,-.1,-64,560)" stroke-width="4.05" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M580.5 5740.07H3459.78"/>
+<path transform="matrix(.1,0,0,-.1,-64,560)" d="M652.141 4422.48H3388.141V4580.324H652.141Z" fill="var(--bg-surface)"/>
+<path transform="matrix(.1,0,0,-.1,-64,560)" d="M652.141 4685.55H3388.141V4896.0109H652.141Z" fill="var(--bg-surface)"/>
+<path transform="matrix(.1,0,0,-.1,-64,560)" d="M652.141 5001.25H3388.141V5211.711H652.141Z" fill="var(--bg-surface)"/>
+<path transform="matrix(.1,0,0,-.1,-64,560)" d="M652.141 5316.94H3388.141V5527.401H652.141Z" fill="var(--bg-surface)"/>
+
+<path transform="matrix(.1,0,0,-.1,-64,560)" stroke-width="5.26154" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2335.83 5001.25V5211.71"/>
+<path transform="matrix(.1,0,0,-.1,-64,560)" stroke-width="21.0462" stroke-linecap="butt" stroke-dasharray="21.0462,21.0462" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M704.754 5264.32H946.785"/>
+<path transform="matrix(.1,0,0,-.1,-64,560)" stroke-width="21.0462" stroke-linecap="butt" stroke-dasharray="21.0462,21.0462" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2546.29 5264.32H3388.14"/>
+<path transform="matrix(.1,0,0,-.1,-64,560)" d="M946.785 5211.71H3093.4949V5316.94H946.785Z" fill="var(--surface)"/>
+
+<path transform="matrix(.1,0,0,-.1,-64,560)" d="M946.785 4896.02H3093.4949V5001.25H946.785Z" fill="var(--surface)"/>
+
+<path transform="matrix(.1,0,0,-.1,-64,560)" d="M946.785 4580.32H3093.4949V4685.5539H946.785Z" fill="var(--surface)"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</g>
+</g>
+
+<text x="138.01" y="21.18" font-size="7.6" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">应用程序</text>
+<text x="106.45" y="52.75" font-size="7.6" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">文件系统</text>
+<text x="201.15" y="52.75" font-size="7.6" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">原始设备</text>
+<text x="138.01" y="84.32" font-size="7.6" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">通用块层</text>
+<text x="138.01" y="115.89" font-size="7.6" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">设备驱动 [SCSI、ATA 等]</text>
+<text x="138.01" y="36.96" font-size="7.6" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">POSIX API [open, read, write, close 等]</text>
+<text x="138.01" y="68.53" font-size="7.6" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">通用块接口 [块读/写]</text>
+<text x="138.01" y="100.10" font-size="7.6" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">特定块接口 [协议相关读/写]</text>
+<text x="265.03" y="17.78" font-size="7.6" fill="var(--fg)" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 265.03 17.78)" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">用户态</text>
+<text x="265.03" y="80.92" font-size="7.6" fill="var(--fg)" text-anchor="middle" dominant-baseline="central" transform="rotate(-90 265.03 80.92)" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">内核态</text>
+</svg>

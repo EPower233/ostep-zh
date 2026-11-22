@@ -1,0 +1,276 @@
+[
+  {
+    "text": "导读",
+    "collapsed": false,
+    "items": [
+      {
+        "text": "前言",
+        "link": "/zh/intro/preface/"
+      },
+      {
+        "text": "第 1 章 关于本书的对话",
+        "link": "/zh/intro/dialogue-threeeasy/"
+      },
+      {
+        "text": "第 2 章 操作系统介绍",
+        "link": "/zh/intro/intro/"
+      }
+    ]
+  },
+  {
+    "text": "虚拟化",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "虚拟化",
+        "link": "/zh/virtualization/part-virtualization/"
+      },
+      {
+        "text": "第 3 章 关于虚拟化的对话",
+        "link": "/zh/virtualization/dialogue-virtualization/"
+      },
+      {
+        "text": "第 4 章 抽象：进程",
+        "link": "/zh/virtualization/cpu-intro/"
+      },
+      {
+        "text": "第 5 章 插叙：进程 API",
+        "link": "/zh/virtualization/cpu-api/"
+      },
+      {
+        "text": "第 6 章 机制：受限直接执行",
+        "link": "/zh/virtualization/cpu-mechanisms/"
+      },
+      {
+        "text": "第 7 章 进程调度：介绍",
+        "link": "/zh/virtualization/cpu-sched/"
+      },
+      {
+        "text": "第 8 章 调度：多级反馈队列",
+        "link": "/zh/virtualization/cpu-sched-mlfq/"
+      },
+      {
+        "text": "第 9 章 调度：比例份额",
+        "link": "/zh/virtualization/cpu-sched-lottery/"
+      },
+      {
+        "text": "第 10 章 多处理器调度（高级）",
+        "link": "/zh/virtualization/cpu-sched-multi/"
+      },
+      {
+        "text": "第 11 章 关于 CPU 虚拟化的总结对话",
+        "link": "/zh/virtualization/cpu-dialogue/"
+      },
+      {
+        "text": "第 12 章 关于内存虚拟化的对话",
+        "link": "/zh/virtualization/dialogue-vm/"
+      },
+      {
+        "text": "第 13 章 抽象：地址空间",
+        "link": "/zh/virtualization/vm-intro/"
+      },
+      {
+        "text": "第 14 章 插叙：内存操作 API",
+        "link": "/zh/virtualization/vm-api/"
+      },
+      {
+        "text": "第 15 章 机制：地址转换",
+        "link": "/zh/virtualization/vm-mechanism/"
+      },
+      {
+        "text": "第 16 章 分段",
+        "link": "/zh/virtualization/vm-segmentation/"
+      },
+      {
+        "text": "第 17 章 空闲空间管理",
+        "link": "/zh/virtualization/vm-freespace/"
+      },
+      {
+        "text": "第 18 章 分页：介绍",
+        "link": "/zh/virtualization/vm-paging/"
+      },
+      {
+        "text": "第 19 章 分页：快速地址转换（TLB）",
+        "link": "/zh/virtualization/vm-tlbs/"
+      },
+      {
+        "text": "第 20 章 分页：较小的表",
+        "link": "/zh/virtualization/vm-smalltables/"
+      },
+      {
+        "text": "第 21 章 超越物理内存：机制",
+        "link": "/zh/virtualization/vm-beyondphys/"
+      },
+      {
+        "text": "第 22 章 超越物理内存：策略",
+        "link": "/zh/virtualization/vm-beyondphys-policy/"
+      },
+      {
+        "text": "第 23 章 VAX/VMS 虚拟内存系统",
+        "link": "/zh/virtualization/vm-complete/"
+      },
+      {
+        "text": "第 24 章 内存虚拟化总结对话",
+        "link": "/zh/virtualization/vm-dialogue/"
+      }
+    ]
+  },
+  {
+    "text": "并发",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "并发",
+        "link": "/zh/concurrency/part-concurrency/"
+      },
+      {
+        "text": "第 25 章 关于并发的对话",
+        "link": "/zh/concurrency/dialogue-concurrency/"
+      },
+      {
+        "text": "第 26 章 并发：介绍",
+        "link": "/zh/concurrency/threads-intro/"
+      },
+      {
+        "text": "第 27 章 插叙：线程 API",
+        "link": "/zh/concurrency/threads-api/"
+      },
+      {
+        "text": "第 28 章 锁",
+        "link": "/zh/concurrency/threads-locks/"
+      },
+      {
+        "text": "第 29 章 基于锁的并发数据结构",
+        "link": "/zh/concurrency/threads-locks-usage/"
+      },
+      {
+        "text": "第 30 章 条件变量",
+        "link": "/zh/concurrency/threads-cv/"
+      },
+      {
+        "text": "第 31 章 信号量",
+        "link": "/zh/concurrency/threads-sema/"
+      },
+      {
+        "text": "第 32 章 常见并发问题",
+        "link": "/zh/concurrency/threads-bugs/"
+      },
+      {
+        "text": "第 33 章 基于事件的并发（进阶）",
+        "link": "/zh/concurrency/threads-events/"
+      },
+      {
+        "text": "第 34 章 并发的总结对话",
+        "link": "/zh/concurrency/threads-dialogue/"
+      }
+    ]
+  },
+  {
+    "text": "持久性",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "持久性",
+        "link": "/zh/persistence/part-persistence/"
+      },
+      {
+        "text": "第 35 章 关于持久性的对话",
+        "link": "/zh/persistence/dialogue-persistence/"
+      },
+      {
+        "text": "第 36 章 I/O 设备",
+        "link": "/zh/persistence/file-devices/"
+      },
+      {
+        "text": "第 37 章 磁盘驱动器",
+        "link": "/zh/persistence/file-disks/"
+      },
+      {
+        "text": "第 38 章 廉价冗余磁盘阵列（RAID）",
+        "link": "/zh/persistence/file-raid/"
+      },
+      {
+        "text": "第 39 章 插叙：文件和目录",
+        "link": "/zh/persistence/file-intro/"
+      },
+      {
+        "text": "第 40 章 文件系统实现",
+        "link": "/zh/persistence/file-implementation/"
+      },
+      {
+        "text": "第 41 章 局部性和快速文件系统",
+        "link": "/zh/persistence/file-ffs/"
+      },
+      {
+        "text": "第 42 章 崩溃一致性：FSCK 和日志",
+        "link": "/zh/persistence/file-journaling/"
+      },
+      {
+        "text": "第 43 章 日志结构文件系统",
+        "link": "/zh/persistence/file-lfs/"
+      },
+      {
+        "text": "第 44 章 数据完整性和保护",
+        "link": "/zh/persistence/file-integrity/"
+      },
+      {
+        "text": "第 45 章 关于持久的总结对话",
+        "link": "/zh/persistence/file-dialogue/"
+      },
+      {
+        "text": "第 46 章 关于分布式的对话",
+        "link": "/zh/persistence/dialogue-distribution/"
+      },
+      {
+        "text": "第 47 章 分布式系统",
+        "link": "/zh/persistence/dist-intro/"
+      },
+      {
+        "text": "第 48 章 Sun 的网络文件系统（NFS）",
+        "link": "/zh/persistence/dist-nfs/"
+      },
+      {
+        "text": "第 49 章 Andrew 文件系统（AFS）",
+        "link": "/zh/persistence/dist-afs/"
+      },
+      {
+        "text": "第 50 章 关于分布式的总结对话",
+        "link": "/zh/persistence/dist-dialogue/"
+      }
+    ]
+  },
+  {
+    "text": "附录",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "附录 A 关于虚拟机监视器的对话",
+        "link": "/zh/appendices/dialogue-vmm/"
+      },
+      {
+        "text": "附录 B 虚拟机监视器",
+        "link": "/zh/appendices/vmm-intro/"
+      },
+      {
+        "text": "附录 C 关于监视器的对话",
+        "link": "/zh/appendices/dialogue-monitors/"
+      },
+      {
+        "text": "附录 D 关于实验室的对话",
+        "link": "/zh/appendices/dialogue-labs/"
+      },
+      {
+        "text": "附录 E 实验室：指南",
+        "link": "/zh/appendices/lab-tutorial/"
+      },
+      {
+        "text": "附录 F 实验室：系统项目",
+        "link": "/zh/appendices/lab-projects-systems/"
+      },
+      {
+        "text": "附录 G 实验室：xv6 项目",
+        "link": "/zh/appendices/lab-projects-xv6/"
+      }
+    ]
+  }
+]

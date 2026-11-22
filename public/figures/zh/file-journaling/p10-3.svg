@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="756.0" height="124.2" viewBox="0 0 560 92">
+  <style>
+    :root {
+      --fg: #1e293b;
+      --surface: #dbeafe;
+      --surface-stroke: #3b82f6;
+      --surface-text: #1e40af;
+      --bg: #ffffff;
+      --stroke: #475569;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fg: #e6edf3;
+        --surface: rgba(59, 130, 246, 0.20);
+        --surface-stroke: #60a5fa;
+        --surface-text: #93c5fd;
+        --bg: #1b1f24;
+        --stroke: #8b949e;
+      }
+    }
+    text { font-family: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif; fill: var(--fg); }
+    .stroke { stroke: var(--stroke); fill: none; stroke-width: 1.5; }
+    .super { fill: var(--surface); stroke: var(--surface-stroke); stroke-width: 1.5; }
+    .cell { fill: var(--bg); stroke: var(--stroke); stroke-width: 1.4; }
+    path:not([fill]), use:not([fill]), text:not([fill]) { fill: var(--fg); }
+</style>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="2" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M0,0 L8,4 L0,8 L2,4 z" fill="var(--stroke)"/>
+    </marker>
+  </defs>
+
+  <text x="18" y="56" font-size="13" font-weight="600" text-anchor="middle" transform="rotate(-90 18 56)">日志</text>
+
+  <rect class="super" x="34" y="28" width="76" height="52" rx="4"/>
+  <text x="72" y="51" font-size="12" font-weight="600" fill="var(--surface-text)" text-anchor="middle">日志</text>
+  <text x="72" y="68" font-size="12" font-weight="600" fill="var(--surface-text)" text-anchor="middle">超级块</text>
+
+  <rect class="cell" x="110" y="28" width="56" height="52"/>
+  <text x="138" y="59" font-size="13" text-anchor="middle">Tx1</text>
+  <rect class="cell" x="166" y="28" width="56" height="52"/>
+  <text x="194" y="59" font-size="13" text-anchor="middle">Tx2</text>
+  <rect class="cell" x="222" y="28" width="56" height="52"/>
+  <text x="250" y="59" font-size="13" text-anchor="middle">Tx3</text>
+  <rect class="cell" x="278" y="28" width="56" height="52"/>
+  <text x="306" y="59" font-size="13" text-anchor="middle">Tx4</text>
+  <rect class="cell" x="334" y="28" width="56" height="52"/>
+  <text x="362" y="59" font-size="13" text-anchor="middle">Tx5</text>
+
+  <line class="stroke" x1="390" y1="28" x2="548" y2="28"/>
+  <line class="stroke" x1="390" y1="80" x2="548" y2="80"/>
+  <text x="416" y="59" font-size="15" text-anchor="middle">...</text>
+  <line class="stroke" x1="440" y1="54" x2="516" y2="54" marker-end="url(#arrow)"/>
+
+  <!-- Oldest & Newest pointers -->
+  <path class="stroke" d="M96,34 L96,15 L110,15 L110,20" marker-end="url(#arrow)"/>
+  <path class="stroke" d="M84,34 L84,7 L390,7 L390,20" marker-end="url(#arrow)"/>
+</svg>

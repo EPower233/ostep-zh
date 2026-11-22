@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="315.5" height="304.5" viewBox="0 0 127.2 122.77">
+<style>
+  :root {
+    --fg: #1f2328;
+    --fg-muted: #57606a;
+    --bg-surface: #ffffff;
+    --surface: #f6f8fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+    --fg: #e6edf3;
+    --fg-muted: #9da7b3;
+    --bg-surface: #1b1f24;
+    --surface: #21262d;
+    }
+  }
+  path:not([fill]), use:not([fill]), text:not([fill]) { fill: var(--fg); }
+</style>
+<defs>
+<clipPath id="clip_1">
+<path transform="matrix(1,0,0,-1,-138.41004,549.60006)" d="M138.41 426.83003H265.61V549.6H138.41Z"/>
+</clipPath>
+<clipPath id="clip_2">
+<path transform="matrix(1,0,0,-1,-138.41004,549.60006)" d="M0 0H432V648H0Z"/>
+</clipPath>
+<clipPath id="clip_3">
+<path transform="matrix(.1,0,0,-.1,-138.41004,549.60006)" d="M1804.14 4284H2236.1402V4716H1804.14Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+<clipPath id="clip_4">
+<path transform="matrix(.1,0,0,-.1,-138.41004,549.60006)" d="M1444.14 5004H1876.14V5436H1444.14Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+<clipPath id="clip_5">
+<path transform="matrix(.1,0,0,-.1,-138.41004,549.60006)" d="M2164.14 5004H2596.14V5436H2164.14Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+<clipPath id="clip_6">
+<path transform="matrix(.1,0,0,-.1,-138.41004,549.60006)" d="M1444.14 4932H1876.14V5076H1444.14Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+<clipPath id="clip_7">
+<path transform="matrix(.1,0,0,-.1,-138.41004,549.60006)" d="M2164.14 4932H2596.14V5076H2164.14Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+</defs>
+<g clip-path="url(#clip_1)">
+<g clip-path="url(#clip_2)">
+
+
+
+
+
+
+
+<path transform="matrix(.1,0,0,-.1,-138.41004,549.60006)" stroke-width="4.05" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M580.5 5740.07H3459.78"/>
+<g clip-path="url(#clip_3)">
+<path transform="matrix(.1,0,0,-.1,-138.41004,549.60006)" d="M1804.14 4284H2236.1402V4716H1804.14Z" fill="var(--bg-surface)"/>
+</g>
+<path transform="matrix(.1,0,0,-.1,-138.41004,549.60006)" stroke-width="3.6" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1804.14 4284H2236.1402V4716H1804.14Z"/>
+
+<g clip-path="url(#clip_4)">
+<path transform="matrix(.1,0,0,-.1,-138.41004,549.60006)" d="M1444.14 5004H1876.14V5436H1444.14Z" fill="var(--bg-surface)"/>
+</g>
+<path transform="matrix(.1,0,0,-.1,-138.41004,549.60006)" stroke-width="3.6" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1444.14 5004H1876.14V5436H1444.14Z"/>
+
+<g clip-path="url(#clip_5)">
+<path transform="matrix(.1,0,0,-.1,-138.41004,549.60006)" d="M2164.14 5004H2596.14V5436H2164.14Z" fill="var(--bg-surface)"/>
+</g>
+<path transform="matrix(.1,0,0,-.1,-138.41004,549.60006)" stroke-width="3.6" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2164.14 5004H2596.14V5436H2164.14Z"/>
+
+<g clip-path="url(#clip_6)">
+<path transform="matrix(.1,0,0,-.1,-138.41004,549.60006)" d="M1444.14 4932H1876.14V5076H1444.14Z" fill="var(--surface)"/>
+</g>
+<path transform="matrix(.1,0,0,-.1,-138.41004,549.60006)" stroke-width="3.6" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1444.14 4932H1876.14V5076H1444.14Z"/>
+
+<g clip-path="url(#clip_7)">
+<path transform="matrix(.1,0,0,-.1,-138.41004,549.60006)" d="M2164.14 4932H2596.14V5076H2164.14Z" fill="var(--surface)"/>
+</g>
+<path transform="matrix(.1,0,0,-.1,-138.41004,549.60006)" stroke-width="3.6" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2164.14 4932H2596.14V5076H2164.14Z"/>
+
+<path transform="matrix(.1,0,0,-.1,-138.41004,549.60006)" stroke-width="14.4" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1660.14 4932V4824"/>
+<path transform="matrix(.1,0,0,-.1,-138.41004,549.60006)" stroke-width="14.4" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1660.14 4824V4932"/>
+<path transform="matrix(.1,0,0,-.1,-138.41004,549.60006)" stroke-width="14.4" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2380.14 4932V4824"/>
+<path transform="matrix(.1,0,0,-.1,-138.41004,549.60006)" stroke-width="14.4" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2380.14 4824V4932"/>
+<path transform="matrix(.1,0,0,-.1,-138.41004,549.60006)" stroke-width="14.4" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2387.34 4824H1652.94"/>
+<path transform="matrix(.1,0,0,-.1,-138.41004,549.60006)" stroke-width="14.4" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1652.94 4824H2387.34"/>
+<path transform="matrix(.1,0,0,-.1,-138.41004,549.60006)" stroke-width="14.4" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2020.14 4824V4716"/>
+<path transform="matrix(.1,0,0,-.1,-138.41004,549.60006)" stroke-width="14.4" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2020.14 4716V4824"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</g>
+</g>
+
+<text x="63.60" y="104.63" font-size="11.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">内存</text>
+<text x="27.60" y="32.63" font-size="11.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">CPU</text>
+<text x="99.60" y="32.63" font-size="11.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">CPU</text>
+<text x="27.60" y="54.23" font-size="11.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">缓存</text>
+<text x="99.60" y="54.23" font-size="11.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">缓存</text>
+<text x="110.65" y="70.97" font-size="8.6" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">总线</text>
+</svg>

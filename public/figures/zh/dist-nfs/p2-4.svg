@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="624.6" height="113.5" viewBox="0 0 251.84 45.77">
+<style>
+  :root {
+    --fg: #1f2328;
+    --fg-muted: #57606a;
+    --bg-surface: #ffffff;
+    --surface: #f6f8fa;
+    --surface-mid: #d0d7de;
+    --stroke-mid: #8c959f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+    --fg: #e6edf3;
+    --fg-muted: #9da7b3;
+    --bg-surface: #1b1f24;
+    --surface: #21262d;
+    --surface-mid: #2f363f;
+      --stroke-mid: #7d8590;
+    }
+  }
+  path:not([fill]), use:not([fill]), text:not([fill]) { fill: var(--fg); }
+</style>
+<defs>
+<clipPath id="clip_1">
+<path transform="matrix(1,0,0,-1,-103.03999,222.47)" d="M103.04 176.70001H354.88V222.47H103.04Z"/>
+</clipPath>
+<clipPath id="clip_2">
+<path transform="matrix(1,0,0,-1,-103.03999,222.47)" d="M0 0H432V648H0Z"/>
+</clipPath>
+<clipPath id="clip_3">
+<path transform="matrix(.1,0,0,-.1,-103.03999,222.47)" d="M1043.55 1781.91H1934.55V2097.808H1043.55Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+<clipPath id="clip_4">
+<path transform="matrix(.1,0,0,-.1,-103.03999,222.47)" d="M2299.05 1781.91H3109.05V2097.808H2299.05Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+</defs>
+<g clip-path="url(#clip_1)">
+<g clip-path="url(#clip_2)">
+
+
+
+
+
+
+
+
+
+
+
+<path transform="matrix(.1,0,0,-.1,-103.03999,222.47)" stroke-width="4.05" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M859.5 5740.07H3738.78"/>
+<path transform="matrix(.1,0,0,-.1,-103.03999,222.47)" stroke-width="566.73" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--stroke-mid)" d="M769.77 5266.84H3828.33"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<g clip-path="url(#clip_3)">
+<path transform="matrix(.1,0,0,-.1,-103.03999,222.47)" d="M1043.55 1781.91H1934.55V2097.808H1043.55Z" fill="var(--surface)"/>
+</g>
+
+<g clip-path="url(#clip_4)">
+<path transform="matrix(.1,0,0,-.1,-103.03999,222.47)" d="M2299.05 1781.91H3109.05V2097.808H2299.05Z" fill="var(--surface)"/>
+</g>
+
+<path transform="matrix(.1,0,0,-.1,-103.03999,222.47)" stroke-width="8.1" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1894.05 1854.81H2339.55"/>
+<path transform="matrix(.1,0,0,-.1,-103.03999,222.47)" d="M2339.55 1854.81V1875.06L2380.05 1854.81 2339.55 1834.56Z"/>
+<path transform="matrix(.1,0,0,-.1,-103.03999,222.47)" stroke-width="4.05" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2339.55 1854.81V1875.06L2380.05 1854.81 2339.55 1834.56Z"/>
+<path transform="matrix(.1,0,0,-.1,-103.03999,222.47)" stroke-width="8.1" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2339.55 1854.81H1894.05"/>
+<path transform="matrix(.1,0,0,-.1,-103.03999,222.47)" d="M1894.05 1854.81V1834.56L1853.55 1854.81 1894.05 1875.06Z"/>
+<path transform="matrix(.1,0,0,-.1,-103.03999,222.47)" stroke-width="4.05" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1894.05 1854.81V1834.56L1853.55 1854.81 1894.05 1875.06Z"/>
+<path transform="matrix(.1,0,0,-.1,-103.03999,222.47)" stroke-width="8.1" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M3068.55 2016.81H3271.05"/>
+<path transform="matrix(.1,0,0,-.1,-103.03999,222.47)" d="M3271.05 2016.81V2037.06L3311.55 2016.81 3271.05 1996.56Z"/>
+<path transform="matrix(.1,0,0,-.1,-103.03999,222.47)" stroke-width="4.05" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M3271.05 2016.81V2037.06L3311.55 2016.81 3271.05 1996.56Z"/>
+<path transform="matrix(.1,0,0,-.1,-103.03999,222.47)" stroke-width="8.1" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M3271.05 2016.81H3068.55"/>
+<path transform="matrix(.1,0,0,-.1,-103.03999,222.47)" d="M3068.55 2016.81V1996.56L3028.05 2016.81 3068.55 2037.06Z"/>
+<path transform="matrix(.1,0,0,-.1,-103.03999,222.47)" stroke-width="4.05" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M3068.55 2016.81V1996.56L3028.05 2016.81 3068.55 2037.06Z"/>
+<path transform="matrix(.1,0,0,-.1,-103.03999,222.47)" stroke-width="4.05" stroke-linecap="butt" stroke-dasharray="16.2,16.2" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1084.05 1935.81H1894.05"/>
+<path transform="matrix(.1,0,0,-.1,-103.03999,222.47)" stroke-width="4.05" stroke-linecap="butt" stroke-dasharray="16.2,16.2" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2339.55 1935.81H3068.55"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</g>
+</g>
+
+<text x="45.87" y="8.13" font-size="8.1" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">客户端应用</text>
+<text x="45.87" y="24.33" font-size="8.1" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">客户端文件系统</text>
+<text x="45.87" y="40.53" font-size="8.1" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">网络层</text>
+<text x="167.37" y="24.33" font-size="8.1" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">文件服务器</text>
+<text x="167.37" y="40.53" font-size="8.1" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">网络层</text>
+<text x="240.27" y="24.33" font-size="8.1" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">磁盘</text>
+</svg>

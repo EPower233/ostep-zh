@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="771.3" height="248.8" viewBox="0 0 311.01 100.31">
+<style>
+  :root {
+    --fg: #1f2328;
+    --fg-muted: #57606a;
+    --bg-surface: #ffffff;
+    --surface: #f6f8fa;
+    --surface-mid: #d0d7de;
+    --stroke-mid: #8c959f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+    --fg: #e6edf3;
+    --fg-muted: #9da7b3;
+    --bg-surface: #1b1f24;
+    --surface: #21262d;
+    --surface-mid: #2f363f;
+      --stroke-mid: #7d8590;
+    }
+  }
+  path:not([fill]), use:not([fill]), text:not([fill]) { fill: var(--fg); }
+</style>
+<defs>
+<clipPath id="clip_1">
+<path transform="matrix(1,0,0,-1,-36.51999,559.54)" d="M36.52 459.22999H347.53V559.54H36.52Z"/>
+</clipPath>
+<clipPath id="clip_2">
+<path transform="matrix(1,0,0,-1,-36.51999,559.54)" d="M0 0H432V648H0Z"/>
+</clipPath>
+<clipPath id="clip_3">
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" d="M1427.94 4607.1H1766.3379V4945.498H1427.94Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+</defs>
+<g clip-path="url(#clip_1)">
+<g clip-path="url(#clip_2)">
+
+
+
+
+
+
+
+
+
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" stroke-width="4.05" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M580.5 5740.07H3459.78"/>
+
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" d="M751.141 5114.7H1089.5391V5453.102H751.141Z" fill="var(--surface)"/>
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" stroke-width="4.23" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M751.141 5114.7H1089.5391V5453.102H751.141Z"/>
+
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" d="M1089.54 5114.7H1427.942V5453.102H1089.54Z" fill="var(--bg-surface)"/>
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" stroke-width="4.23" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1089.54 5114.7H1427.942V5453.102H1089.54Z"/>
+
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" d="M1427.94 5114.7H1766.3379V5453.102H1427.94Z" fill="var(--bg-surface)"/>
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" stroke-width="4.23" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1427.94 5114.7H1766.3379V5453.102H1427.94Z"/>
+
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" d="M1766.34 5114.7H2104.738V5453.102H1766.34Z" fill="var(--surface-mid)"/>
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" stroke-width="4.23" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1766.34 5114.7H2104.738V5453.102H1766.34Z"/>
+
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" d="M751.141 4607.1H1089.5391V4945.498H751.141Z" fill="var(--surface)"/>
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" stroke-width="4.23" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M751.141 4607.1H1089.5391V4945.498H751.141Z"/>
+
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" d="M1089.54 4607.1H1427.942V4945.498H1089.54Z" fill="var(--surface)"/>
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" stroke-width="4.23" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1089.54 4607.1H1427.942V4945.498H1089.54Z"/>
+
+<g clip-path="url(#clip_3)">
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" stroke-width="25.38" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--stroke-mid)" d="M1343.34 4522.5 1850.94 5030.1"/>
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" stroke-width="25.38" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--stroke-mid)" d="M1343.34 4581.72 1850.94 5089.32"/>
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" stroke-width="25.38" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--stroke-mid)" d="M1343.34 4640.94 1850.94 5148.54"/>
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" stroke-width="25.38" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--stroke-mid)" d="M1343.34 4700.16 1850.94 5207.76"/>
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" stroke-width="25.38" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--stroke-mid)" d="M1343.34 4759.38 1850.94 5266.98"/>
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" stroke-width="25.38" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--stroke-mid)" d="M1343.34 4818.6 1850.94 5326.2"/>
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" stroke-width="25.38" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--stroke-mid)" d="M1343.34 4877.82 1850.94 5385.42"/>
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" stroke-width="25.38" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--stroke-mid)" d="M1343.34 4937.04 1850.94 5444.64"/>
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" stroke-width="25.38" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--stroke-mid)" d="M1343.34 4522.5 1850.94 5030.1"/>
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" stroke-width="25.38" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--stroke-mid)" d="M1402.56 4522.5 1910.16 5030.1"/>
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" stroke-width="25.38" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--stroke-mid)" d="M1461.78 4522.5 1969.38 5030.1"/>
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" stroke-width="25.38" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--stroke-mid)" d="M1521 4522.5 2028.6 5030.1"/>
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" stroke-width="25.38" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--stroke-mid)" d="M1580.22 4522.5 2087.82 5030.1"/>
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" stroke-width="25.38" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--stroke-mid)" d="M1639.44 4522.5 2147.04 5030.1"/>
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" stroke-width="25.38" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--stroke-mid)" d="M1698.66 4522.5 2206.26 5030.1"/>
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" stroke-width="25.38" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--stroke-mid)" d="M1757.88 4522.5 2265.48 5030.1"/>
+</g>
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" stroke-width="4.23" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1427.94 4607.1H1766.3379V4945.498H1427.94Z"/>
+
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" d="M1766.34 4607.1H2104.738V4945.498H1766.34Z" fill="var(--bg-surface)"/>
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" stroke-width="4.23" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1766.34 4607.1H2104.738V4945.498H1766.34Z"/>
+
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" d="M2104.74 4607.1H2443.142V4945.498H2104.74Z" fill="var(--bg-surface)"/>
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" stroke-width="4.23" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2104.74 4607.1H2443.142V4945.498H2104.74Z"/>
+
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" d="M2443.14 4607.1H2781.5379V4945.498H2443.14Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" stroke-width="4.23" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2443.14 4607.1H2781.5379V4945.498H2443.14Z"/>
+
+
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" d="M2781.54 4607.1H3119.9422V4945.498H2781.54Z" fill="var(--surface-mid)"/>
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" stroke-width="4.23" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2781.54 4607.1H3119.9422V4945.498H2781.54Z"/>
+
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" d="M3119.94 4607.1H3458.338V4945.498H3119.94Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+<path transform="matrix(.1,0,0,-.1,-36.51999,559.54)" stroke-width="4.23" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M3119.94 4607.1H3458.338V4945.498H3119.94Z"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</g>
+</g>
+
+<text x="17.44" y="28.10" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">物理</text>
+<text x="17.44" y="36.56" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">内存</text>
+<text x="55.51" y="13.21" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">PFN 0</text>
+<text x="55.51" y="28.10" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">Proc 0</text>
+<text x="55.51" y="36.56" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">[VPN 0]</text>
+<text x="89.35" y="13.21" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">PFN 1</text>
+<text x="89.35" y="28.10" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">Proc 1</text>
+<text x="89.35" y="36.56" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">[VPN 2]</text>
+<text x="123.19" y="13.21" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">PFN 2</text>
+<text x="123.19" y="28.10" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">Proc 1</text>
+<text x="123.19" y="36.56" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">[VPN 3]</text>
+<text x="157.03" y="13.21" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">PFN 3</text>
+<text x="157.03" y="28.10" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">Proc 2</text>
+<text x="157.03" y="36.56" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">[VPN 0]</text>
+<text x="17.44" y="78.86" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">交换</text>
+<text x="17.44" y="87.32" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">空间</text>
+<text x="55.51" y="78.86" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">Proc 0</text>
+<text x="55.51" y="87.32" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">[VPN 1]</text>
+<text x="55.51" y="63.97" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">块 0</text>
+<text x="89.35" y="78.86" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">Proc 0</text>
+<text x="89.35" y="87.32" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">[VPN 2]</text>
+<text x="89.35" y="63.97" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">块 1</text>
+<text x="123.19" y="85.62" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">[空闲]</text>
+<text x="123.19" y="63.97" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">块 2</text>
+<text x="157.03" y="78.86" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">Proc 1</text>
+<text x="157.03" y="87.32" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">[VPN 0]</text>
+<text x="157.03" y="63.97" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">块 3</text>
+<text x="190.87" y="78.86" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">Proc 1</text>
+<text x="190.87" y="87.32" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">[VPN 1]</text>
+<text x="190.87" y="63.97" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">块 4</text>
+<text x="224.71" y="78.86" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">Proc 3</text>
+<text x="224.71" y="87.32" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">[VPN 0]</text>
+<text x="224.71" y="63.97" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">块 5</text>
+<text x="258.55" y="78.86" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">Proc 2</text>
+<text x="258.55" y="87.32" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">[VPN 1]</text>
+<text x="258.55" y="63.97" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">块 6</text>
+<text x="292.39" y="78.86" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">Proc 3</text>
+<text x="292.39" y="87.32" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">[VPN 1]</text>
+<text x="292.39" y="63.97" font-size="8.5" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">块 7</text>
+</svg>

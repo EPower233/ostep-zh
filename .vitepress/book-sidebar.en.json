@@ -1,0 +1,306 @@
+[
+  {
+    "text": "Introduction",
+    "collapsed": false,
+    "items": [
+      {
+        "text": "Preface",
+        "link": "/en/intro/preface/"
+      },
+      {
+        "text": "Dedication",
+        "link": "/en/intro/dedication/"
+      },
+      {
+        "text": "1 A Dialogue on the Book",
+        "link": "/en/intro/dialogue-threeeasy/"
+      },
+      {
+        "text": "2 Introduction to Operating Systems",
+        "link": "/en/intro/intro/"
+      }
+    ]
+  },
+  {
+    "text": "Virtualization",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "3 Dialogue",
+        "link": "/en/virtualization/dialogue-virtualization/"
+      },
+      {
+        "text": "4 The Abstraction: The Process",
+        "link": "/en/virtualization/cpu-intro/"
+      },
+      {
+        "text": "5 Interlude: Process API",
+        "link": "/en/virtualization/cpu-api/"
+      },
+      {
+        "text": "6 Mechanism: Limited Direct Execution",
+        "link": "/en/virtualization/cpu-mechanisms/"
+      },
+      {
+        "text": "7 Scheduling: Introduction",
+        "link": "/en/virtualization/cpu-sched/"
+      },
+      {
+        "text": "8 The Multi-Level Feedback Queue",
+        "link": "/en/virtualization/cpu-sched-mlfq/"
+      },
+      {
+        "text": "9 Scheduling: Proportional Share",
+        "link": "/en/virtualization/cpu-sched-lottery/"
+      },
+      {
+        "text": "10 Multiprocessor Scheduling (Advanced)",
+        "link": "/en/virtualization/cpu-sched-multi/"
+      },
+      {
+        "text": "11 Summary Dialogue on CPU Virtualization",
+        "link": "/en/virtualization/cpu-dialogue/"
+      },
+      {
+        "text": "12 A Dialogue on Memory Virtualization",
+        "link": "/en/virtualization/dialogue-vm/"
+      },
+      {
+        "text": "13 The Abstraction: Address Spaces",
+        "link": "/en/virtualization/vm-intro/"
+      },
+      {
+        "text": "14 Interlude: Memory API",
+        "link": "/en/virtualization/vm-api/"
+      },
+      {
+        "text": "15 Mechanism: Address Translation",
+        "link": "/en/virtualization/vm-mechanism/"
+      },
+      {
+        "text": "16 Segmentation",
+        "link": "/en/virtualization/vm-segmentation/"
+      },
+      {
+        "text": "17 Free-Space Management",
+        "link": "/en/virtualization/vm-freespace/"
+      },
+      {
+        "text": "18 Paging: Introduction",
+        "link": "/en/virtualization/vm-paging/"
+      },
+      {
+        "text": "19 Paging: Faster Translations (TLBs)",
+        "link": "/en/virtualization/vm-tlbs/"
+      },
+      {
+        "text": "20 Paging: Smaller Tables",
+        "link": "/en/virtualization/vm-smalltables/"
+      },
+      {
+        "text": "21 Beyond Physical Memory: Mechanisms",
+        "link": "/en/virtualization/vm-beyondphys/"
+      },
+      {
+        "text": "22 Beyond Physical Memory: Policies",
+        "link": "/en/virtualization/vm-beyondphys-policy/"
+      },
+      {
+        "text": "23 Complete Virtual Memory Systems",
+        "link": "/en/virtualization/vm-complete/"
+      },
+      {
+        "text": "24 Summary Dialogue on Memory Virtualization",
+        "link": "/en/virtualization/vm-dialogue/"
+      }
+    ]
+  },
+  {
+    "text": "Concurrency",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "25 Dialogue",
+        "link": "/en/concurrency/dialogue-concurrency/"
+      },
+      {
+        "text": "26 Concurrency: An Introduction",
+        "link": "/en/concurrency/threads-intro/"
+      },
+      {
+        "text": "27 Interlude: Thread API",
+        "link": "/en/concurrency/threads-api/"
+      },
+      {
+        "text": "28 Locks",
+        "link": "/en/concurrency/threads-locks/"
+      },
+      {
+        "text": "29 Lock-based Concurrent Data Structures",
+        "link": "/en/concurrency/threads-locks-usage/"
+      },
+      {
+        "text": "30 Condition Variables",
+        "link": "/en/concurrency/threads-cv/"
+      },
+      {
+        "text": "31 Semaphores",
+        "link": "/en/concurrency/threads-sema/"
+      },
+      {
+        "text": "32 Common Concurrency Problems",
+        "link": "/en/concurrency/threads-bugs/"
+      },
+      {
+        "text": "33 Event-based Concurrency (Advanced)",
+        "link": "/en/concurrency/threads-events/"
+      },
+      {
+        "text": "34 Summary Dialogue on Concurrency",
+        "link": "/en/concurrency/threads-dialogue/"
+      }
+    ]
+  },
+  {
+    "text": "Persistence",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "35 Dialogue",
+        "link": "/en/persistence/dialogue-persistence/"
+      },
+      {
+        "text": "36 I/O Devices",
+        "link": "/en/persistence/file-devices/"
+      },
+      {
+        "text": "37 Hard Disk Drives",
+        "link": "/en/persistence/file-disks/"
+      },
+      {
+        "text": "38 Redundant Arrays of Inexpensive Disks",
+        "link": "/en/persistence/file-raid/"
+      },
+      {
+        "text": "39 Interlude: Files and Directories",
+        "link": "/en/persistence/file-intro/"
+      },
+      {
+        "text": "40 File System Implementation",
+        "link": "/en/persistence/file-implementation/"
+      },
+      {
+        "text": "41 Locality and The Fast File System",
+        "link": "/en/persistence/file-ffs/"
+      },
+      {
+        "text": "42 Crash Consistency: FSCK and Journaling",
+        "link": "/en/persistence/file-journaling/"
+      },
+      {
+        "text": "43 Log-structured File Systems",
+        "link": "/en/persistence/file-lfs/"
+      },
+      {
+        "text": "44 Flash-based SSDs",
+        "link": "/en/persistence/file-ssd/"
+      },
+      {
+        "text": "45 Data Integrity and Protection",
+        "link": "/en/persistence/file-integrity/"
+      },
+      {
+        "text": "46 Summary Dialogue on Persistence",
+        "link": "/en/persistence/file-dialogue/"
+      },
+      {
+        "text": "47 A Dialogue on Distribution",
+        "link": "/en/persistence/dialogue-distribution/"
+      },
+      {
+        "text": "48 Distributed Systems",
+        "link": "/en/persistence/dist-intro/"
+      },
+      {
+        "text": "49 Sun’s Network File System (NFS)",
+        "link": "/en/persistence/dist-nfs/"
+      },
+      {
+        "text": "50 The Andrew File System (AFS)",
+        "link": "/en/persistence/dist-afs/"
+      },
+      {
+        "text": "51 Summary Dialogue on Distribution",
+        "link": "/en/persistence/dist-dialogue/"
+      }
+    ]
+  },
+  {
+    "text": "Security",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "52 A Dialogue on Security",
+        "link": "/en/security/dialogue-security/"
+      },
+      {
+        "text": "53 Introduction to Operating System Security",
+        "link": "/en/security/security-intro/"
+      },
+      {
+        "text": "54 Authentication",
+        "link": "/en/security/security-authentication/"
+      },
+      {
+        "text": "55 Access Control",
+        "link": "/en/security/security-access/"
+      },
+      {
+        "text": "56 Protecting Information With Cryptography",
+        "link": "/en/security/security-crypto/"
+      },
+      {
+        "text": "57 Distributed System Security",
+        "link": "/en/security/security-distributed/"
+      }
+    ]
+  },
+  {
+    "text": "Appendices",
+    "collapsed": true,
+    "items": [
+      {
+        "text": "Appendix A A Dialogue on Virtual Machine Monitors",
+        "link": "/en/appendices/dialogue-vmm/"
+      },
+      {
+        "text": "Appendix B Virtual Machine Monitors",
+        "link": "/en/appendices/vmm-intro/"
+      },
+      {
+        "text": "Appendix C A Dialogue on Monitors",
+        "link": "/en/appendices/dialogue-monitors/"
+      },
+      {
+        "text": "Appendix D Monitors (Deprecated)",
+        "link": "/en/appendices/threads-monitors/"
+      },
+      {
+        "text": "Appendix E A Dialogue on Labs",
+        "link": "/en/appendices/dialogue-labs/"
+      },
+      {
+        "text": "Appendix F Laboratory: Tutorial",
+        "link": "/en/appendices/lab-tutorial/"
+      },
+      {
+        "text": "Appendix G Laboratory: Systems Projects",
+        "link": "/en/appendices/lab-projects-systems/"
+      },
+      {
+        "text": "Appendix H Laboratory: xv6 Projects",
+        "link": "/en/appendices/lab-projects-xv6/"
+      }
+    ]
+  }
+]

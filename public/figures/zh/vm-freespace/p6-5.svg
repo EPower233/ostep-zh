@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="590.9" height="824.9" viewBox="0 0 238.28 332.62">
+<style>
+  :root {
+    --fg: #1f2328;
+    --fg-muted: #57606a;
+    --bg-surface: #ffffff;
+    --surface: #f6f8fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+    --fg: #e6edf3;
+    --fg-muted: #9da7b3;
+    --bg-surface: #1b1f24;
+    --surface: #21262d;
+    }
+  }
+  path:not([fill]), use:not([fill]), text:not([fill]) { fill: var(--fg); }
+</style>
+<defs>
+<clipPath id="clip_1">
+<path transform="matrix(1,0,0,-1,-93.76996,567.45999)" d="M93.77 234.84H332.05V567.46H93.77Z"/>
+</clipPath>
+<clipPath id="clip_2">
+<path transform="matrix(1,0,0,-1,-93.76996,567.45999)" d="M0 0H432V648H0Z"/>
+</clipPath>
+<clipPath id="clip_3">
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" d="M1489.05 5411.07H2164.05V5579.82H1489.05Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+<clipPath id="clip_4">
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" d="M1489.05 5242.32H2164.05V5411.07H1489.05Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+<clipPath id="clip_5">
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" d="M1489.05 4567.32H2164.05V4736.07H1489.05Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+<clipPath id="clip_6">
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" d="M1489.05 4398.57H2164.05V4567.32H1489.05Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+<clipPath id="clip_7">
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" d="M1489.05 3723.57H2164.05V3892.32H1489.05Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+<clipPath id="clip_8">
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" d="M1489.05 3554.82H2164.05V3723.57H1489.05Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+<clipPath id="clip_9">
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" d="M1489.05 2879.82H2164.05V3048.57H1489.05Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+<clipPath id="clip_10">
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" d="M1489.05 2711.07H2164.05V2879.82H1489.05Z" fill="var(--fg-muted)" fill-opacity="0.38"/>
+</clipPath>
+</defs>
+<g clip-path="url(#clip_1)">
+<g clip-path="url(#clip_2)">
+
+
+
+
+
+
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" stroke-width="4.05" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M859.5 5740.07H3738.78"/>
+<g clip-path="url(#clip_3)">
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" d="M1489.05 5411.07H2164.05V5579.82H1489.05Z" fill="var(--surface)"/>
+</g>
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" stroke-width="4.6875" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1489.05 5411.07H2164.05V5579.82H1489.05Z"/>
+
+<g clip-path="url(#clip_4)">
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" d="M1489.05 5242.32H2164.05V5411.07H1489.05Z" fill="var(--surface)"/>
+</g>
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" stroke-width="4.6875" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1489.05 5242.32H2164.05V5411.07H1489.05Z"/>
+
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" stroke-width="4.6875" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1489.05 5242.32V5073.57"/>
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" stroke-width="4.6875" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2164.05 5242.32V5073.57"/>
+
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" stroke-width="4.6875" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1489.05 4904.82V4736.07"/>
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" stroke-width="4.6875" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2164.05 4904.82V4736.07"/>
+<g clip-path="url(#clip_5)">
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" d="M1489.05 4567.32H2164.05V4736.07H1489.05Z" fill="var(--surface)"/>
+</g>
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" stroke-width="4.6875" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1489.05 4567.32H2164.05V4736.07H1489.05Z"/>
+
+<g clip-path="url(#clip_6)">
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" d="M1489.05 4398.57H2164.05V4567.32H1489.05Z" fill="var(--surface)"/>
+</g>
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" stroke-width="4.6875" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1489.05 4398.57H2164.05V4567.32H1489.05Z"/>
+
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" stroke-width="4.6875" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1489.05 4398.57V4229.82"/>
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" stroke-width="4.6875" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2164.05 4398.57V4229.82"/>
+
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" stroke-width="4.6875" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1489.05 4061.07V3892.32"/>
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" stroke-width="4.6875" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2164.05 4061.07V3892.32"/>
+<g clip-path="url(#clip_7)">
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" d="M1489.05 3723.57H2164.05V3892.32H1489.05Z" fill="var(--surface)"/>
+</g>
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" stroke-width="4.6875" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1489.05 3723.57H2164.05V3892.32H1489.05Z"/>
+
+<g clip-path="url(#clip_8)">
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" d="M1489.05 3554.82H2164.05V3723.57H1489.05Z" fill="var(--surface)"/>
+</g>
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" stroke-width="4.6875" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1489.05 3554.82H2164.05V3723.57H1489.05Z"/>
+
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" stroke-width="4.6875" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1489.05 3554.82V3386.07"/>
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" stroke-width="4.6875" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2164.05 3554.82V3386.07"/>
+
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" stroke-width="4.6875" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1489.05 3217.32V3048.57"/>
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" stroke-width="4.6875" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2164.05 3217.32V3048.57"/>
+<g clip-path="url(#clip_9)">
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" d="M1489.05 2879.82H2164.05V3048.57H1489.05Z" fill="var(--surface)"/>
+</g>
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" stroke-width="4.6875" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1489.05 2879.82H2164.05V3048.57H1489.05Z"/>
+
+<g clip-path="url(#clip_10)">
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" d="M1489.05 2711.07H2164.05V2879.82H1489.05Z" fill="var(--surface)"/>
+</g>
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" stroke-width="4.6875" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1489.05 2711.07H2164.05V2879.82H1489.05Z"/>
+
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" stroke-width="4.6875" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1489.05 2711.07V2542.32"/>
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" stroke-width="4.6875" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2164.05 2711.07V2542.32"/>
+
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" stroke-width="4.6875" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1489.05 2373.57V2204.82"/>
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" stroke-width="4.6875" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M2164.05 2373.57V2204.82"/>
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" stroke-width="4.6875" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1489.05 2204.82H2164.05"/>
+
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" stroke-width="9.375" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1252.8 4398.57H1387.8"/>
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" d="M1387.8 4398.57V4422.01L1434.68 4398.57 1387.8 4375.13Z"/>
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" stroke-width="4.6875" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1387.8 4398.57V4422.01L1434.68 4398.57 1387.8 4375.13Z"/>
+
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" stroke-width="9.375" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1252.8 3048.57H1387.8"/>
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" d="M1387.8 3048.57V3072.01L1434.68 3048.57 1387.8 3025.13Z"/>
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" stroke-width="4.6875" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg)" d="M1387.8 3048.57V3072.01L1434.68 3048.57 1387.8 3025.13Z"/>
+
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" stroke-width="18.75" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg-muted)" d="M2197.8 5242.32H2231.55V4736.07H2197.8"/>
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" stroke-width="18.75" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg-muted)" d="M2231.55 4989.2H2265.3"/>
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" stroke-width="18.75" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg-muted)" d="M2197.8 4398.57H2231.55V3892.32H2197.8"/>
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" stroke-width="18.75" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg-muted)" d="M2231.55 4145.45H2265.3"/>
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" stroke-width="18.75" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg-muted)" d="M2197.8 3554.82H2231.55V3048.57H2197.8"/>
+<path transform="matrix(.1,0,0,-.1,-93.76996,567.45999)" stroke-width="18.75" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="var(--fg-muted)" d="M2231.55 3301.7H2265.3"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</g>
+</g>
+
+<text x="67.18" y="21.59" font-size="8.4" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">size:</text>
+<text x="112.22" y="21.59" font-size="8.4" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">100</text>
+<text x="88.89" y="38.47" font-size="8.4" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">magic: 1234567</text>
+<text x="88.89" y="68.33" font-size="14.0" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">. . .</text>
+<text x="67.18" y="105.97" font-size="8.4" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">size:</text>
+<text x="112.22" y="105.97" font-size="8.4" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">100</text>
+<text x="88.89" y="122.84" font-size="8.4" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">magic: 1234567</text>
+<text x="88.89" y="152.70" font-size="14.0" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">. . .</text>
+<text x="67.18" y="190.34" font-size="8.4" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">size:</text>
+<text x="112.22" y="190.34" font-size="8.4" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">100</text>
+<text x="88.89" y="207.22" font-size="8.4" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">magic: 1234567</text>
+<text x="88.89" y="237.08" font-size="14.0" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">. . .</text>
+<text x="67.18" y="274.72" font-size="8.4" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">size:</text>
+<text x="109.88" y="274.72" font-size="8.4" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">3764</text>
+<text x="67.66" y="291.59" font-size="8.4" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">next:</text>
+<text x="116.91" y="291.59" font-size="8.4" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">0</text>
+<text x="88.89" y="321.45" font-size="14.0" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">. . .</text>
+<text x="17.73" y="131.28" font-size="8.4" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">sptr</text>
+<text x="178.58" y="13.15" font-size="8.4" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">[虚拟地址: 16KB]</text>
+<text x="15.38" y="266.28" font-size="8.4" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">head</text>
+<text x="179.75" y="72.22" font-size="8.4" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">仍有100字节已分配</text>
+<text x="179.75" y="156.59" font-size="8.4" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">仍有100字节已分配</text>
+<text x="179.05" y="165.03" font-size="8.4" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">（但即将释放）</text>
+<text x="179.98" y="240.97" font-size="8.4" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">仍有100字节已分配</text>
+<text x="184.21" y="325.34" font-size="8.4" fill="var(--fg)" text-anchor="middle" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans CJK SC', system-ui, sans-serif">空闲的 3764 字节块</text>
+</svg>
