@@ -208,7 +208,11 @@ There are a few other interesting bits in the MIPS TLB. We see a global bit (G),
 
 ![Figure 19.4: A MIPS TLB Entry](/figures/en/vm-tlbs/tlb-mips-entry.svg)
 
-<p class="figure-caption"><em>Figure 19.4: A MIPS TLB Entry</em></p>
+<div class="figure-caption">
+
+<em>Figure 19.4: A MIPS TLB Entry</em>
+
+</div>
 
 > [!TIP] TIP: RAM ISN’T ALWAYS RAM (CULLER’S LAW)
 > The term random-access memory, or RAM, implies that you can access any part of RAM just as quickly as another. While it is generally good to think of RAM in this way, because of hardware/OS features such as the TLB, accessing a particular page of memory may be costly, particularly if that page isn’t currently mapped by your TLB. Thus, it is always good to remember the implementation tip: RAM isn’t always RAM. Sometimes randomly accessing your address space, particularly if the number of pages accessed exceeds the TLB coverage, can lead to severe performance penalties. Because one of our advisors, David Culler, used to always point to the TLB as the source of many performance problems, we name this law in his honor: Culler’s Law.

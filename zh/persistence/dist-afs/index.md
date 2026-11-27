@@ -2,7 +2,7 @@
 
 [原版 PDF](https://pages.cs.wisc.edu/~remzi/OSTEP/Chinese/49.pdf#page=1)
 
-Andrew 文件系统由卡内基梅隆大学（CMU）的研究人员于 20 世纪 80 年代[[H+88](#ref-h-88)]引入。该项目由卡内基梅隆大学著名教授 M. Satyanarayanan（简称为 Satya）领导，主要目标很简单：扩展（scale）。具体来说，如何设计分布式文件系统（如服务器）可以支持尽可能多的客户端？
+Andrew 文件系统由卡内基梅隆大学（CMU）的研究人员于 20 世纪 80 年代[[H+88](#ref-h-88)] 引入。该项目由卡内基梅隆大学著名教授 M. Satyanarayanan（简称为 Satya）领导，主要目标很简单：扩展（scale）。具体来说，如何设计分布式文件系统（如服务器）可以支持尽可能多的客户端？
 
 有趣的是，设计和实现的许多方面都会影响可扩展性。最重要的是客户端和服务器之间的协议（protocol）设计。例如，在 NFS 中，协议强制客户端定期检查服务器，以确定缓存的内容是否已更改。因为每次检查都使用服务器资源（包括 CPU 和网络带宽），所以频繁的检查会限制服务器响应的客户端数量，从而限制可扩展性。
 
@@ -29,7 +29,11 @@ AFS 与 NFS 的不同之处也在于，从一开始，合理的、用户可见�
 | `SetFileStat` | 设置文件的状态信息 |
 | `ListDir` | 列出目录的内容 |
 
-<p class="figure-caption"><em>表 49.1 AFSv1 协议的要点</em></p>
+<div class="figure-caption">
+
+<em>表 49.1 AFSv1 协议的要点</em>
+
+</div>
 
 ## 49.2 版本 1 的问题
 
@@ -111,7 +115,11 @@ else
 | `write(A)` |  | A |  | - | - |  |
 | `close()` |  | A |  | - | A |  |
 
-<p class="figure-caption"><em>表 49.3 缓存一致性时间线</em></p>
+<div class="figure-caption">
+
+<em>表 49.3 缓存一致性时间线</em>
+
+</div>
 
 ````text:no-line-numbers
                                         Server
@@ -143,7 +151,11 @@ close()           D D             C D    D D
                    D     close()   D      D
 ````
 
-<p class="figure-caption"><em>表 49.3（续）缓存一致性时间线</em></p>
+<div class="figure-caption">
+
+<em>表 49.3（续）缓存一致性时间线</em>
+
+</div>
 
 ## 49.6 崩溃恢复
 
@@ -155,7 +167,7 @@ close()           D D             C D    D D
 
 有了新协议，人们对 AFSv2 进行了测量，发现它比原来的版本更具可扩展性。实际上，每台服务器可以支持大约 50 个客户端（而不是仅仅 20 个）。另一个好处是客户端性能通常非常接近本地性能，因为在通常情况下，所有文件访问都是本地的。文件读取通常转到本地磁盘缓存（可能还有本地内存）。只有当客户端创建新文件或写入现有文件时，才需要向服务器发送 Store 消息，从而用新内容更新文件。
 
-对于常见的文件系统访问场景，通过与 NFS 进行比较，可以对 AFS 的性能有所了解。[表49.4](#table-49-4) 展示了定性比较的结果。
+对于常见的文件系统访问场景，通过与 NFS 进行比较，可以对 AFS 的性能有所了解。[表 49.4](#table-49-4) 展示了定性比较的结果。
 
 <div id="table-49-4" class="anchor-block"></div>
 
@@ -173,7 +185,11 @@ close()           D D             C D    D D
 | 10.大文件，顺序覆写 | $N_{L}$ · $L_{net}$ | 2 · $N_{L}$ · $L_{net}$ | 2 |
 | 11.大文件，单次写入 | $L_{net}$ | 2 · $N_{L}$ · $L_{net}$ | 2 · $N_{L}$ |
 
-<p class="figure-caption"><em>表 49.4 比较：AFS 与 NFS</em></p>
+<div class="figure-caption">
+
+<em>表 49.4 比较：AFS 与 NFS</em>
+
+</div>
 
 在表中，我们分析了不同大小的文件的典型读写模式。小文件中有 $N_{s}$ 块，中等文件有 $N_{m}$ 个块，大文件有 $N_{L}$ 块。假设中小型文件可以放入客户端的内存，大文件可以放入本地磁盘，但不能放入客户端内存。为了便于分析，我们还假设，跨网络访问远程服务器上的文件块，需要的时间为 $L_{net}$。访问本地内存需要 $L_{mem}$，访问本地磁盘需要 $L_{disk}$。一般假设是 $L_{net}$ > $L_{disk}$ > $L_{mem}$。最后，我们假设第一次访问文件没有任何缓存命中。如果相关高速缓存具有足够容量来保存文件，则假设后续文件访问（即“重新读取”）将在高速缓存中命中。该表的列展示了特定操作（例如，小文件顺序读取）在 NFS 或 AFS 上的大致时间。最右侧的列展示了 AFS 与 NFS 的比值。我们有以下观察结果。首先，在许多情况下，每个系统的性能大致相当。例如，首次读取文件时（即工作负载 1、3、5），从远程服务器获取文件的时间占主要部分，并且两个系统上差不多。在这种情况下，你可能会认为 AFS 会更慢，因为它必须将文件写入本地磁盘。但是，这些写入由本地（客户端）文件系统缓存来缓冲，因此上述成本可能不明显。同样，你可能认为从本地缓存副本读取 AFS 会更慢，因为 AFS 会将缓存副本存储在磁盘上。但是，AFS 再次受益于本地文件系统缓存。读取 AFS 可能会命中客户端内存缓存，性能与 NFS 类似。其次，在大文件顺序重新读取时（工作负载 6），出现了有趣的差异。由于 AFS 具有大型本地磁盘缓存，因此当再次访问该文件时，它将从磁盘缓存中访问该文件。相反，NFS 只能在客户端内存中缓存块。结果，如果重新读取大文件（即比本地内存大的文件），则 NFS 客户端将不得不从远程服务器重新获取整个文件。因此，假设远程访问确实比本地磁盘慢，AFS 在这种情况下比 NFS 快一倍。我们还注意到，在这种情况下，NFS 会增加服务器负载，这也会对扩展产生影响。
 
@@ -218,7 +234,7 @@ AFS 告诉我们，构建分布式文件系统与我们在 NFS 中看到的完�
 
 <span id="ref-h-88"></span>**[H+88] “Scale and Performance in a Distributed File System”John H. Howard, Michael L. Kazar, Sherri G. Menees, David A. Nichols, M. Satyanarayanan, Robert N. Sidebotham, Michael J. West ACM Transactions on Computing Systems (ACM TOCS), page 51-81, Volume 6, Number 1, February 1988.** 著名的 AFS 系统的期刊长版本，该系统仍然在全世界的许多地方使用，也可能是关于如何构建分布式文件系统的最早的清晰思考。它是测量科学和原理工程的完美结合。
 
-<span id="ref-r-00"></span>**[R+00] “A Comparison of File System Workloads”Drew Roselli, Jacob R. Lorch, Thomas E. Anderson USENIX’00, San Diego, California, June 2000.** 与 Baker 的论文[[B+91](#ref-b-91)]相比，有最近的一些记录。
+<span id="ref-r-00"></span>**[R+00] “A Comparison of File System Workloads”Drew Roselli, Jacob R. Lorch, Thomas E. Anderson USENIX’00, San Diego, California, June 2000.** 与 Baker 的论文[[B+91](#ref-b-91)] 相比，有最近的一些记录。
 
 <span id="ref-s-85"></span>**[S+85] “The ITC Distributed File System: Principles and Design”M. Satyanarayanan, J.H. Howard, D.A. Nichols, R.N. Sidebotham, A. Spector, M.J. West SOSP’85, Orcas Island, Washington, December 1985.** 关于分布式文件系统的较早的文章。AFS 的许多基本设计都在这个较早的系统中实现，但没有对扩展进行改进。该系统后来改名为“Andrew”，是为了向两位都叫 Andrew 的人致敬：Andrew Carnegie 和 Andrew Mellon。这两位富豪分别创办了卡内基理工学院和梅隆工业研究所，二者最终合并，成为如今所称的卡内基梅隆大学。
 

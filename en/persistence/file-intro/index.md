@@ -46,7 +46,7 @@ However, there are a few interesting cases where an entry in the open file table
 int fd = open("foo", O_CREAT | O_WRONLY | O_TRUNC, S_IRUSR | S_IWUSR);
 ````
 
-> [!NOTE] ASIDE: THE C R E A `T()` SYSTEM CALL
+> [!NOTE] ASIDE: THE `creat()` SYSTEM CALL
 > The older way of creating a file is to call `creat()`, as follows:
 >
 > ````c:no-line-numbers
@@ -72,7 +72,7 @@ struct proc {
 
 A simple array (with a maximum of `NOFILE` open files), indexed by the file descriptor, tracks which files are opened on a per-process basis. Each entry of the array is actually just a pointer to a `struct file`, which will be used to track information about the file being read or written; we’ll discuss this further below.
 
-> [!TIP] TIP: USE S T R A C E (AND SIMILAR TOOLS)
+> [!TIP] TIP: USE `strace` (AND SIMILAR TOOLS)
 > The `strace` tool provides an awesome way to see what programs are up to. By running it, you can trace which system calls a program makes, see the arguments and return codes, and generally get a very good idea of what is going on.
 >
 > The tool also takes some arguments which can be quite useful. For example, -f follows any fork’d children too; -t reports the time of day at each call; -e trace=open,close,read,write only traces calls to those system calls and ignores all others. There are many other flags; read the man pages and find out how to harness this wonderful tool.
@@ -119,8 +119,8 @@ The `cat` program then tries to read more from the file, but since there are no 
 
 Writing a file is accomplished via a similar set of steps. First, a file is opened for writing, then the `write()` system call is called, perhaps repeatedly for larger files, and then `close()`. Use `strace` to trace writes to a file, perhaps of a program you wrote yourself, or by tracing the `dd` utility, e.g., `dd if=foo of=bar`.
 
-> [!NOTE] ASIDE
-> DATA STRUCTURE — THE OPEN FILE TABLE Each process maintains an array of file descriptors, each of which refers to an entry in the system-wide open file table. Each entry in this table tracks which underlying file the descriptor refers to, the current offset, and other relevant details such as whether the file is readable or writable.
+> [!NOTE] ASIDE: DATA STRUCTURE — THE OPEN FILE TABLE
+> Each process maintains an array of file descriptors, each of which refers to an entry in the system-wide open file table. Each entry in this table tracks which underlying file the descriptor refers to, the current offset, and other relevant details such as whether the file is readable or writable.
 
 ## 39.5 Reading And Writing, But Not Sequentially
 
@@ -294,8 +294,8 @@ Interestingly, this sequence does not guarantee everything that you might expect
 
 Once we have a file, it is sometimes useful to be able to give a file a different name. When typing at the command line, this is accomplished with `mv` command; in this example, the file `foo` is renamed `bar`:
 
-> [!NOTE] ASIDE
-> `mmap()` AND PERSISTENT MEMORY (Guest Aside by Terence Kelly) Memory mapping is an alternative way to access persistent data in files. The `mmap()` system call creates a correspondence between byte offsets in a file and virtual addresses in the calling process; the former is called the backing file and the latter its in-memory image. The process can then access the backing file using CPU instructions (i.e., loads and stores) to the in-memory image.
+> [!NOTE] ASIDE: `mmap()` AND PERSISTENT MEMORY (Guest Aside by Terence Kelly)
+> Memory mapping is an alternative way to access persistent data in files. The `mmap()` system call creates a correspondence between byte offsets in a file and virtual addresses in the calling process; the former is called the backing file and the latter its in-memory image. The process can then access the backing file using CPU instructions (i.e., loads and stores) to the in-memory image.
 >
 > By combining the persistence of files with the access semantics of memory, file-backed memory mappings support a software abstraction called persistent memory. The persistent memory style of programming can streamline applications by eliminating translation between different data formats for memory and storage [[K19](#ref-k19)].
 >

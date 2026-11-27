@@ -6,8 +6,7 @@ In order to virtualize the CPU, the operating system needs to somehow share the 
 
 There are a few challenges, however, in building such virtualization machinery. The first is performance: how can we implement virtualization without adding excessive overhead to the system? The second is control: how can we run processes efficiently while retaining control over the CPU? Control is particularly important to the OS, as it is in charge of resources; without control, a process could simply run forever and take over the machine, or access information that it should not be allowed to access. Obtaining high performance while maintaining control is thus one of the central challenges in building an operating system.
 
-> [!IMPORTANT] THE CRUX:
-> HOW TO EFFICIENTLY VIRTUALIZE THE CPU WITH CONTROL
+> [!IMPORTANT] THE CRUX: HOW TO EFFICIENTLY VIRTUALIZE THE CPU WITH CONTROL
 >
 > The OS must virtualize the CPU in an efficient manner while retaining control over the system. To do so, both hardware and operating-system support will be required. The OS will often use a judicious bit of hardware support in order to accomplish its work effectively.
 
@@ -158,9 +157,6 @@ Now that the OS has regained control, whether cooperatively via a system call, o
 If the decision is made to switch, the OS then executes a low-level piece of code which we refer to as a *context* switch. A *context* switch is conceptually simple: all the OS has to do is save a few register values for the currently-executing process (onto its kernel stack, for example) and restore a few for the soon-to-be-executing process (from its kernel stack). By doing so, the OS thus ensures that when the return-from-trap instruction is finally executed, instead of returning to the process that was running, the system resumes execution of another process.
 
 To save the *context* of the currently-running process, the OS will execute some low-level assembly code to save the general purpose registers, PC, and the kernel stack pointer of the currently-running process, and then restore said registers, PC, and switch to the kernel stack for the soon-to-be-executing process. By switching stacks, the kernel enters the call to the switch code in the *context* of one process (the one that was interrupted) and returns in the *context* of another (the soon-to-be-executing one). When the OS then finally executes a return-from-trap instruction, the soon-to-be-executing process becomes the currently-running process. And thus the *context* switch is complete.
-
-> [!TIP] TIP: USE THE TIMER INTERRUPT TO REGAIN CONTROL
-> The addition of a timer interrupt gives the OS the ability to run again on a CPU even if processes act in a non-cooperative fashion. Thus, this hardware feature is essential in helping the OS maintain control of the machine.
 
 > [!TIP] TIP: REBOOT IS USEFUL
 > Earlier on, we noted that the only solution to infinite loops (and similar behaviors) under cooperative preemption is to reboot the machine. While you may scoff at this hack, researchers have shown that reboot (or in general, starting over some piece of software) can be a hugely useful tool in building robust systems [[C+04](#ref-c-04)].

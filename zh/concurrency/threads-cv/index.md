@@ -4,7 +4,7 @@
 
 到目前为止，我们已经形成了锁的概念，看到了如何通过硬件和操作系统支持的正确组合来实现锁。然而，锁并不是并发程序设计所需的唯一原语。
 
-具体来说，在很多情况下，线程需要检查某一条件（condition）满足之后，才会继续运行。例如，父线程需要检查子线程是否执行完毕 [这常被称为 `join()`]。这种等待如何实现呢？我们来看如[图30.1](#fig-30-1) 所示的代码。
+具体来说，在很多情况下，线程需要检查某一条件（condition）满足之后，才会继续运行。例如，父线程需要检查子线程是否执行完毕 [这常被称为 `join()`]。这种等待如何实现呢？我们来看如[图 30.1](#fig-30-1) 所示的代码。
 
 ````c:line-numbers=1
 void* child(void* arg) {
@@ -23,7 +23,7 @@ int main(int argc, char* argv[]) {
 }
 ````
 
-<p id="fig-30-1" class="figure-caption"><em>图30.1  父线程等待子线程</em></p>
+<p id="fig-30-1" class="figure-caption"><em>图 30.1  父线程等待子线程</em></p>
 
 我们期望能看到这样的输出：
 
@@ -33,7 +33,7 @@ child
 parent: end
 ````
 
-我们可以尝试用一个共享变量，如[图30.2](#fig-30-2) 所示。这种解决方案一般能工作，但是效率低下，因为主线程会自旋检查，浪费 CPU 时间。
+我们可以尝试用一个共享变量，如[图 30.2](#fig-30-2) 所示。这种解决方案一般能工作，但是效率低下，因为主线程会自旋检查，浪费 CPU 时间。
 
 ````c:line-numbers=1
 volatile int done = 0;
@@ -54,7 +54,7 @@ int main(int argc, char* argv[]) {
 }
 ````
 
-<p id="fig-30-2" class="figure-caption"><em>图30.2  父线程等待子线程：基于自旋的方案</em></p>
+<p id="fig-30-2" class="figure-caption"><em>图 30.2  父线程等待子线程：基于自旋的方案</em></p>
 
 我们希望有某种方式让父线程休眠，直到等待的条件满足（即子线程完成执行）。
 
@@ -63,9 +63,9 @@ int main(int argc, char* argv[]) {
 
 ## 30.1 定义和程序
 
-线程可以使用条件变量（condition variable），来等待一个条件变成真。条件变量是一个显式队列，当某些执行状态（即条件，condition）不满足时，线程可以把自己加入队列，等待（waiting）该条件。另外某个线程，当它改变了上述状态时，就可以唤醒一个或者多个等待线程（通过在该条件上发信号），让它们继续执行。Dijkstra 最早在“私有信号量”[[D68](#ref-d68)]中提出这种思想。Hoare 后来在关于观察者的工作中，将类似的思想称为条件变量[[H74](#ref-h74)]。
+线程可以使用条件变量（condition variable），来等待一个条件变成真。条件变量是一个显式队列，当某些执行状态（即条件，condition）不满足时，线程可以把自己加入队列，等待（waiting）该条件。另外某个线程，当它改变了上述状态时，就可以唤醒一个或者多个等待线程（通过在该条件上发信号），让它们继续执行。Dijkstra 最早在“私有信号量”[[D68](#ref-d68)] 中提出这种思想。Hoare 后来在关于观察者的工作中，将类似的思想称为条件变量[[H74](#ref-h74)]。
 
-要声明这样的条件变量，只要像这样写：`pthread_cond_t c;`，这里声明 `c` 是一个条件变量（注意：还需要适当的初始化）。条件变量有两种相关操作：`wait()` 和 `signal()`。线程要睡眠的时候，调用 `wait()`。当线程想唤醒等待在某个条件变量上的睡眠线程时，调用 `signal()`。具体来说，POSIX 调用如[图30.3](#fig-30-3) 所示。
+要声明这样的条件变量，只要像这样写：`pthread_cond_t c;`，这里声明 `c` 是一个条件变量（注意：还需要适当的初始化）。条件变量有两种相关操作：`wait()` 和 `signal()`。线程要睡眠的时候，调用 `wait()`。当线程想唤醒等待在某个条件变量上的睡眠线程时，调用 `signal()`。具体来说，POSIX 调用如[图 30.3](#fig-30-3) 所示。
 
 ````c:no-line-numbers
 pthread_cond_wait(pthread_cond_t* c, pthread_mutex_t* m);
@@ -106,9 +106,9 @@ int main(int argc, char* argv[]) {
 }
 ````
 
-<p id="fig-30-3" class="figure-caption"><em>图30.3  父线程等待子线程：使用条件变量</em></p>
+<p id="fig-30-3" class="figure-caption"><em>图 30.3  父线程等待子线程：使用条件变量</em></p>
 
-我们常简称为 `wait()` 和 `signal()`。你可能注意到一点，`wait()` 调用有一个参数，它是互斥量。它假定在 `wait()` 调用时，这个互斥量是已上锁状态。`wait()` 的职责是释放锁，并让调用线程休眠（原子地）。当线程被唤醒时（在另外某个线程发信号给它后），它必须重新获取锁，再返回调用者。这样复杂的步骤也是为了避免在线程陷入休眠时，产生一些竞态条件。我们观察一下[图30.3](#fig-30-3) 中 join 问题的解决方法，以加深理解。
+我们常简称为 `wait()` 和 `signal()`。你可能注意到一点，`wait()` 调用有一个参数，它是互斥量。它假定在 `wait()` 调用时，这个互斥量是已上锁状态。`wait()` 的职责是释放锁，并让调用线程休眠（原子地）。当线程被唤醒时（在另外某个线程发信号给它后），它必须重新获取锁，再返回调用者。这样复杂的步骤也是为了避免在线程陷入休眠时，产生一些竞态条件。我们观察一下[图 30.3](#fig-30-3) 中 join 问题的解决方法，以加深理解。
 
 有两种情况需要考虑。第一种情况是父线程创建出子线程，但自己继续运行（假设只有一个处理器），然后马上调用 `thr_join()` 等待子线程。在这种情况下，它会先获取锁，检查子进程是否完成（还没有完成），然后调用 `wait()`，让自己休眠。子线程最终得以运行，打印出“child”，并调用 `thr_exit()` 函数唤醒父进程，这段代码会在获得锁后设置状态变量 `done`，然后向父线程发信号唤醒它。最后，父线程会运行（从 `wait()` 调用返回并持有锁），释放锁，打印出“parent: end”。
 
@@ -168,7 +168,7 @@ void thr_join() {
 
 因为有界缓冲区是共享资源，所以我们必须通过同步机制来访问它，以免[^1]产生竞态条件。为了更好地理解这个问题，我们来看一些实际的代码。
 
-首先需要一个共享缓冲区，让生产者放入数据，消费者取出数据。简单起见，我们就拿一个整数来做缓冲区（你当然可以想到用一个指向数据结构的指针来代替），两个内部函数将值放入缓冲区，从缓冲区取值。[图30.4](#fig-30-4) 为相关代码。
+首先需要一个共享缓冲区，让生产者放入数据，消费者取出数据。简单起见，我们就拿一个整数来做缓冲区（你当然可以想到用一个指向数据结构的指针来代替），两个内部函数将值放入缓冲区，从缓冲区取值。[图 30.4](#fig-30-4) 为相关代码。
 
 ````c:line-numbers=1
 int buffer;
@@ -187,13 +187,13 @@ int get() {
 }
 ````
 
-<p id="fig-30-4" class="figure-caption"><em>图30.4  put 和 get 函数（第1版）</em></p>
+<p id="fig-30-4" class="figure-caption"><em>图 30.4  put 和 get 函数（第 1 版）</em></p>
 
 很简单，不是吗？`put()` 函数会假设缓冲区是空的，把一个值存在缓冲区，然后把 `count` 设置为 1 表示缓冲区满了。`get()` 函数刚好相反，把缓冲区清空后（即将 `count` 设置为 0），并返回该值。不用担心这个共享缓冲区只能存储一条数据，稍后我们会一般化，用队列保存更多数据项，这会比听起来更有趣。
 
 现在我们需要编写一些函数，知道何时可以访问缓冲区，以便将数据放入缓冲区或从缓冲区取出数据。条件是显而易见的：仅在 `count` 为 0 时（即缓冲区为空时），才将数据放入缓冲区中。仅在计数为 1 时（即缓冲区已满时），才从缓冲区获得数据。如果我们编写同步代码，让生产者将数据放入已满的缓冲区，或消费者从空的数据获取数据，就做错了（在这段代码中，断言将触发）。
 
-这项工作将由两种类型的线程完成，其中一类我们称之为生产者（producer）线程，另一类我们称之为消费者（consumer）线程。[图30.5](#fig-30-5) 展示了一个生产者的代码，它将一个整数放入共享缓冲区 `loops` 次，以及一个消费者，它从该共享缓冲区中获取数据（永远不停），每次打印出从共享缓冲区中提取的数据项。
+这项工作将由两种类型的线程完成，其中一类我们称之为生产者（producer）线程，另一类我们称之为消费者（consumer）线程。[图 30.5](#fig-30-5) 展示了一个生产者的代码，它将一个整数放入共享缓冲区 `loops` 次，以及一个消费者，它从该共享缓冲区中获取数据（永远不停），每次打印出从共享缓冲区中提取的数据项。
 
 ````c:line-numbers=1
 void* producer(void* arg) {
@@ -212,11 +212,11 @@ void* consumer(void* arg) {
 }
 ````
 
-<p id="fig-30-5" class="figure-caption"><em>图30.5  生产者/消费者线程（第1版）</em></p>
+<p id="fig-30-5" class="figure-caption"><em>图 30.5  生产者/消费者线程（第 1 版）</em></p>
 
 ### 有问题的方案
 
-假设只有一个生产者和一个消费者。显然，`put()` 和 `get()` 函数之中会有临界区，因为 `put()` 更新缓冲区，`get()` 读取缓冲区。但是，给代码加锁没有用，我们还需别的东西。不奇怪，别的东西就是某些条件变量。在这个（有问题的）首次尝试中（见[图30.6](#fig-30-6)），我们用了条件变量 `cond` 和相关的锁 `mutex`。
+假设只有一个生产者和一个消费者。显然，`put()` 和 `get()` 函数之中会有临界区，因为 `put()` 更新缓冲区，`get()` 读取缓冲区。但是，给代码加锁没有用，我们还需别的东西。不奇怪，别的东西就是某些条件变量。在这个（有问题的）首次尝试中（见[图 30.6](#fig-30-6)），我们用了条件变量 `cond` 和相关的锁 `mutex`。
 
 ````c:line-numbers=1
 int loops;  // must initialize somewhere...
@@ -249,27 +249,31 @@ void* consumer(void* arg) {
 }
 ````
 
-<p id="fig-30-6" class="figure-caption"><em>图30.6  生产者/消费者：一个条件变量和 if 语句</em></p>
+<p id="fig-30-6" class="figure-caption"><em>图 30.6  生产者/消费者：一个条件变量和 if 语句</em></p>
 
-来看看生产者和消费者之间的信号逻辑。当生产者想要填充缓冲区时，它等待缓冲区变空（p1～p3）。消费者具有完全相同的逻辑，但等待不同的条件——变满（c1～c3）。当只有一个生产者和一个消费者时，[图30.6](#fig-30-6) 中的代码能够正常运行。但如果有超过一个线程（例如两个消费者），这个方案会有两个严重的问题。哪两个问题？……（暂停思考一下）……我们来理解第一个问题，它与等待之前的 `if` 语句有关。假设有两个消费者（Tc1 和 Tc2），一个生产者（Tp）。首先，一个消费者（Tc1）先开始执行，它获得锁（c1），检查缓冲区是否可以消费（c2），然后等待（c3）（这会释放锁）。
+来看看生产者和消费者之间的信号逻辑。当生产者想要填充缓冲区时，它等待缓冲区变空（p1～p3）。消费者具有完全相同的逻辑，但等待不同的条件——变满（c1～c3）。当只有一个生产者和一个消费者时，[图 30.6](#fig-30-6) 中的代码能够正常运行。但如果有超过一个线程（例如两个消费者），这个方案会有两个严重的问题。哪两个问题？……（暂停思考一下）……我们来理解第一个问题，它与等待之前的 `if` 语句有关。假设有两个消费者（Tc1 和 Tc2），一个生产者（Tp）。首先，一个消费者（Tc1）先开始执行，它获得锁（c1），检查缓冲区是否可以消费（c2），然后等待（c3）（这会释放锁）。
 
 接着生产者（Tp）运行。它获取锁（p1），检查缓冲区是否满（p2），发现没满就给缓冲区加入一个数字（p4）。然后生产者发出信号，说缓冲区已满（p5）。关键的是，这让第一个消费者（Tc1）不再睡在条件变量上，进入就绪队列。Tc1 现在可以运行（但还未运行）。生产者继续执行，直到发现缓冲区满后睡眠（p6,p1-p3）。
 
-这时问题发生了：另一个消费者（Tc2）抢先执行，消费了缓冲区中的值（c1,c2,c4,c5,c6，跳过了 c3 的等待，因为缓冲区是满的）。现在假设 Tc1 运行，在从 wait 返回之前，它获取了锁，然后返回。然后它调用了 `get()` (c4)，但缓冲区已无法消费！断言触发，代码不能像预期那样工作。显然，我们应该设法阻止 Tc1 去消费，因为 Tc2 插进来，消费了缓冲区中之前生产的一个值。[表30.1](#table-30-1) 展示了每个线程的动作，以及它的调度程序状态（就绪、运行、睡眠）随时间的变化。
+这时问题发生了：另一个消费者（Tc2）抢先执行，消费了缓冲区中的值（c1,c2,c4,c5,c6，跳过了 c3 的等待，因为缓冲区是满的）。现在假设 Tc1 运行，在从 wait 返回之前，它获取了锁，然后返回。然后它调用了 `get()` (c4)，但缓冲区已无法消费！断言触发，代码不能像预期那样工作。显然，我们应该设法阻止 Tc1 去消费，因为 Tc2 插进来，消费了缓冲区中之前生产的一个值。[表 30.1](#table-30-1) 展示了每个线程的动作，以及它的调度程序状态（就绪、运行、睡眠）随时间的变化。
 
 <div id="table-30-1" class="anchor-block"></div>
 
-<table><tbody><tr><td>$T_{c1}$</td><td>状态</td><td>$T_{c2}$</td><td>状态</td><td>$T_{p}$</td><td>状态</td><td>count</td><td>注释</td></tr><tr><td>c1</td><td>运行</td><td></td><td>就绪</td><td></td><td>就绪</td><td>0</td><td rowspan="5">没数据可取</td></tr><tr><td>c2</td><td>运行</td><td></td><td>就绪</td><td></td><td>就绪</td><td>0</td></tr><tr><td>c3</td><td>睡眠</td><td></td><td>就绪</td><td></td><td>就绪</td><td>0</td></tr><tr><td></td><td>睡眠</td><td></td><td>就绪</td><td>p1</td><td>运行</td><td>0</td></tr><tr><td></td><td>睡眠</td><td></td><td>就绪</td><td>p2</td><td>运行</td><td>0</td></tr><tr><td></td><td>睡眠</td><td></td><td>就绪</td><td>p4</td><td>运行</td><td>1</td><td>缓冲区现在满了</td></tr><tr><td></td><td>就绪</td><td></td><td>就绪</td><td>p5</td><td>运行</td><td>1</td><td>$T_{c1}$唤醒</td></tr><tr><td></td><td>就绪</td><td></td><td>就绪</td><td>p6</td><td>运行</td><td>1</td><td></td></tr><tr><td></td><td>就绪</td><td></td><td>就绪</td><td>p1</td><td>运行</td><td>1</td><td></td></tr><tr><td></td><td>就绪</td><td></td><td>就绪</td><td>p2</td><td>运行</td><td>1</td><td></td></tr><tr><td></td><td>就绪</td><td></td><td>就绪</td><td>p3</td><td>睡眠</td><td>1</td><td>缓冲区满了，睡眠</td></tr><tr><td></td><td>就绪</td><td>c1</td><td>运行</td><td></td><td>睡眠</td><td>1</td><td>$T_{c2}$插入……</td></tr><tr><td></td><td>就绪</td><td>c2</td><td>运行</td><td></td><td>睡眠</td><td>1</td><td></td></tr><tr><td></td><td>就绪</td><td>c5</td><td>运行</td><td></td><td>就绪</td><td>0</td><td>$T_{p}$唤醒</td></tr>
+<table><tbody><tr><td>$T_{c1}$</td><td>状态</td><td>$T_{c2}$</td><td>状态</td><td>$T_{p}$</td><td>状态</td><td>count</td><td>注释</td></tr><tr><td>c1</td><td>运行</td><td></td><td>就绪</td><td></td><td>就绪</td><td>0</td><td rowspan="5">没数据可取</td></tr><tr><td>c2</td><td>运行</td><td></td><td>就绪</td><td></td><td>就绪</td><td>0</td></tr><tr><td>c3</td><td>睡眠</td><td></td><td>就绪</td><td></td><td>就绪</td><td>0</td></tr><tr><td></td><td>睡眠</td><td></td><td>就绪</td><td>p1</td><td>运行</td><td>0</td></tr><tr><td></td><td>睡眠</td><td></td><td>就绪</td><td>p2</td><td>运行</td><td>0</td></tr><tr><td></td><td>睡眠</td><td></td><td>就绪</td><td>p4</td><td>运行</td><td>1</td><td>缓冲区现在满了</td></tr><tr><td></td><td>就绪</td><td></td><td>就绪</td><td>p5</td><td>运行</td><td>1</td><td>$T_{c1}$ 唤醒</td></tr><tr><td></td><td>就绪</td><td></td><td>就绪</td><td>p6</td><td>运行</td><td>1</td><td></td></tr><tr><td></td><td>就绪</td><td></td><td>就绪</td><td>p1</td><td>运行</td><td>1</td><td></td></tr><tr><td></td><td>就绪</td><td></td><td>就绪</td><td>p2</td><td>运行</td><td>1</td><td></td></tr><tr><td></td><td>就绪</td><td></td><td>就绪</td><td>p3</td><td>睡眠</td><td>1</td><td>缓冲区满了，睡眠</td></tr><tr><td></td><td>就绪</td><td>c1</td><td>运行</td><td></td><td>睡眠</td><td>1</td><td>$T_{c2}$ 插入……</td></tr><tr><td></td><td>就绪</td><td>c2</td><td>运行</td><td></td><td>睡眠</td><td>1</td><td></td></tr><tr><td></td><td>就绪</td><td>c5</td><td>运行</td><td></td><td>就绪</td><td>0</td><td>$T_{p}$ 唤醒</td></tr>
 <tr><td></td><td>就绪</td><td>c6</td><td>运行</td><td></td><td>就绪</td><td>0</td><td></td></tr>
 <tr><td>c4</td><td>运行</td><td></td><td>就绪</td><td></td><td>就绪</td><td>0</td><td>啊！没数据</td></tr></tbody></table>
 
-<p class="figure-caption"><em>表30.1  追踪线程：有问题的方案（第1版）</em></p>
+<div class="figure-caption">
+
+<em>表 30.1  追踪线程：有问题的方案（第 1 版）</em>
+
+</div>
 
 问题产生的原因很简单：在 Tc1 被生产者唤醒后，但在它运行之前，缓冲区的状态改变了（由于 Tc2）。发信号给线程只是唤醒它们，暗示状态发生了变化（在这个例子中，就是值已被放入缓冲区），但并不会保证在它运行之前状态一直是期望的情况。信号的这种释义常称为 Mesa 语义（Mesa semantic），为了纪念以这种方式建立条件变量的首次研究[[LR80](#ref-lr80)]。另一种释义是 Hoare 语义（Hoare semantic），虽然实现难度大，但是会保证被唤醒线程立刻执行[[H74](#ref-h74)]。实际上，几乎所有系统都采用了 Mesa 语义。
 
 ### 较好但仍有问题的方案：使用 While 语句替代 If
 
-幸运的是，修复这个问题很简单（见[图30.7](#fig-30-7)）：把 `if` 语句改为 `while`。当消费者 Tc1 被唤醒后，立刻再次检查共享变量（c2）。如果缓冲区此时为空，消费者就会回去继续睡眠（c3）。生产者中相应的 `if` 也改为 `while`（p2）。
+幸运的是，修复这个问题很简单（见[图 30.7](#fig-30-7)）：把 `if` 语句改为 `while`。当消费者 Tc1 被唤醒后，立刻再次检查共享变量（c2）。如果缓冲区此时为空，消费者就会回去继续睡眠（c3）。生产者中相应的 `if` 也改为 `while`（p2）。
 
 ````c:line-numbers=1
 int loops;  // must initialize somewhere...
@@ -302,7 +306,7 @@ void* consumer(void* arg) {
 }
 ````
 
-<p id="fig-30-7" class="figure-caption"><em>图30.7  生产者/消费者：一个条件变量和 while 语句</em></p>
+<p id="fig-30-7" class="figure-caption"><em>图 30.7  生产者/消费者：一个条件变量和 while 语句</em></p>
 
 由于 Mesa 语义，我们要记住一条关于条件变量的简单规则：总是使用 `while` 循环（always use while loop）。虽然有时候不需要重新检查条件，但这样做总是安全的，做了就开心了。但是，这段代码仍然有一个问题，也是上文提到的两个问题之一。你能想到吗？它和我们只用了一个条件变量有关。尝试弄清楚这个问题是什么，再继续阅读。想一下！……（暂停想一想，或者闭一下眼）……我们来确认一下你想得对不对。假设两个消费者（Tc1 和 Tc2）先运行，都睡眠了（c3）。
 
@@ -310,23 +314,27 @@ void* consumer(void* arg) {
 
 消费者 Tc1 醒过来并从 `wait()` 调用返回（c3），重新检查条件（c2），发现缓冲区是满的，消费了这个值（c4）。这个消费者然后在该条件上发信号（c5），唤醒一个在睡眠的线程。但是，应该唤醒哪个线程呢？
 
-因为消费者已经清空了缓冲区，很显然，应该唤醒生产者。但是，如果它唤醒了 Tc2（这绝对是可能的，取决于等待队列是如何管理的），问题就出现了。具体来说，消费者 Tc2 会醒过来，发现队列为空（c2），又继续回去睡眠（c3）。生产者 Tp 刚才在缓冲区中放了一个值，现在在睡眠。另一个消费者线程 Tc1 也回去睡眠了。3 个线程都在睡眠，显然是一个缺陷。由[表30.2](#table-30-2) 可以看到这个可怕灾难的步骤。
+因为消费者已经清空了缓冲区，很显然，应该唤醒生产者。但是，如果它唤醒了 Tc2（这绝对是可能的，取决于等待队列是如何管理的），问题就出现了。具体来说，消费者 Tc2 会醒过来，发现队列为空（c2），又继续回去睡眠（c3）。生产者 Tp 刚才在缓冲区中放了一个值，现在在睡眠。另一个消费者线程 Tc1 也回去睡眠了。3 个线程都在睡眠，显然是一个缺陷。由[表 30.2](#table-30-2) 可以看到这个可怕灾难的步骤。
 
 <div id="table-30-2" class="anchor-block"></div>
 
-<table><tbody><tr><td>$T_{c1}$</td><td>状态</td><td>$T_{c2}$</td><td>状态</td><td>$T_{p}$</td><td>状态</td><td>count</td><td>注释</td></tr><tr><td>c1</td><td>运行</td><td></td><td>就绪</td><td></td><td>就绪</td><td>0</td><td rowspan="5">没数据可取</td></tr><tr><td>c2</td><td>运行</td><td></td><td>就绪</td><td></td><td>就绪</td><td>0</td></tr><tr><td>c3</td><td>睡眠</td><td></td><td>就绪</td><td></td><td>就绪</td><td>0</td></tr><tr><td></td><td>睡眠</td><td>c1</td><td>运行</td><td></td><td>就绪</td><td>0</td></tr><tr><td></td><td>睡眠</td><td>c2</td><td>运行</td><td></td><td>就绪</td><td>0</td></tr><tr><td></td><td>睡眠</td><td>c3</td><td>睡眠</td><td></td><td>就绪</td><td>0</td><td>没数据可取</td></tr><tr><td></td><td>睡眠</td><td></td><td>睡眠</td><td>p1</td><td>运行</td><td>0</td><td></td></tr><tr><td></td><td>睡眠</td><td></td><td>睡眠</td><td>p2</td><td>运行</td><td>0</td><td></td></tr><tr><td></td><td>睡眠</td><td></td><td>睡眠</td><td>p4</td><td>运行</td><td>1</td><td>缓冲区现在满了</td></tr><tr><td></td><td>就绪</td><td></td><td>睡眠</td><td>p5</td><td>运行</td><td>1</td><td>$T_{c1}$唤醒</td></tr><tr><td></td><td>就绪</td><td></td><td>睡眠</td><td>p6</td><td>运行</td><td>1</td><td></td></tr><tr><td></td><td>就绪</td><td></td><td>睡眠</td><td>p1</td><td>运行</td><td>1</td><td></td></tr><tr><td></td><td>就绪</td><td></td><td>睡眠</td><td>p2</td><td>运行</td><td>1</td><td></td></tr><tr><td></td><td>就绪</td><td></td><td>睡眠</td><td>p3</td><td>睡眠</td><td>1</td><td>必须睡（满了）</td></tr><tr><td>c2</td><td>运行</td><td></td><td>睡眠</td><td></td><td>睡眠</td><td>1</td><td>重新检查条件</td></tr><tr><td>c4</td><td>运行</td><td></td><td>睡眠</td><td></td><td>睡眠</td><td>0</td><td>$T_{c1}$抓取数据</td></tr><tr><td>c5</td><td>运行</td><td></td><td>就绪</td><td></td><td>睡眠</td><td>0</td><td>啊！唤醒$T_{c2}$</td></tr><tr><td>c6</td><td>运行</td><td></td><td>就绪</td><td></td><td>睡眠</td><td>0</td></tr><tr><td>c1</td><td>运行</td><td></td><td>就绪</td><td></td><td>睡眠</td><td>0</td><td></td></tr>
+<table><tbody><tr><td>$T_{c1}$</td><td>状态</td><td>$T_{c2}$</td><td>状态</td><td>$T_{p}$</td><td>状态</td><td>count</td><td>注释</td></tr><tr><td>c1</td><td>运行</td><td></td><td>就绪</td><td></td><td>就绪</td><td>0</td><td rowspan="5">没数据可取</td></tr><tr><td>c2</td><td>运行</td><td></td><td>就绪</td><td></td><td>就绪</td><td>0</td></tr><tr><td>c3</td><td>睡眠</td><td></td><td>就绪</td><td></td><td>就绪</td><td>0</td></tr><tr><td></td><td>睡眠</td><td>c1</td><td>运行</td><td></td><td>就绪</td><td>0</td></tr><tr><td></td><td>睡眠</td><td>c2</td><td>运行</td><td></td><td>就绪</td><td>0</td></tr><tr><td></td><td>睡眠</td><td>c3</td><td>睡眠</td><td></td><td>就绪</td><td>0</td><td>没数据可取</td></tr><tr><td></td><td>睡眠</td><td></td><td>睡眠</td><td>p1</td><td>运行</td><td>0</td><td></td></tr><tr><td></td><td>睡眠</td><td></td><td>睡眠</td><td>p2</td><td>运行</td><td>0</td><td></td></tr><tr><td></td><td>睡眠</td><td></td><td>睡眠</td><td>p4</td><td>运行</td><td>1</td><td>缓冲区现在满了</td></tr><tr><td></td><td>就绪</td><td></td><td>睡眠</td><td>p5</td><td>运行</td><td>1</td><td>$T_{c1}$ 唤醒</td></tr><tr><td></td><td>就绪</td><td></td><td>睡眠</td><td>p6</td><td>运行</td><td>1</td><td></td></tr><tr><td></td><td>就绪</td><td></td><td>睡眠</td><td>p1</td><td>运行</td><td>1</td><td></td></tr><tr><td></td><td>就绪</td><td></td><td>睡眠</td><td>p2</td><td>运行</td><td>1</td><td></td></tr><tr><td></td><td>就绪</td><td></td><td>睡眠</td><td>p3</td><td>睡眠</td><td>1</td><td>必须睡（满了）</td></tr><tr><td>c2</td><td>运行</td><td></td><td>睡眠</td><td></td><td>睡眠</td><td>1</td><td>重新检查条件</td></tr><tr><td>c4</td><td>运行</td><td></td><td>睡眠</td><td></td><td>睡眠</td><td>0</td><td>$T_{c1}$ 抓取数据</td></tr><tr><td>c5</td><td>运行</td><td></td><td>就绪</td><td></td><td>睡眠</td><td>0</td><td>啊！唤醒 $T_{c2}$</td></tr><tr><td>c6</td><td>运行</td><td></td><td>就绪</td><td></td><td>睡眠</td><td>0</td></tr><tr><td>c1</td><td>运行</td><td></td><td>就绪</td><td></td><td>睡眠</td><td>0</td><td></td></tr>
 <tr><td>c2</td><td>运行</td><td></td><td>就绪</td><td></td><td>睡眠</td><td>0</td><td></td></tr>
 <tr><td>c3</td><td>睡眠</td><td></td><td>就绪</td><td></td><td>睡眠</td><td>0</td><td>没数据可取</td></tr>
 <tr><td></td><td>睡眠</td><td>c2</td><td>运行</td><td></td><td>睡眠</td><td>0</td><td></td></tr>
 <tr><td></td><td>睡眠</td><td>c3</td><td>睡眠</td><td></td><td>睡眠</td><td>0</td><td>大家都睡了……</td></tr></tbody></table>
 
-<p class="figure-caption"><em>表30.2  追踪线程：有问题的方案（第2版）</em></p>
+<div class="figure-caption">
+
+<em>表 30.2  追踪线程：有问题的方案（第 2 版）</em>
+
+</div>
 
 信号显然需要，但必须更有指向性。消费者不应该唤醒消费者，而应该只唤醒生产者，反之亦然。
 
 ### 单值缓冲区的生产者/消费者方案
 
-解决方案也很简单：使用两个条件变量，而不是一个，以便正确地发出信号，在系统状态改变时，哪类线程应该唤醒。[图30.8](#fig-30-8) 展示了最终的代码。
+解决方案也很简单：使用两个条件变量，而不是一个，以便正确地发出信号，在系统状态改变时，哪类线程应该唤醒。[图 30.8](#fig-30-8) 展示了最终的代码。
 
 ````c:line-numbers=1
 int loops;  // must initialize somewhere...
@@ -357,7 +365,7 @@ void* consumer(void* arg) {
 }
 ````
 
-<p id="fig-30-8" class="figure-caption"><em>图30.8  生产者/消费者：两个条件变量和 while 语句</em></p>
+<p id="fig-30-8" class="figure-caption"><em>图 30.8  生产者/消费者：两个条件变量和 while 语句</em></p>
 
 在上述代码中，生产者线程等待条件变量 `empty`，发信号给变量 `fill`。相应地，消费者线程等待 `fill`，发信号给 `empty`。这样做，从设计上避免了上述第二个问题：消费者再也不会唤醒消费者，生产者也不会唤醒生产者。
 
@@ -365,7 +373,7 @@ void* consumer(void* arg) {
 
 我们现在有了可用的生产者/消费者方案，但不太通用。我们最后的修改是提高并发和效率。具体来说，增加更多缓冲区槽位，这样在睡眠之前，可以生产多个值。同样，睡眠之前可以消费多个值。单个生产者和消费者时，这种方案因为上下文切换少，提高了效率。多个生产者和消费者时，它甚至支持并发生产和消费，从而提高了并发。幸运的是，和现有方案相比，改动也很小。
 
-第一处修改是缓冲区结构本身，以及对应的 `put()` 和 `get()` 方法（见[图30.9](#fig-30-9)）。我们还稍稍修改了生产者和消费者的检查条件，以便决定是否要睡眠。[图30.10](#fig-30-10) 展示了最终的等待和信号逻辑。生产者只有在缓冲区满了的时候才会睡眠（p2），消费者也只有在队列为空的时候睡眠（c2）。至此，我们解决了生产者/消费者问题。
+第一处修改是缓冲区结构本身，以及对应的 `put()` 和 `get()` 方法（见[图 30.9](#fig-30-9)）。我们还稍稍修改了生产者和消费者的检查条件，以便决定是否要睡眠。[图 30.10](#fig-30-10) 展示了最终的等待和信号逻辑。生产者只有在缓冲区满了的时候才会睡眠（p2），消费者也只有在队列为空的时候睡眠（c2）。至此，我们解决了生产者/消费者问题。
 
 ````c:line-numbers=1
 int buffer[MAX];
@@ -387,7 +395,7 @@ int get() {
 }
 ````
 
-<p id="fig-30-9" class="figure-caption"><em>图30.9  最终的<code>put()</code>和<code>get()</code>方法</em></p>
+<p id="fig-30-9" class="figure-caption"><em>图 30.9  最终的<code>put()</code>和<code>get()</code>方法</em></p>
 
 ````c:line-numbers=1
 int loops;  // must initialize somewhere...
@@ -420,7 +428,7 @@ void* consumer(void* arg) {
 }
 ````
 
-<p id="fig-30-10" class="figure-caption"><em>图30.10  最终有效方案</em></p>
+<p id="fig-30-10" class="figure-caption"><em>图 30.10  最终有效方案</em></p>
 
 > [!TIP] 提示：对条件变量使用 `while`（不是 `if`）
 > 多线程程序在检查条件变量时，使用 `while` 循环总是对的。`if` 语句可能会对，这取决于发信号的语义。因此，总是使用 `while`，代码就会符合预期。
@@ -430,7 +438,7 @@ void* consumer(void* arg) {
 
 现在再来看条件变量的一个例子。这段代码摘自 Lampson 和 Redell 关于飞行员的论文[[LR80](#ref-lr80)]，同一个小组首次提出了上述的 Mesa 语义（Mesa semantic，他们使用的语言是 Mesa，因此而得名）。
 
-他们遇到的问题通过一个简单的例子就能说明，在这个例子中，是一个简单的多线程内存分配库。[图30.11](#fig-30-11) 是展示这一问题的代码片段。
+他们遇到的问题通过一个简单的例子就能说明，在这个例子中，是一个简单的多线程内存分配库。[图 30.11](#fig-30-11) 是展示这一问题的代码片段。
 
 ````c:line-numbers=1
 // how many bytes of the heap are free?
@@ -457,7 +465,7 @@ void free(void* ptr, int size) {
 }
 ````
 
-<p id="fig-30-11" class="figure-caption"><em>图30.11  覆盖条件的例子</em></p>
+<p id="fig-30-11" class="figure-caption"><em>图 30.11  覆盖条件的例子</em></p>
 
 从代码中可以看出，当线程调用进入内存分配代码时，它可能会因为内存不足而等待。相应的，线程释放内存时，会发信号说有更多内存空闲。但是，代码中有一个问题：应该唤醒哪个等待线程（可能有多个线程）？
 

@@ -73,7 +73,11 @@ For example, if a client accessed the file `/home/remzi/notes.txt`, and `home` w
 | **`close(fd);`**<br>do local `close()` on cached copy<br>if file has changed, flush to server | |
 | **fd = `open("/home/remzi/notes.txt", ...)`;**<br>`Foreach dir (home, remzi)`<br>&nbsp;&nbsp;`if (callback(dir) == VALID)`<br>&nbsp;&nbsp;&nbsp;&nbsp;`use local copy for lookup(dir)`<br>&nbsp;&nbsp;`else`<br>&nbsp;&nbsp;&nbsp;&nbsp;`Fetch (as above)`<br>`if (callback(notes.txt) == VALID)`<br>&nbsp;&nbsp;`open local cached copy`<br>&nbsp;&nbsp;`return file descriptor to it`<br>`else`<br>&nbsp;&nbsp;`Fetch (as above) then open and return fd` | |
 
-<p class="figure-caption"><em>Figure 50.2: Reading A File: Client-side And File Server Actions</em></p>
+<div class="figure-caption">
+
+<em>Figure 50.2: Reading A File: Client-side And File Server Actions</em>
+
+</div>
 
 The key difference, however, from NFS, is that with each fetch of a directory or file, the AFS client would establish a callback with the server, thus ensuring that the server would notify the client of a change in its cached state. The benefit is obvious: although the first access to `/home/remzi/notes.txt` generates many client-server messages (as described above), it also establishes callbacks for all the directories as well as the file `notes.txt`, and thus subsequent accesses are entirely local and require no server interaction at all. Thus, in the common case where a file is cached at the client, AFS behaves nearly identically to a local disk-based file system. If one accesses a file more than once, the second access should be just as fast as accessing a file locally.
 

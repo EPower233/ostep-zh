@@ -25,7 +25,11 @@ The study focuses on four major and important open-source applications: MySQL (a
 | OpenOffice | Office Suite | 6 | 2 |
 | Total |  | 74 | 31 |
 
-<p class="figure-caption"><em>Figure 32.1: Bugs In Modern Applications</em></p>
+<div class="figure-caption">
+
+<em>Figure 32.1: Bugs In Modern Applications</em>
+
+</div>
 
 Further, you can see the number of bugs studied from each application; while OpenOffice only had 8 total concurrency bugs, Mozilla had nearly 60.
 
@@ -351,7 +355,11 @@ For example, assume we have two processors and four threads which must be schedu
 | `L1` | yes | yes | no | no |
 | `L2` | yes | yes | yes | no |
 
-<p class="figure-caption"><em>Table 32.2: Lock Requirements of Threads</em></p>
+<div class="figure-caption">
+
+<em>Table 32.2: Lock Requirements of Threads</em>
+
+</div>
 
 A smart scheduler could thus compute that as long as T1 and T2 are not run at the same time, no deadlock could ever arise. Here is one such schedule:
 
@@ -376,12 +384,11 @@ Let’s look at one more example. In this one, there is more contention for the 
 | `L1` | yes | yes | yes | no |
 | `L2` | yes | yes | yes | no |
 
-<p class="figure-caption"><em>Table 32.3: Lock Contention Among Threads</em></p>
+<div class="figure-caption">
 
-> [!TIP] TIP: DON’T ALWAYS DO IT PERFECTLY (TOM WEST’S LAW)
-> Tom West, famous as the subject of the classic computer-industry book Soul of a New Machine [[K81](#ref-k81)], says famously: “Not everything worth doing is worth doing well”, which is a terrific engineering maxim. If a bad thing happens rarely, certainly one should not spend a great deal of effort to prevent it, particularly if the cost of the bad thing occurring is small. If, on the other hand, you are building a space shuttle, and the cost of something going wrong is the space shuttle blowing up, well, perhaps you should ignore this piece of advice.
->
-> Some readers object: “This sounds like you are suggesting mediocrity as a solution!” Perhaps they are right, that we should be careful with advice such as this. However, our experience tells us that in the world of engineering, with pressing deadlines and other real-world concerns, one will always have to decide which aspects of a system to build well and which to put aside for another day. The hard part is knowing which to do when, a bit of insight only gained through experience and dedication to the task at hand.
+<em>Table 32.3: Lock Contention Among Threads</em>
+
+</div>
 
 In particular, threads T1, T2, and T3 all need to grab both locks `L1` and `L2` at some point during their execution. Here is a possible schedule that guarantees that no deadlock could ever occur:
 

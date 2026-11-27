@@ -122,7 +122,7 @@ To make sure we understand this difference, let’s do a simple exercise. Specif
 To compute S, we need to first figure out how time is spent in a typical 10 MB transfer. First, we spend 7 ms seeking, and then 3 ms rotating. Finally, transfer begins; 10 MB @ 50 MB/s leads to 1/5th of a second, or 200 ms, spent in transfer. Thus, for each 10 MB request, we spend 210 ms completing the request. To compute S, we just need to divide:
 
 $$
-S = \frac{\text{Amount of Data}}{\text{Time to access}} = \frac{10\text{ MB}}{210\text{ ms}} = 47.62\text{ MB/s}
+S = \frac{\text{Amount of Data}}{\text{Time to access}} = \frac{10\text{MB}}{210\text{ms}} = 47.62\text{MB/s}
 $$
 
 As we can see, because of the large time spent transferring data, $S$ is very near the peak bandwidth of the disk (the seek and rotational costs have been amortized).
@@ -130,7 +130,7 @@ As we can see, because of the large time spent transferring data, $S$ is very ne
 We can compute R similarly. Seek and rotation are the same; we then compute the time spent in transfer, which is 10 KB @ 50 MB/s, or 0.195 ms.
 
 $$
-R = \frac{\text{Amount of Data}}{\text{Time to access}} = \frac{10\text{ KB}}{10.195\text{ ms}} = 0.981\text{ MB/s}
+R = \frac{\text{Amount of Data}}{\text{Time to access}} = \frac{10\text{KB}}{10.195\text{ms}} = 0.981\text{MB/s}
 $$
 
 As we can see, R is less than 1 MB/s, and S/R is almost 50.

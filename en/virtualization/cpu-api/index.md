@@ -238,8 +238,8 @@ Beyond `fork()`, `exec()`, and `wait()`, there are a lot of other interfaces for
 
 The entire signals subsystem provides a rich infrastructure to deliver external events to processes, including ways to receive and process those signals within individual processes, and ways to send signals to individual processes as well as entire process groups. To use this form of communication, a process should use the `signal()` system call to “catch” various signals; doing so ensures that when a particular signal is delivered to a process, it will suspend its normal execution and run a particular piece of code in response to the signal. Read elsewhere [[SR05](#ref-sr05)] to learn more about signals and their many intricacies.
 
-> [!NOTE] ASIDE
-> RTFM — READ THE MAN PAGES Many times in this book, when referring to a particular system call or library call, we’ll tell you to read the manual pages, or man pages for short. Man pages are the original form of documentation that exist on UNIX systems; realize that they were created before the thing called the web existed.
+> [!NOTE] ASIDE: RTFM — READ THE MAN PAGES
+> Many times in this book, when referring to a particular system call or library call, we’ll tell you to read the manual pages, or man pages for short. Man pages are the original form of documentation that exist on UNIX systems; realize that they were created before the thing called the web existed.
 >
 > Spending some time reading man pages is a key step in the growth of a systems programmer; there are tons of useful tidbits hidden in those pages. Some particularly useful pages to read are the man pages for whichever shell you are using (e.g., tcsh, or bash), and certainly for any system calls your program makes (in order to see what return values and error conditions exist).
 >
@@ -307,7 +307,8 @@ This simulation homework focuses on `fork.py`, a simple process creation simulat
 
 6. Finally, use both `-t` and `-F` together. This shows the final process tree, but then asks you to fill in the actions that took place. By looking at the tree, can you determine the exact actions that took place? In which cases can you tell? In which can’t you tell? Try some different random seeds to delve into this question.
 
-> [!NOTE] ASIDE: CODING HOMEWORKS Coding homeworks are small exercises where you write code to run on
+> [!NOTE] ASIDE: CODING HOMEWORKS
+> Coding homeworks are small exercises where you write code to run on
 > a real machine to get some experience with some basic operating system
 >
 > APIs. After all, you are (probably) a computer scientist, and therefore should like to code, right? If you don’t, there is always CS theory, but that’s pretty hard. Of course, to truly become an expert, you have to spend more than a little time hacking away at the machine; indeed, find every excuse you can to write some code and see how it works. Spend the time, and become the wise master you know you can be.

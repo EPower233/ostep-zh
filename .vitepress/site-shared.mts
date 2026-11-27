@@ -26,6 +26,15 @@ export const common: UserConfig = {
       md.use(readableTables)
       md.use(alertTitleInline)
       md.use(headingLinks, root)
+      const defaultCodeInline = md.renderer.rules.code_inline
+      md.renderer.rules.code_inline = (tokens, idx, options, env, self) => {
+        const rendered = defaultCodeInline
+          ? defaultCodeInline(tokens, idx, options, env, self)
+          : self.renderToken(tokens, idx, options)
+        return rendered.includes('{{') || rendered.includes('}}')
+          ? rendered.replace('<code', '<code v-pre')
+          : rendered
+      }
     },
   },
   postRender({ teleports }) {

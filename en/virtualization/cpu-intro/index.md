@@ -96,7 +96,11 @@ Let’s look at an example of how two processes might transition through some of
 | 7 | – | Running |  |
 | 8 | – | Running | Process1 now done |
 
-<p class="figure-caption"><em>Figure 4.3: Tracing Process State: CPU Only</em></p>
+<div class="figure-caption">
+
+<em>Figure 4.3: Tracing Process State: CPU Only</em>
+
+</div>
 
 In this next example, the first process issues an I/O after running for some time. At that point, the process is blocked, giving the other process a chance to run. [Figure 4.4](#fig-4-4) shows a trace of this scenario.
 
@@ -115,7 +119,11 @@ In this next example, the first process issues an I/O after running for some tim
 | 9 | Running | – |  |
 | 10 | Running | – | Process0 now done |
 
-<p class="figure-caption"><em>Figure 4.4: Tracing Process State: CPU and I/O</em></p>
+<div class="figure-caption">
+
+<em>Figure 4.4: Tracing Process State: CPU and I/O</em>
+
+</div>
 
 More specifically, Process0 initiates an I/O and becomes blocked waiting for it to complete; processes become blocked, for example, when reading from a disk or waiting for a packet from a network. The OS recognizes Process0 is not using the CPU and starts running Process1. While Process1 is running, the I/O completes, moving Process0 back to ready. Finally, Process1 finishes, and Process0 runs and then is done.
 

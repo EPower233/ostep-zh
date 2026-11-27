@@ -6,8 +6,8 @@ In developing the virtualization of the CPU, we focused on a general mechanism k
 
 In virtualizing memory, we will pursue a similar strategy, attaining both efficiency and control while providing the desired virtualization. Efficiency dictates that we make use of hardware support, which at first will be quite rudimentary (e.g., just a few registers) but will grow to be fairly complex (e.g., TLBs, page-table support, and so forth, as you will see). Control implies that the OS ensures that no application is allowed to access any memory but its own; thus, to protect applications from one another, and the OS from applications, we will need help from the hardware here too. Finally, we will need a little more from the VM system, in terms of flexibility; specifically, we’d like for programs to be able to use their address spaces in whatever way they would like, thus making the system easier to program. And thus we arrive at the refined crux:
 
-> [!IMPORTANT] THE CRUX:
-> HOW TO EFFICIENTLY AND FLEXIBLY VIRTUALIZE MEMORY How can we build an efficient virtualization of memory? How do we provide the flexibility needed by applications? How do we maintain control over which memory locations an application can access, and thus ensure that application memory accesses are properly restricted? How do we do all of this efficiently?
+> [!IMPORTANT] THE CRUX: HOW TO EFFICIENTLY AND FLEXIBLY VIRTUALIZE MEMORY
+> How can we build an efficient virtualization of memory? How do we provide the flexibility needed by applications? How do we maintain control over which memory locations an application can access, and thus ensure that application memory accesses are properly restricted? How do we do all of this efficiently?
 
 The generic technique we will use, which you can consider an addition to our general approach of limited direct execution, is something that is referred to as hardware-based address translation, or just address translation for short. With address translation, the hardware transforms each memory access (e.g., an instruction fetch, load, or store), changing the virtual address provided by the instruction to a physical address where the desired information is actually located. Thus, on each and every memory reference, an address translation is performed by the hardware to redirect application memory references to their actual locations in memory.
 
@@ -140,7 +140,11 @@ The hardware should provide special instructions to modify the base and bounds r
 | Privileged instructions to register an exception handler | OS must tell the hardware what code to run if an exception arises |
 | Ability to raise an exception | When a process tries to use a privileged instruction or an out-of-bounds memory reference |
 
-<p class="figure-caption"><em>Figure 15.3: Dynamic Relocation: Hardware Requirements</em></p>
+<div class="figure-caption">
+
+<em>Figure 15.3: Dynamic Relocation: Hardware Requirements</em>
+
+</div>
 
 Finally, the CPU must be able to generate exceptions in situations where a user program tries to access memory illegally (with an address that is “out of bounds”); in this case, the CPU should stop executing the user program and arrange for the OS “out-of-bounds” exception handler to run. The OS handler can then figure out how to react, in this case likely terminating the process. Similarly, if a user program tries to change the values of the (privileged) base and bounds registers, the CPU should raise an exception and run the “tried to execute a privileged operation while in user mode” handler. The CPU also must provide a method to inform it of the location of these handlers; a few more privileged instructions are thus needed.
 
@@ -166,7 +170,11 @@ Exception handling             Code to run when exceptions arise;
                                likely action is to terminate offending process
 ````
 
-<p class="figure-caption"><em>Figure 15.4: Dynamic Relocation: Operating System Responsibilities</em></p>
+<div class="figure-caption">
+
+<em>Figure 15.4: Dynamic Relocation: Operating System Responsibilities</em>
+
+</div>
 
 Let’s look at an example. In [Figure 15.2](#fig-15-2) (page 5), you can see the OS using the first slot of physical memory for itself, and that it has relocated the process from the example above into the slot starting at physical memory address 32 KB. The other two slots are free (16 KB-32 KB and 48 KB-64 KB); thus, the free list should consist of these two entries.
 
@@ -186,7 +194,11 @@ Fourth, the OS must provide exception handlers, or functions to be called, as di
 | start interrupt timer | start timer; interrupt after X ms |
 | initialize process table<br>initialize free list | |
 
-<p class="figure-caption"><em>Figure 15.5: Limited Direct Execution (Dynamic Relocation) @ Boot</em></p>
+<div class="figure-caption">
+
+<em>Figure 15.5: Limited Direct Execution (Dynamic Relocation) @ Boot</em>
+
+</div>
 
 [Figures 15.5](#fig-15-5) and [15.6](#fig-15-6) illustrate much of the hardware/OS interaction in a timeline. The first figure shows what the OS does at boot time to ready the machine for use, and the second shows what happens when a process (Process A) starts running; note how its memory translations are handled by the hardware with no OS intervention. At some point (middle of second figure), a timer interrupt occurs, and the OS switches to Process B, which executes a “bad load” (to an illegal memory address); at that point, the OS must get involved, terminating the process and cleaning up by freeing B’s memory and removing its entry from the process table. As you can see from the figures, we are still following the basic approach of limited direct execution. In most cases, the OS just sets up the hardware appropriately and lets the process run directly on the CPU; only when the process misbehaves does the OS have to become involved.
 
@@ -202,7 +214,11 @@ Fourth, the OS must provide exception handlers, or functions to be called, as di
 | | Load is out-of-bounds;<br>move to kernel mode<br>jump to trap handler | |
 | Handle the trap<br>decide to kill process B<br>deallocate B’s memory<br>free B’s entry in process table | | |
 
-<p class="figure-caption"><em>Figure 15.6: Limited Direct Execution (Dynamic Relocation) @ Runtime</em></p>
+<div class="figure-caption">
+
+<em>Figure 15.6: Limited Direct Execution (Dynamic Relocation) @ Runtime</em>
+
+</div>
 
 ## 15.6 Summary
 

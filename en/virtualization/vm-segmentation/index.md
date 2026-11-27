@@ -58,7 +58,11 @@ In our example, then, if the top two bits are 00, the hardware knows the virtual
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 1 | 0 | 1 | 0 | 0 | 0 |
 
-<p class="figure-caption"><em>Segment (2 bits) | Offset (12 bits)</em></p>
+<div class="figure-caption">
+
+<em>Segment (2 bits) | Offset (12 bits)</em>
+
+</div>
 
 As you can see from the picture, the top two bits (01) tell the hardware which segment we are referring to. The bottom 12 bits are the offset into the segment: 0000 0110 1000, or hex `0x068`, or 104 in decimal. Thus, the hardware simply takes the first two bits to determine which segment register to use, and then takes the next 12 bits as the offset into the segment. By adding the base register to the offset, the hardware arrives at the final physical address. Note the offset eases the bounds check too: we can simply check if the offset is less than the bounds; if not, the address is illegal. Thus, if base and bounds were arrays (with one entry per segment), the hardware would be doing something like this to obtain the desired physical address:
 

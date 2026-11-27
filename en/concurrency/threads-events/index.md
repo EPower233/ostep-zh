@@ -207,37 +207,6 @@ As you can see, in a multi-threaded program, doing this kind of work is trivial;
 
 In an event-based system, life is not so easy. To perform the same task, we’d first issue the read asynchronously, using the AIO calls described above. Let’s say we then periodically check for completion of the read using the `aio_error()` call; when that call informs us that the read is complete, how does the event-based server know what to do?
 
-> [!NOTE] ASIDE: UNIX SIGNALS
-> A huge and fascinating infrastructure known as signals is present in all modern UNIX variants. At its simplest, signals provide a way to communicate with a process. Specifically, a signal can be delivered to an application; doing so stops the application from whatever it is doing to run a signal handler, i.e., some code in the application to handle that signal. When finished, the process just resumes its previous behavior. Each signal has a name, such as HUP (hang up), INT (interrupt), SEGV (segmentation violation), etc.; see the man page for details. Interestingly, sometimes it is the kernel itself that does the signaling. For example, when your program encounters a segmentation violation, the OS sends it a SIGSEGV (prepending SIG to signal names is common); if your program is configured to catch that signal, you can actually run some code in response to this erroneous program behavior (which is helpful for debugging). When a signal is sent to a process not configured to handle a signal, the default behavior is enacted; for SEGV, the process is killed. Here is a simple program that goes into an infinite loop, but has first set up a signal handler to catch SIGHUP:
->
-> ````c:no-line-numbers
-> #include <stdio.h>
-> #include <signal.h>
->
-> void handle(int arg) {
->   printf("stop wakin' me up...\n");
-> }
->
-> int main(int argc, char* argv[]) {
->   signal(SIGHUP, handle);
->   while (1);  // doin' nothin' except catchin' some sigs
->   return 0;
-> }
-> ````
->
-> You can send signals to it with the `kill` command line tool (yes, this is an odd and aggressive name). Doing so will interrupt the main while loop in the program and run the handler code `handle()`:
->
-> ````console:no-line-numbers
-> prompt> ./main &
-> [3] 36705
-> prompt> kill -HUP 36705
-> stop wakin' me up...
-> prompt> kill -HUP 36705
-> stop wakin' me up...
-> ````
->
-> There is a lot more to learn about signals, so much that a single chapter, much less a single page, does not nearly suffice. As always, there is one great source: Stevens and Rago [[SR05](#ref-sr05)]. Read more if interested.
-
 The solution, as described by Adya et al. [[A+02](#ref-a-02)], is to use an old programming language construct known as a continuation [[FHK84](#ref-fhk84)]. Though it sounds complicated, the idea is rather simple: basically, record the needed information to finish processing this event in some data structure; when the event happens (i.e., when the disk I/O completes), look up the needed information and process the event.
 
 In this specific case, the solution would be to record the socket descriptor (`sd`) in some kind of data structure (e.g., a hash table), indexed by the file descriptor (`fd`). When the disk I/O completes, the event handler would use the file descriptor to look up the continuation, which will return the value of the socket descriptor to the caller. At this point (finally), the server can then do the last bit of work to write the data to the socket.

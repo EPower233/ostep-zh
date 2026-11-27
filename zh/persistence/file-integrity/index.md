@@ -21,7 +21,7 @@
 
 Prabhakaran 等人将这种更现代的磁盘故障视图描述为故障—部分（fail-partial）磁盘故障模型[[P+05](#ref-p-05)]。在此视图中，磁盘仍然可以完全失败（像传统的故障停止模型中的情况）。然而，磁盘也可以似乎正常工作，并有一个或多个块变得不可访问（即 LSE）或保存了错误的内容（即讹误）。因此，当访问看似工作的磁盘时，偶尔会在尝试读取或写入给定块时返回错误（非无声的部分故障），偶尔可能只是返回错误的数据（一个无声的部分错误）。
 
-这两种类型的故障都有点罕见，但有多罕见？[表 44.1](#table-44-1) 总结了 Bairavasundaram 的两项研究[[B+07](#ref-b-07), [B+08](#ref-b-08)]的一些结果。
+这两种类型的故障都有点罕见，但有多罕见？[表 44.1](#table-44-1) 总结了 Bairavasundaram 的两项研究[[B+07](#ref-b-07), [B+08](#ref-b-08)] 的一些结果。
 
 <div id="table-44-1" class="anchor-block"></div>
 
@@ -30,7 +30,11 @@ Prabhakaran 等人将这种更现代的磁盘故障视图描述为故障—部�
 | LSEs | 9.40% | 1.40% |
 | 讹误 | 0.50% | 0.05% |
 
-<p class="figure-caption"><em>表 44.1 LSE 和块讹误的频率</em></p>
+<div class="figure-caption">
+
+<em>表 44.1 LSE 和块讹误的频率</em>
+
+</div>
 
 该表显示了在研究过程中至少出现一次 LSE 或块讹误的驱动器百分比（大约 3 年，超过 150 万个磁盘驱动器）。该表进一步将结果细分为“廉价”驱动器（通常为 SATA 驱动器）和“昂贵”驱动器（通常为 SCSI 或 FibreChannel）。如你所见，虽然购买更好的驱动器可以减少两种类型问题的频率（大约一个数量级），但它们的发生频率仍然足够高，你需要仔细考虑如何在存储系统中处理它们。
 
@@ -154,7 +158,7 @@ XOR 是一个合理的校验和，但有其局限性。例如，如果每个校�
 > [!IMPORTANT] 关键问题：如何处理丢失的写入
 > 存储系统或磁盘控制器应如何检测丢失的写入？校验和需要哪些附加功能？
 
-有许多可能的解决方案有助于解决该问题[[K+08](#ref-k-08)]。一种经典方法[[BS04](#ref-bs04)]是执行写入验证（write verify），或写入后读取（read-after-write）。通过在写入后立即读回数据，系统可以确保数据确实到达磁盘表面。然而，这种方法非常慢，使完成写入所需的 I/O 数量翻了一番。
+有许多可能的解决方案有助于解决该问题[[K+08](#ref-k-08)]。一种经典方法[[BS04](#ref-bs04)] 是执行写入验证（write verify），或写入后读取（read-after-write）。通过在写入后立即读回数据，系统可以确保数据确实到达磁盘表面。然而，这种方法非常慢，使完成写入所需的 I/O 数量翻了一番。
 
 某些系统在系统的其他位置添加校验和，以检测丢失的写入。例如，Sun 的 Zettabyte 文件系统（ZFS）在文件系统的每个 inode 和间接块中，包含文件中每个块的校验和。因此，即使对数据块本身的写入丢失，inode 内的校验和也不会与旧数据匹配。只有当同时丢失对 inode 和数据的写入时，这样的方案才会失败，这是不太可能的情况（但也有可能发生！）。
 
@@ -182,7 +186,7 @@ XOR 是一个合理的校验和，但有其局限性。例如，如果每个校�
 
 ## 参考资料
 
-<span id="ref-b-07"></span>**[B+07]** “An Analysis of Latent Sector Errors in Disk Drives”Lakshmi N. Bairavasundaram, Garth R. Goodson, Shankar Pasupathy, Jiri Schindler SIGMETRICS’07, San Diego, California, June 2007 一篇详细研究潜在扇区错误的论文。正如引文[[B+08](#ref-b-08)]所述，这是威斯康星大学与 NetApp 之间的合作。该论文还获得了 Kenneth C. Sevcik 杰出学生论文奖。Sevcik 是一位了不起的研究者，也是一位太早过世的好人。为了向本书作者展示有可能从美国搬到加拿大并喜欢上这个地方，Sevcik 曾经站在餐馆中间唱过加拿大国歌。
+<span id="ref-b-07"></span>**[B+07]** “An Analysis of Latent Sector Errors in Disk Drives”Lakshmi N. Bairavasundaram, Garth R. Goodson, Shankar Pasupathy, Jiri Schindler SIGMETRICS’07, San Diego, California, June 2007 一篇详细研究潜在扇区错误的论文。正如引文[[B+08](#ref-b-08)] 所述，这是威斯康星大学与 NetApp 之间的合作。该论文还获得了 Kenneth C. Sevcik 杰出学生论文奖。Sevcik 是一位了不起的研究者，也是一位太早过世的好人。为了向本书作者展示有可能从美国搬到加拿大并喜欢上这个地方，Sevcik 曾经站在餐馆中间唱过加拿大国歌。
 
 <span id="ref-b-08"></span>**[B+08]** “An Analysis of Data Corruption in the Storage Stack”Lakshmi N. Bairavasundaram, Garth R. Goodson, Bianca Schroeder, Andrea C. Arpaci-Dusseau, Remzi H. Arpaci-Dusseau FAST’08, San Jose, CA, February 2008 一篇真正详细研究磁盘讹误的论文，重点关注超过 150 万个驱动器 3 年内发生此类讹误的频率。Lakshmi 做这项工作时还是威斯康星大学的一名研究生，在我们的指导下，同时也与他在 NetApp 的同事合作，他有几个暑假都在 NetApp 做实习生。与业界合作可以带来更有趣、有实际意义的研究，这是一个很好的例子。
 

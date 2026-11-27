@@ -48,7 +48,11 @@ Years ago, the creators of Multics (in particular Jack Dennis) chanced upon such
 | 28 | 1 | rw- | 1 | 1 |
 | 4 | 1 | rw- | 1 | 1 |
 
-<p class="figure-caption"><em>Figure 20.2: A Page Table For 16KB Address Space</em></p>
+<div class="figure-caption">
+
+<em>Figure 20.2: A Page Table For 16KB Address Space</em>
+
+</div>
 
 This example assumes the single code page (VPN 0) is mapped to physical page 10, the single heap page (VPN 4) to physical page 23, and the two stack pages at the other end of the address space (VPNs 14 and 15) are mapped to physical pages 28 and 4, respectively. As you can see from the picture, most of the page table is unused, full of invalid entries. What a waste! And this is for a tiny 16KB address space. Imagine the page table of a 32-bit address space and all the potential wasted space in there! Actually, don’t imagine such a thing; it’s far too gruesome.
 
@@ -155,7 +159,11 @@ This page of the page table contains the mappings for the first 16 VPNs; in our 
 
 <table><tbody><tr><td colspan="2">Page Directory</td><td colspan="3">Page of PT (@PFN:100)</td><td colspan="3">Page of PT (@PFN:101)</td></tr><tr><td>PFN</td><td>valid?</td><td>PFN</td><td>valid</td><td>prot</td><td>PFN</td><td>valid</td><td>prot</td></tr><tr><td>100</td><td>1</td><td>10</td><td>1</td><td>r-x</td><td>-</td><td>0</td><td>-</td></tr><tr><td>-</td><td>0</td><td>23</td><td>1</td><td>r-x</td><td>-</td><td>0</td><td>-</td></tr><tr><td>-</td><td>0</td><td>-</td><td>0</td><td>-</td><td>-</td><td>0</td><td>-</td></tr><tr><td>-</td><td>0</td><td>-</td><td>0</td><td>-</td><td>-</td><td>0</td><td>-</td></tr><tr><td>-</td><td>0</td><td>80</td><td>1</td><td>rw-</td><td>-</td><td>0</td><td>-</td></tr><tr><td>-</td><td>0</td><td>59</td><td>1</td><td>rw-</td><td>-</td><td>0</td><td>-</td></tr><tr><td>-</td><td>0</td><td>-</td><td>0</td><td>-</td><td>-</td><td>0</td><td>-</td></tr><tr><td>-</td><td>0</td><td>-</td><td>0</td><td>-</td><td>-</td><td>0</td><td>-</td></tr><tr><td>-</td><td>0</td><td>-</td><td>0</td><td>-</td><td>-</td><td>0</td><td>-</td></tr><tr><td>-</td><td>0</td><td>-</td><td>0</td><td>-</td><td>-</td><td>0</td><td>-</td></tr><tr><td>-</td><td>0</td><td>-</td><td>0</td><td>-</td><td>-</td><td>0</td><td>-</td></tr><tr><td>-</td><td>0</td><td>-</td><td>0</td><td>-</td><td>-</td><td>0</td><td>-</td></tr><tr><td>-</td><td>0</td><td>-</td><td>0</td><td>-</td><td>-</td><td>0</td><td>-</td></tr><tr><td>-</td><td>0</td><td>-</td><td>0</td><td>-</td><td>-</td><td>0</td><td>-</td></tr><tr><td>-</td><td>0</td><td>-</td><td>0</td><td>-</td><td>55</td><td>1</td><td>rw-</td></tr><tr><td>101</td><td>1</td><td>-</td><td>0</td><td>-</td><td>45</td><td>1</td><td>rw-</td></tr></tbody></table>
 
-<p class="figure-caption"><em>Figure 20.5: A Page Directory, And Pieces Of Page Table</em></p>
+<div class="figure-caption">
+
+<em>Figure 20.5: A Page Directory, And Pieces Of Page Table</em>
+
+</div>
 
 > [!TIP] TIP: BE WARY OF COMPLEXITY
 > System designers should be wary of adding complexity into their system. What a good systems builder does is implement the least complex system that achieves the task at hand. For example, if disk space is abundant, you shouldn’t design a file system that works hard to use as few bytes as possible; similarly, if processors are fast, it is better to write a clean and understandable module within the OS than perhaps the most CPU-optimized, hand-assembled code for the task at hand. Be wary of needless complexity, in prematurely-optimized code or other forms; such approaches make systems harder to understand, maintain, and debug. As Antoine de Saint-Exupery famously wrote: “Perfection is finally attained not when there is no longer anything to add, but when there is no longer anything to take away.” What he didn’t write: “It’s a lot easier to say something about perfection than to actually achieve it.”
@@ -178,7 +186,7 @@ Let’s take a simple example and use it to show why a deeper multi-level table 
 
 Remember our goal in constructing a multi-level page table: to make each piece of the page table fit within a single page. Thus far, we’ve only considered the page table itself; however, what if the page directory gets too big?
 
-To determine how many levels are needed in a multi-level table to make all pieces of the page table fit within a page, we start by determining how many page-table entries fit within a page. Given our page size of 512 bytes, and assuming a PTE size of 4 bytes, you should see that you can fit 128 PTEs on a single page. When we index into a page of the page table, we can thus conclude we’ll need the least significant 7 bits ($log_{2}$128) of the VPN as an index:
+To determine how many levels are needed in a multi-level table to make all pieces of the page table fit within a page, we start by determining how many page-table entries fit within a page. Given our page size of 512 bytes, and assuming a PTE size of 4 bytes, you should see that you can fit 128 PTEs on a single page. When we index into a page of the page table, we can thus conclude we’ll need the least significant 7 bits ($\log_2 128$) of the VPN as an index:
 
 ![Two-level 30-bit virtual address split](/figures/en/vm-smalltables/st-2level.svg)
 

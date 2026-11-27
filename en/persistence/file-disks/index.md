@@ -84,19 +84,17 @@ On writes, the drive has a choice: should it acknowledge the write has completed
 >
 > Let’s do an example to see how dimensional analysis works and why it is useful. In this case, assume you have to figure out how long, in milliseconds, a single rotation of a disk takes. Unfortunately, you are given only the RPM of the disk, or rotations per minute. Let’s assume we’re talking about a 10K RPM disk (i.e., it rotates 10,000 times per minute). How do we set up the dimensional analysis so that we get time per rotation in milliseconds?
 >
-> To do so, we start by putting the desired units on the left; in this case, we wish to obtain the time (in milliseconds) per rotation, so that is exactly what we write down: $\frac{\text{Time (ms)}}{\text{1 Rotation}}$. We then write down everything we know, making sure to cancel units where possible. First, we obtain $\frac{1 \text{ minute}}{10{,}000 \text{ Rotations}}$ (keeping rotation on the bottom, as that’s where it is on the left), then transform minutes into seconds with $\frac{60 \text{ seconds}}{1 \text{ minute}}$, and then finally transform seconds into milliseconds with $\frac{1000 \text{ ms}}{1 \text{ second}}$. The final result is the following (with units nicely canceled):
-
-$$
-\frac{\text{Time (ms)}}{\text{1 Rotation}} = \frac{1 \text{ minute}}{10{,}000 \text{ Rot.}} \cdot \frac{60 \text{ seconds}}{1 \text{ minute}} \cdot \frac{1000 \text{ ms}}{1 \text{ second}} = \frac{60{,}000 \text{ ms}}{10{,}000 \text{ Rot.}} = \frac{6 \text{ ms}}{\text{Rotation}}
-$$
-
-As you can see from this example, dimensional analysis makes what seems intuitive into a simple and repeatable process. Beyond the RPM calculation above, it comes in handy with I/O analysis regularly. For example, you will often be given the transfer rate of a disk, e.g.,
-
-100 MB/second, and then asked: how long does it take to transfer a 512 KB block (in milliseconds)? With dimensional analysis, it’s easy:
-
-$$
-\frac{\text{Time (ms)}}{\text{Request}} = \frac{512 \text{ KB}}{\text{1 Request}} \cdot \frac{1 \text{ MB}}{1024 \text{ KB}} \cdot \frac{1 \text{ second}}{100 \text{ MB}} \cdot \frac{1000 \text{ ms}}{1 \text{ second}} = 5 \text{ ms}
-$$
+> To do so, we start by putting the desired units on the left; in this case, we wish to obtain the time (in milliseconds) per rotation, so that is exactly what we write down: $\frac{\text{Time (ms)}}{\text{1 Rotation}}$. We then write down everything we know, making sure to cancel units where possible. First, we obtain $\frac{1 \text{minute}}{10{,}000 \text{Rotations}}$ (keeping rotation on the bottom, as that’s where it is on the left), then transform minutes into seconds with $\frac{60 \text{seconds}}{1 \text{minute}}$, and then finally transform seconds into milliseconds with $\frac{1000 \text{ms}}{1 \text{second}}$. The final result is the following (with units nicely canceled):
+>
+> $$
+> \frac{\text{Time (ms)}}{\text{1 Rotation}} = \frac{1 \text{minute}}{10{,}000 \text{Rot.}} \cdot \frac{60 \text{seconds}}{1 \text{minute}} \cdot \frac{1000 \text{ms}}{1 \text{second}} = \frac{60{,}000 \text{ms}}{10{,}000 \text{Rot.}} = \frac{6 \text{ms}}{\text{Rotation}}
+> $$
+>
+> As you can see from this example, dimensional analysis makes what seems intuitive into a simple and repeatable process. Beyond the RPM calculation above, it comes in handy with I/O analysis regularly. For example, you will often be given the transfer rate of a disk, e.g., 100 MB/second, and then asked: how long does it take to transfer a 512 KB block (in milliseconds)? With dimensional analysis, it’s easy:
+>
+> $$
+> \frac{\text{Time (ms)}}{\text{Request}} = \frac{512 \text{KB}}{\text{1 Request}} \cdot \frac{1 \text{MB}}{1024 \text{KB}} \cdot \frac{1 \text{second}}{100 \text{MB}} \cdot \frac{1000 \text{ms}}{1 \text{second}} = 5 \text{ms}
+> $$
 
 ## 37.4 I/O Time: Doing The Math
 
@@ -124,7 +122,11 @@ $$
 | Cache | 16 MB | 16/32 MB |
 | Connects via | SCSI | SATA |
 
-<p class="figure-caption"><em>Figure 37.5: Disk Drive Specs: SCSI Versus SATA</em></p>
+<div class="figure-caption">
+
+<em>Figure 37.5: Disk Drive Specs: SCSI Versus SATA</em>
+
+</div>
 
 To get a better feel for I/O time, let us perform the following calculation. Assume there are two workloads we are interested in. The first, known as the random workload, issues small (e.g., 4KB) reads to random locations on the disk. Random workloads are common in many important applications, including database management systems. The second, known as the sequential workload, simply reads a large number of sectors consecutively from the disk, without jumping around. Sequential access patterns are quite common and thus important as well.
 
@@ -154,7 +156,11 @@ Now let’s look at the sequential workload. Here we can assume there is a singl
 | $R_{\text{I/O}}$ Random | 0.66 MB/s | 0.31 MB/s |
 | $R_{\text{I/O}}$ Sequential | 125 MB/s | 105 MB/s |
 
-<p class="figure-caption"><em>Figure 37.6: Disk Drive Performance: SCSI Versus SATA</em></p>
+<div class="figure-caption">
+
+<em>Figure 37.6: Disk Drive Performance: SCSI Versus SATA</em>
+
+</div>
 
 The figure shows us a number of important things. First, and most importantly, there is a huge gap in drive performance between random and sequential workloads, almost a factor of 200 or so for the Cheetah and more than a factor 300 difference for the Barracuda. And thus we arrive at the most obvious design tip in the history of computing.
 

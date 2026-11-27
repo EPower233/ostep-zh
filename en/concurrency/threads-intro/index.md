@@ -284,7 +284,11 @@ With these assumptions, what happens is shown in [Figure 26.7](#fig-26-7). Assum
 | interrupt<br>save T2<br>restore T1 | | | 108 | 51 | 51 |
 | | `mov %eax,8049a1c` | | 113 | 51 | 51 |
 
-<p class="figure-caption"><em>Figure 26.7: The Problem: Up Close and Personal</em></p>
+<div class="figure-caption">
+
+<em>Figure 26.7: The Problem: Up Close and Personal</em>
+
+</div>
 
 What we have demonstrated here is called a race condition (or, more specifically, a data race): the results depend on the timing of the code’s execution. With some bad luck (i.e., context switches that occur at untimely points in the execution), we get the wrong result. In fact, we may get a different result each time; thus, instead of a nice deterministic computation (which we are used to from computers), we call this result indeterminate, where it is not known what the output will be and it is indeed likely to be different across runs.
 

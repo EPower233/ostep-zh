@@ -135,7 +135,11 @@ Unfortunately, the code has two problems: one of correctness, and another of per
 | | `interrupt: switch to Thread 1` |
 | `flag = 1; // set flag to 1 (too!)` | |
 
-<p class="figure-caption"><em>Figure 28.2: Trace: No Mutual Exclusion</em></p>
+<div class="figure-caption">
+
+<em>Figure 28.2: Trace: No Mutual Exclusion</em>
+
+</div>
 
 As you can see from this interleaving, with timely (untimely?) interrupts, we can easily produce a case where both threads set the flag to 1 and both threads are thus able to enter the critical section. This behavior is what professionals call “bad” – we have obviously failed to provide the most basic requirement: providing mutual exclusion.
 
@@ -367,7 +371,6 @@ Note one important difference with this solution versus our previous attempts: i
 ## 28.12 Too Much Spinning: What Now?
 
 Our hardware-based locks are simple (only a few lines of code) and they work (you could even prove that if you’d like to, by writing some code), which are two excellent properties of any system or code. However, in some cases, these solutions can be quite inefficient. Imagine you are running two threads on a single processor. Now imagine that one thread (thread 0) is in a critical section and thus has a lock held, and unfortunately gets interrupted. The second thread (thread 1) now tries to acquire the lock, but finds that it is held. Thus, it begins to spin. And spin. Then it spins some more. And finally, a timer interrupt goes off, thread 0 is run again, which releases the lock, and finally (the next time it runs, say), thread 1 won’t have to spin so much and will be able to acquire the lock. Thus, any time a thread gets caught spinning in a situation like this, it wastes an entire time slice doing nothing but checking a value that isn’t going to change! The problem gets worse with N threads contending for a lock; N − 1 time slices may be wasted in a similar manner, simply spinning and waiting for a single thread to release the lock. And thus, our next problem:
-
 
 > [!IMPORTANT] THE CRUX: HOW TO AVOID SPINNING
 > How can we develop a lock that doesn’t needlessly waste time spinning on the CPU?

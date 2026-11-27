@@ -133,20 +133,6 @@ The answer, of course, is that the value of the semaphore should be set to 0. Th
 
 ![Figure 31.7: Thread Trace: Parent Waiting For Child (Case 1)](/figures/en/threads-sema/p6-2.svg)
 
-| Val | Parent | State | Child | State |
-| --- | --- | --- | --- | --- |
-| 0 | create(Child) | Run | (Child exists, can run) | Ready |
-| 0 | call `sem_wait()` | Run |  | Ready |
-| -1 | decr sem | Run |  | Ready |
-| -1 | (sem<0)→sleep | Sleep |  | Ready |
-| -1 | Switch→Child | Sleep | child runs | Run |
-| -1 |  | Sleep | call `sem_post()` | Run |
-| 0 |  | Sleep | inc sem | Run |
-| 0 |  | Ready | wake(Parent) | Run |
-| 0 |  | Ready | `sem_post()` returns | Run |
-| 0 |  | Ready | Interrupt→Parent | Ready |
-| 0 | `sem_wait()` returns | Run |  | Ready |
-
 <p id="fig-31-7" class="figure-caption"><em>Figure 31.7: Thread Trace: Parent Waiting For Child (Case 1)</em></p>
 
 | Val | Parent | State | Child | State |
